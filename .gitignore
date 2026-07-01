@@ -1,0 +1,34 @@
+# Środowisko wirtualne Pythona (odtwarzane z requirements.txt)
+.venv/
+venv/
+ENV/
+env/
+
+# Artefakty Pythona
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE i system
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Sekrety (na przyszłość)
+.env
+.env.*
+*.pem
+credentials.json
+
+# Logi tymczasowe
+*.log

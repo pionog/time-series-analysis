@@ -1,0 +1,17 @@
+Cecha,Liczba,Procent,Lacznie_artykulow
+Synthetic,51,34.46,148
+Unknown missingness,33,22.3,148
+MAR,26,17.57,148
+Natural,19,12.84,148
+Non-linear,12,8.11,148
+Unknown noise,10,6.76,148
+Unknown Degradation,9,6.08,148
+Non-stationarity,8,5.41,148
+Gaussian Noise,8,5.41,148
+MCAR,8,5.41,148
+MNAR,7,4.73,148
+White Noise,6,4.05,148
+Additive distortions,3,2.03,148
+Drift,2,1.35,148
+Interrupted time series,2,1.35,148
+Outliers,1,0.68,148

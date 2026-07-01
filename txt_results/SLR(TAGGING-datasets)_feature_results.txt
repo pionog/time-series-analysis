@@ -1,0 +1,844 @@
+Podsumowanie cech (globalnie)
+- liczba przeanalizowanych artykułów: 148
+- liczba unikalnych cech: 99
+- łączna liczba oznaczeń cech (x): 133
+- Cecha 'Self-generated' wystąpiła 7 razy
+- Cecha 'METR-LA' wystąpiła 4 razy
+- Cecha 'Motes' wystąpiła 4 razy
+- Cecha 'GSA' wystąpiła 4 razy
+- Cecha 'PEMS-BAY' wystąpiła 3 razy
+- Cecha 'PEMS04' wystąpiła 3 razy
+- Cecha 'Exchange Rate' wystąpiła 3 razy
+- Cecha 'Sea-Surface Temperature' wystąpiła 3 razy
+- Cecha 'Not specified' wystąpiła 3 razy
+- Cecha 'MIMIC-III' wystąpiła 3 razy
+- Cecha 'PEMS08' wystąpiła 2 razy
+- Cecha 'China AQI' wystąpiła 2 razy
+- Cecha 'Mexico' wystąpiła 2 razy
+- Cecha 'MIMIC-IV' wystąpiła 2 razy
+- Cecha 'Air Quality' wystąpiła 2 razy
+- Cecha 'ETT' wystąpiła 2 razy
+- Cecha 'PhysioNet2012' wystąpiła 2 razy
+- Cecha 'DASYA' wystąpiła 1 razy
+- Cecha 'BanLuang' wystąpiła 1 razy
+- Cecha 'BosniaDam' wystąpiła 1 razy
+- Cecha 'UCI Electricity' wystąpiła 1 razy
+- Cecha 'Germany Weather' wystąpiła 1 razy
+- Cecha 'ETTh1' wystąpiła 1 razy
+- Cecha 'USHCN' wystąpiła 1 razy
+- Cecha 'WTI' wystąpiła 1 razy
+- Cecha 'ADNI' wystąpiła 1 razy
+- Cecha 'MIMIC-CXR' wystąpiła 1 razy
+- Cecha 'Cooperation hospitals' wystąpiła 1 razy
+- Cecha 'ShipSpeed' wystąpiła 1 razy
+- Cecha 'Maracaibo' wystąpiła 1 razy
+- Cecha 'BoonPegoh' wystąpiła 1 razy
+- Cecha 'BoonKota' wystąpiła 1 razy
+- Cecha 'Annual Energy Review' wystąpiła 1 razy
+- Cecha 'US Embassy Beijing' wystąpiła 1 razy
+- Cecha 'PeMS-Kim2025' wystąpiła 1 razy
+- Cecha 'Google Flu Trends' wystąpiła 1 razy
+- Cecha 'PEMS-M' wystąpiła 1 razy
+- Cecha 'ECL' wystąpiła 1 razy
+- Cecha 'WTH' wystąpiła 1 razy
+- Cecha 'Influenza-Like Illness' wystąpiła 1 razy
+- Cecha 'AUST-Gait' wystąpiła 1 razy
+- Cecha 'Multi-Modal Gait Database' wystąpiła 1 razy
+- Cecha 'Reactor coolant pumps leakage' wystąpiła 1 razy
+- Cecha 'Port of Ulsan Liquid Cargo' wystąpiła 1 razy
+- Cecha 'Hepatitis / Thrombosis (PKDD)' wystąpiła 1 razy
+- Cecha 'M356 environmental time series' wystąpiła 1 razy
+- Cecha 'SSM/I and DMSP satellite data' wystąpiła 1 razy
+- Cecha 'Emergency medical services calls in Lazio' wystąpiła 1 razy
+- Cecha 'M356, M395, and M778 environmental time series' wystąpiła 1 razy
+- Cecha 'HEK293 rAAV Cell Culture Biomass' wystąpiła 1 razy
+- Cecha 'Porto Taxi' wystąpiła 1 razy
+- Cecha 'Beijing and London Air KDD Cup 2018' wystąpiła 1 razy
+- Cecha 'MicroTom Growth Data' wystąpiła 1 razy
+- Cecha 'ENCODE Mouse Midbrain Data' wystąpiła 1 razy
+- Cecha 'GECCO 2015' wystąpiła 1 razy
+- Cecha 'CNNpred' wystąpiła 1 razy
+- Cecha 'KAIST' wystąpiła 1 razy
+- Cecha 'TSDL' wystąpiła 1 razy
+- Cecha 'PW (Polish Weather)' wystąpiła 1 razy
+- Cecha 'AQ : Air Quality' wystąpiła 1 razy
+- Cecha 'AEP : Appliances Energy Prediction' wystąpiła 1 razy
+- Cecha 'OLD : Ozone Level Detection' wystąpiła 1 razy
+- Cecha 'California'a Proposition 99' wystąpiła 1 razy
+- Cecha 'ASE' wystąpiła 1 razy
+- Cecha 'Italian Private Consumption from National Accounts (NA)' wystąpiła 1 razy
+- Cecha 'Household Budget Survey (HBS)' wystąpiła 1 razy
+- Cecha 'GEFCom2012WindPower' wystąpiła 1 razy
+- Cecha 'CaliforniaRenewableProduction' wystąpiła 1 razy
+- Cecha 'GermanTransmissionSystemOperator' wystąpiła 1 razy
+- Cecha 'CMPASS' wystąpiła 1 razy
+- Cecha 'N-CMPASS' wystąpiła 1 razy
+- Cecha 'ECG5000' wystąpiła 1 razy
+- Cecha 'ChinaBejing' wystąpiła 1 razy
+- Cecha 'ChinaGangzhou' wystąpiła 1 razy
+- Cecha 'ChinaShanghai' wystąpiła 1 razy
+- Cecha 'TurkeyWindPower' wystąpiła 1 razy
+- Cecha 'Weather10minutes' wystąpiła 1 razy
+- Cecha 'ElecDem' wystąpiła 1 razy
+- Cecha 'Wind2seconds' wystąpiła 1 razy
+- Cecha 'CinC_ECG_torso' wystąpiła 1 razy
+- Cecha 'HandOutlines' wystąpiła 1 razy
+- Cecha 'Haptics' wystąpiła 1 razy
+- Cecha 'InlineSkate' wystąpiła 1 razy
+- Cecha 'MALLAT' wystąpiła 1 razy
+- Cecha 'StarLightCurves' wystąpiła 1 razy
+- Cecha 'Phoneme' wystąpiła 1 razy
+- Cecha 'UWaveGestureLibraryAll' wystąpiła 1 razy
+- Cecha 'Worms' wystąpiła 1 razy
+- Cecha 'WormsTwoClass' wystąpiła 1 razy
+- Cecha 'JiangsuWindPower' wystąpiła 1 razy
+- Cecha 'HubeiWindPower' wystąpiła 1 razy
+- Cecha 'EliaWindPower' wystąpiła 1 razy
+- Cecha 'EuropeanWindFarmsA' wystąpiła 1 razy
+- Cecha 'EuropeanWindFarmsB' wystąpiła 1 razy
+- Cecha 'BeLyfe' wystąpiła 1 razy
+- Cecha 'SWaT' wystąpiła 1 razy
+- Cecha 'JapanEconomy' wystąpiła 1 razy
+- Cecha 'YangTraffic' wystąpiła 1 razy
+- Cecha 'YangWindSpeed' wystąpiła 1 razy
+
+ID 1 | Exploring the Characteristics of Time Series Data Affecting Forecasting Errors Using LSTM
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 2 | GinAR: An End-To-End Multivariate Time Series Forecasting Model Suitable for Variable Missing
+- liczba zaznaczonych cech (x): 5
+- liczba unikalnych cech: 5
+- cechy: METR-LA (1), PEMS-BAY (1), PEMS04 (1), PEMS08 (1), China AQI (1)
+
+ID 7 | Time series forecasting with missing values
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Self-generated (1)
+
+ID 8 | Time-Series Forecasting to Fill Missing Data in IoT Sensor Data
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: DASYA (1)
+
+ID 9 | Time series forecasting with missing data using neural network and meta-transfer learning
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Mexico (1)
+
+ID 10 | Feasibility Analysis of State-of-the-Art Time Series Models for Wind Power Forecasting with Irregular Missing Data
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Not specified (1)
+
+ID 11 | Neural Networks Fusion for Enhanced Time Series Forecasting with Missing Data
+- liczba zaznaczonych cech (x): 3
+- liczba unikalnych cech: 3
+- cechy: GEFCom2012WindPower (1), CaliforniaRenewableProduction (1), GermanTransmissionSystemOperator (1)
+
+ID 16 | Imputation for the analysis of missing values and prediction of time series data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 17 | Missing and noisy data in nonlinear time-series prediction
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 18 | Time-series data prediction based on reconstruction of missing samples and selective ensembling of FIR neural networks
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: BanLuang (1)
+
+ID 19 | Multilevel prediction of missing time series dam displacements data based on artificial neural networks voting evaluation
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: BosniaDam (1)
+
+ID 20 | Time Series Prediction as a Problem of Missing Values: Application to ESTSP2007 and NN3 Competition Benchmarks
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 21 | Robust Time Series Prediction with Missing Data Based on Deep Convolutional Neural Networks
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 22 | Any-Time Methods for Time-Series Prediction with Missing Observations
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 23 | Nonlinear Time-Series Prediction with Missing and Noisy Data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 24 | Time series prediction with missing values: a bidirectional fully connected neural network approach
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 25 | Predicting Missing Image in Remote Sensing Time Series Using Spatial-Temporal-Spectral Data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 26 | Nonlinear prediction of the hourly FoF2 time series and the nonlinear interpolation of missing points
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 49 | Prediction of satellite clock errors based on deterministic intuitionistic fuzzy time series
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 58 | High-Performance Time Series Prediction With Predictive Error Compensated Wavelet Neural Networks
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 61 | End-to-end Multi-task Learning of Missing Value Imputation and Forecasting in Time-Series Data
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Self-generated (1)
+
+ID 62 | Double quantization forecasting method for filling missing data in the CATS time series
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 63 | Missing Data Dynamic Forecasting of Fuzzy Time Series Based on Gaussian Mixture Model
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 64 | GinAR+: A Robust End-to-End Framework for Multivariate Time Series Forecasting With Missing Values
+- liczba zaznaczonych cech (x): 9
+- liczba unikalnych cech: 9
+- cechy: METR-LA (1), PEMS-BAY (1), PEMS04 (1), PEMS08 (1), China AQI (1), Exchange Rate (1), UCI Electricity (1), Germany Weather (1), ETTh1 (1)
+
+ID 66 | Spline cell-based hidden Markov approach for singular time series forecasting in performance degradation trend analysis
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 73 | Effective Prediction of Missing Data on Apache Spark over Multivariable Time Series
+- liczba zaznaczonych cech (x): 4
+- liczba unikalnych cech: 4
+- cechy: Self-generated (1), Motes (1), Sea-Surface Temperature (1), GSA (1)
+
+ID 74 | Temporal Dynamic Matrix Factorization for Missing Data Prediction in Large Scale Coevolving Time Series
+- liczba zaznaczonych cech (x): 4
+- liczba unikalnych cech: 4
+- cechy: Self-generated (1), Motes (1), Sea-Surface Temperature (1), GSA (1)
+
+ID 75 | Traffic prediction, data compression, abnormal data detection and missing data imputation: An integrated study based on the decomposition of traffic time series
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Not specified (1)
+
+ID 76 | An Efficient Missing Data Prediction Method Based on Kronecker Compressive Sensing in Multivariable Time Series
+- liczba zaznaczonych cech (x): 3
+- liczba unikalnych cech: 3
+- cechy: Motes (1), Sea-Surface Temperature (1), GSA (1)
+
+ID 77 | LIFE: Learning Individual Features for Multivariate Time Series Prediction with Missing Values
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 78 | MTSSP: Missing Value Imputation in Multivariate Time Series for Survival Prediction
+- liczba zaznaczonych cech (x): 2
+- liczba unikalnych cech: 2
+- cechy: MIMIC-III (1), MIMIC-IV (1)
+
+ID 79 | Nonlinear Time-Series Prediction with Missing and Noisy Data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 104 | A dual-path architecture based on time series decomposition and degradation correction for remaining useful life prediction of aero-engine
+- liczba zaznaczonych cech (x): 2
+- liczba unikalnych cech: 2
+- cechy: CMPASS (1), N-CMPASS (1)
+
+ID 106 | Probabilistic Forecasting of Irregularly Sampled Time Series with Missing Values via Conditional Normalizing Flows
+- liczba zaznaczonych cech (x): 3
+- liczba unikalnych cech: 3
+- cechy: MIMIC-III (1), MIMIC-IV (1), USHCN (1)
+
+ID 107 | The Development of an LSTM Model to Predict Time Series Missing Data of Air Temperature inside Fattening Pig Houses
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 117 | Time-series NARX feedback neural network for forecasting impedance cardiography ICG missing points: a predictive model
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 119 | The Association between Parental Child Vaccination Refusal Rate and the Impact of Mass Vaccination against COVID-19 in Kazakhstan: An Interrupted Time Series Analysis with Predictive Modelling of Nationwide Data Sources from 2013 to 2022
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 121 | Reconstruction and Prediction of Chaotic Time Series with Missing Data: Leveraging Dynamical Correlations Between Variables
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Self-generated (1)
+
+ID 122 | Multivariate Probabilistic Time Series Forecasting with Correlated Errors
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Exchange Rate (1)
+
+ID 126 | Reconstructing Missing Variables for Multivariate Time Series Forecasting via Conditional Generative Flows
+- liczba zaznaczonych cech (x): 2
+- liczba unikalnych cech: 2
+- cechy: METR-LA (1), ECG5000 (1)
+
+ID 128 | An intelligent interval forecasting system based on fuzzy time series and error distribution characteristics for air quality index
+- liczba zaznaczonych cech (x): 3
+- liczba unikalnych cech: 3
+- cechy: ChinaBejing (1), ChinaGangzhou (1), ChinaShanghai (1)
+
+ID 129 | Denoising or distortion: Does decomposition-reconstruction modeling paradigm provide a reliable prediction for crude oil price time series?
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: WTI (1)
+
+ID 131 | A residual GRU method with deep cross fusion for Alzheimer's disease progression prediction using missing variable-length time series data
+- liczba zaznaczonych cech (x): 2
+- liczba unikalnych cech: 2
+- cechy: MIMIC-III (1), ADNI (1)
+
+ID 139 | Degradation Modelling and Remaining Useful Life Prediction Methods Based on Time Series Generative Prediction Networks
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 140 | Forecasting interrupted time series
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 142 | Conditional Time Series Modeling for Pneumoconiosis Progression Risk Prediction with Missing Data
+- liczba zaznaczonych cech (x): 2
+- liczba unikalnych cech: 2
+- cechy: MIMIC-CXR (1), Cooperation hospitals (1)
+
+ID 143 | Sensor Data Quality in Ships: A Time Series Forecasting Approach to Compensate for Missing Data and Drift in Measurements of Speed through Water Sensors
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: ShipSpeed (1)
+
+ID 148 | Time Series Prediction with Missing Data by an Iterated Deep Gaussian Process
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 150 | A novel wind power forecasting system integrating time series refining, nonlinear multi-objective optimized deep learning and linear error correction
+- liczba zaznaczonych cech (x): 2
+- liczba unikalnych cech: 2
+- cechy: Not specified (1), TurkeyWindPower (1)
+
+ID 152 | Evaluating the Impact of Error-Bounded Lossy Compression on Time Series Forecasting
+- liczba zaznaczonych cech (x): 4
+- liczba unikalnych cech: 4
+- cechy: ETT (1), Weather10minutes (1), ElecDem (1), Wind2seconds (1)
+
+ID 153 | Time Series Forecasting with Missing Data Using Generative Adversarial Networks and Bayesian Inference
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Mexico (1)
+
+ID 154 | Effects of missing data imputation methods on univariate blood pressure time series data analysis and forecasting with ARIMA and LSTM
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Maracaibo (1)
+
+ID 156 | Assessment of Time Series Model for Predicting Long-Interval Consecutive Missing Values in Air Quality Dataset
+- liczba zaznaczonych cech (x): 2
+- liczba unikalnych cech: 2
+- cechy: BoonPegoh (1), BoonKota (1)
+
+ID 157 | TIformer: A Transformer-Based Framework for Time-Series Forecasting with Missing Data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 158 | kNN estimators for time series prediction: a functional partial linear single index model with missing responses and error-prone covariates
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Annual Energy Review (1)
+
+ID 159 | TMF-GNN: Temporal matrix factorization-based graph neural network for multivariate time series forecasting with missing values
+- liczba zaznaczonych cech (x): 4
+- liczba unikalnych cech: 4
+- cechy: Air Quality (1), US Embassy Beijing (1), PeMS-Kim2025 (1), Google Flu Trends (1)
+
+ID 164 | Improving traffic time-series predictability by imputing continuous non-random missing data
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: PEMS-M (1)
+
+ID 165 | An improved self-attention for long-sequence time-series data forecasting with missing values
+- liczba zaznaczonych cech (x): 5
+- liczba unikalnych cech: 5
+- cechy: ETT (1), ECL (1), WTH (1), Exchange Rate (1), Influenza-Like Illness (1)
+
+ID 167 | BIASED TEMPORAL CONVOLUTION GRAPH NETWORK FOR TIME SERIES FORECASTING WITH MISSING VALUES
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 171 | Uncertainty-Aware Self-Attention Model for Time Series Prediction with Missing Values
+- liczba zaznaczonych cech (x): 3
+- liczba unikalnych cech: 3
+- cechy: AUST-Gait (1), Multi-Modal Gait Database (1), PhysioNet2012 (1)
+
+ID 181 | Automatic prediction modeling for Time-Series degradation data via Genetic algorithm with applications in nuclear energy
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Reactor coolant pumps leakage (1)
+
+ID 186 | A Granule-Based Time Series Forecasting (TSF) Model for Underwater Combat with Missing Data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 192 | A deep learning-based time series model with missing value handling techniques to predict various types of liquid cargo traffic
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Port of Ulsan Liquid Cargo (1)
+
+ID 194 | Online Learning for Time Series Prediction of AR Model with Missing Data
+- liczba zaznaczonych cech (x): 10
+- liczba unikalnych cech: 10
+- cechy: CinC_ECG_torso (1), HandOutlines (1), Haptics (1), InlineSkate (1), MALLAT (1), StarLightCurves (1), Phoneme (1), UWaveGestureLibraryAll (1), Worms (1), WormsTwoClass (1)
+
+ID 198 | Classifying unevenly spaced clinical time series data using forecast error approximation based bottom-up (FeAB) segmented time delay neural network
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Hepatitis / Thrombosis (PKDD) (1)
+
+ID 201 | Environmental Time Series Prediction with Missing Data by Machine Learning and Dynamics Recostruction
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: M356 environmental time series (1)
+
+ID 203 | Research on Multivariate Time Series Prediction Method Based on Missing Data Imputation
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 204 | Recursive Least Square: RLS Method-Based Time Series Data Prediction for Many Missing Data
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: SSM/I and DMSP satellite data (1)
+
+ID 205 | Wind Power Interval Prediction with Adaptive Rolling Error Correction Based on PSR-BLS-QR
+- liczba zaznaczonych cech (x): 3
+- liczba unikalnych cech: 3
+- cechy: JiangsuWindPower (1), HubeiWindPower (1), EliaWindPower (1)
+
+ID 211 | Emergency Medical Services Calls Analysis for Trend Prediction during Epidemic Outbreaks: Interrupted Time Series Analysis on 2020–2021 COVID-19 Epidemic in Lazio, Italy
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Emergency medical services calls in Lazio (1)
+
+ID 212 | Prediction of environmental missing data time series by Support Vector Machine Regression and Correlation Dimension estimation
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: M356, M395, and M778 environmental time series (1)
+
+ID 217 | Handling Massive Proportion of Missing Labels in Multivariate Long-Term Time Series Forecasting
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: HEK293 rAAV Cell Culture Biomass (1)
+
+ID 218 | Joint modeling of local and global temporal dynamics for multivariate time series forecasting with missing values
+- liczba zaznaczonych cech (x): 3
+- liczba unikalnych cech: 3
+- cechy: PhysioNet2012 (1), Porto Taxi (1), Beijing and London Air KDD Cup 2018 (1)
+
+ID 223 | Bayesian sigmoid-type time series forecasting with missing data for greenhouse crops
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: MicroTom Growth Data (1)
+
+ID 227 | Missing data in wind farm time series: Properties and effect on forecasts
+- liczba zaznaczonych cech (x): 2
+- liczba unikalnych cech: 2
+- cechy: EuropeanWindFarmsA (1), EuropeanWindFarmsB (1)
+
+ID 231 | Time Series Missing Value Prediction: Algorithms and Applications
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 235 | TempoMAGE: A deep learning framework that exploits the causal dependency between time-series data to predict histone marks in open chromatin regions at time-points with missing ChIP-seq datasets
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: ENCODE Mouse Midbrain Data (1)
+
+ID 239 | A Novel Framework Based on CNN-LSTM Neural Network for Prediction of Missing Values in Electricity Consumption Time-Series Datasets
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: BeLyfe (1)
+
+ID 241 | Comparison of missing data imputation methods in time series forecasting
+- liczba zaznaczonych cech (x): 3
+- liczba unikalnych cech: 3
+- cechy: GECCO 2015 (1), Air Quality (1), CNNpred (1)
+
+ID 243 | A novel approach for missing data prediction in coevolving time series
+- liczba zaznaczonych cech (x): 3
+- liczba unikalnych cech: 3
+- cechy: Motes (1), GSA (1), KAIST (1)
+
+ID 244 | Forecasting Error Pattern-Based Anomaly Detection in Multivariate Time Series
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: SWaT (1)
+
+ID 249 | A method for predicting large-area missing observations in Landsat time series using spectral-temporal metrics
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 262 | Hydrostats: A Python package for characterizing errors between observed and predicted time series
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 263 | Robust kernel adaptive filters based on mean p-power error for noisy chaotic time series prediction
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: Self-generated (1)
+
+ID 265 | Multi-step prediction of time series with random missing data
+- liczba zaznaczonych cech (x): 2
+- liczba unikalnych cech: 2
+- cechy: Self-generated (1), TSDL (1)
+
+ID 276 | End-to-end anomaly detection, correction and prediction of missing values in historical daily temperature timeseries
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 279 | Modelling missing data for PM2.5 time series forecasting with computational intelligence
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 280 | Missing Data Prediction Based on Kronecker Compressing Sensing in Multivariable Time Series; [多变量时间序列中基于克罗内克压缩感知的缺失数据预测算法]
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 283 | Forward and backward forecasting ensembles for the estimation of time series missing data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 284 | Period-aware content attention RNNs for time series forecasting with missing values
+- liczba zaznaczonych cech (x): 4
+- liczba unikalnych cech: 4
+- cechy: PW (Polish Weather) (1), AQ : Air Quality (1), AEP : Appliances Energy Prediction (1), OLD : Ozone Level Detection (1)
+
+ID 285 | Using forecast modelling to evaluate treatment effects in single-group interrupted time series analysis
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: California'a Proposition 99 (1)
+
+ID 286 | Forecasting Construction Cost Index Using Interrupted Time-Series
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 297 | Forecasting estimated missing time series data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 300 | Online time series prediction with missing data
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: ASE (1)
+
+ID 302 | Improvement of forecasting robustness of time series model for thermal error on CNC machine tool
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 309 | Semi-parametric prediction intervals in small areas when auxiliary data are measured with error
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 318 | Impact of the WHO Framework Convention on Tobacco Control on global cigarette consumption: Quasi-experimental evaluations using interrupted time series analysis and in-sample forecast event modelling
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 319 | Development of methods for restoring missing values and forecasting of interdependent time series
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 322 | Simple nuclear norm based algorithms for imputing missing data and forecasting in time series
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 324 | Forecasting CEMAC's foreign exchange reserves in presence of unanticipated changes in oil prices: An interrupted time series modelling
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 329 | Toward the development of a conventional time series based web error forecasting framework
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 334 | Nonlinear prediction of the hourly FOF2 time series in conjunction with the interpolation of missing data points
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 341 | Analysis of noisy chaotic time series prediction error
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 349 | Forecasting time series with missing data using Holt's model
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: METR-LA (1)
+
+ID 350 | Robustness of forecasting of autoregressive time series for additive distortions
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: PEMS-BAY (1)
+
+ID 356 | Nonlinear prediction of the hourly FOF2 time series and the nonlinear interpolation of missing points
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: PEMS04 (1)
+
+ID 361 | Forecasting economic time series with measurement error
+- liczba zaznaczonych cech (x): 1
+- liczba unikalnych cech: 1
+- cechy: JapanEconomy (1)
+
+ID 364 | Missing and noisy data on nonlinear time-series prediction
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 367 | Prediction of chaotic time series in the presence of measurement error: The importance of initial conditions
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 368 | Generalized unscented Kalman filtering based radial basis function neural network for the prediction of ground radioactivity time series with missing data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 370 | An echo state network based on error compensation for prediction of nonlinear time series in industry
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 372 | Missing data and forecasting in multivariate time series: An application of the common components dynamic linear model
+- liczba zaznaczonych cech (x): 2
+- liczba unikalnych cech: 2
+- cechy: Italian Private Consumption from National Accounts (NA) (1), Household Budget Survey (HBS) (1)
+
+ID 377 | Predicting missing parts in time series using uncertainty theory
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 379 | Influence of missing values on the prediction of a stationary time series
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 381 | Reducing error in neural network time series forecasting
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 384 | A non-linear time series prediction method for missing daily flow rate data of middle firat catchment
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 401 | Prediction of unmet primary care needs for the medically vulnerable post-disaster: An interrupted time-series analysis of health system responses
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 402 | Nonlinear forecasting as a way of distinguishing chaos from measurement error in time series
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 403 | A Co-training approach for time series prediction with missing data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 416 | Prediction of missing observations in the time series of an economic variable
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 418 | Forecasting non-seasonal time series with missing observations
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 426 | Time Series Regression Forecasting with Measurement Errors
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 427 | Forecasting economic time series with measurement error
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 428 | A Forecasting Method for Metering Error of Electric Energy Based on    Intrinsic Time-Scale Decomposition and Time Series Analysis
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 432 | Predicting missing parts in time series using uncertainty theory
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 433 | Forecasting Error Pattern-Based Anomaly Detection in Multivariate Time    Series
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 438 | A co-training approach for time series prediction with missing data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 439 | PREDICTION OF MISSING OBSERVATIONS IN TIME SERIES OF AN ECONOMIC    VARIABLE
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 443 | Prediction of satellite clock errors based on deterministic    intuitionistic fuzzy time series
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 444 | Reduce Forecasting Errors by Low Order Nonlinear Transformations for    Complex Time Series
+- liczba zaznaczonych cech (x): 2
+- liczba unikalnych cech: 2
+- cechy: YangTraffic (1), YangWindSpeed (1)
+
+ID 446 | Forecasting Method Based on Attenuated LSTM for Time Series With Missing    Data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 447 | Reconstructing Missing Variables for Multivariate Time Series Forecasting via Conditional Generative Flows
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 448 | Research on Hybrid Forecasting Method with Time Series and Intelligent    Error Modification
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 450 | Case Study 8-Interrupted Time Series Analysis, Holdback Forecasting, and    Variable Transformation
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 452 | TIformer: A Transformer-Based Framework for Time-Series Forecasting with    Missing Data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 456 | Double quantization forecasting method for filling missing data in the    CATS time series
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 458 | ERROR FORMULAS FOR OPTIMAL LINEAR FILTERING, PREDICTION AND    INTERPOLATION OF STATIONARY TIME SERIES
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 460 | DEEP HYBRID NEURAL NETWORKS FOR PREDICTING MISSING SEGMENTS IN sEMG TIME    SERIES DATA
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 463 | A Granule-Based Time Series Forecasting (TSF) Model for Underwater    Combat with Missing Data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 465 | Recursive Least Square: RLS Method-Based Time Series Data Prediction for    Many Missing Data
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 472 | Multilevel Prediction of Missing Time Series Dam Displacements Data    Based on Artificial Neural Networks Voting Evaluation
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 473 | Time series prediction as a problem of missing values: Application to    ESTSP2007 and NN3 competition benchmarks
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 474 | Joint Modeling of Local and Global Temporal Dynamics for Multivariate    Time Series Forecasting with Missing Values
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 475 | TIME-SERIES FATIGUE DAMAGE STATES FORECASTING AND PROBABILISTIC    ENVIRONMENTAL FATIGUE LIFE PREDICTION USING MARKOV-CHAIN-MONTE-CARLO    TECHNIQUES
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 476 | Spline Cell-Based Hidden Markov Approach for Singular Time Series    Forecasting in Performance Degradation Trend Analysis
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 478 | APPLICATION OF HYBRID MODELS IN FORECASTING OF MISSING DATA IN HIGH    FREQUENCY TIME SERIES WITH SYSTEMATIC GAPS
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 480 | Time-series data prediction based on reconstruction of missing samples    and selective ensembling of FIR neural networks
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+
+ID 485 | Traffic Prediction, Data Compression, Abnormal Data Detection and    Missing Data Imputation: An Integrated Study Based on the Decomposition    of Traffic Time Series
+- liczba zaznaczonych cech (x): 0
+- liczba unikalnych cech: 0
+- cechy: brak
+

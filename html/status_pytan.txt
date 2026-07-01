@@ -1,0 +1,308 @@
+STATUS PYTAŃ BADAWCZYCH I ANALITYCZNYCH
+Data: 2026-07-01
+
+Legenda:
+  [TAK]       — na pytanie można już odpowiedzieć na podstawie danych w projekcie
+  [NIE]       — brak danych; wymaga ręcznej pracy lub nowych źródeł
+  [CZĘŚCIOWO] — dostępne są dane pomocnicze, ale odpowiedź nie jest pełna
+
+Źródła danych: input_csv/, csv_results/, rules_results/
+
+========================================================================
+
+RQ1: Jakie zbiory danych są wykorzystywane w badaniach?
+------------------------------------------------------------------------
+  Podsumowanie RQ [RQ1]: [TAK]
+  Przeanalizowano 148 artykułów. Zidentyfikowano 99 nazw zbiorów danych i 23 nazw benchmarkowych (121 unikalnych po połączeniu).
+
+  [TAK]  RQ1-A1
+           Jakie zbiory danych były wykorzystywane w badaniach dotyczących zakłócania i naprawy danych typu szeregów czasowych?
+           → Self-generated: 7
+
+  [TAK]  RQ1-A2
+           Jakie zbiory danych były wykorzystywane w badaniach dotyczących zakłócania i naprawy danych typu szeregów czasowych, określane jako benchmarkowe?
+           → PhysioNet2012: 3
+
+  [TAK]  RQ1-A3
+           Jakie zbiory danych występują najczęściej w badaniach? (Połączenie dwóch powyższych pytań)
+           → Dla każdej nazwy zbioru: liczba artykułów = suma z kolumny Dataset (RQ1-A1) i Benchmark datasets ...
+
+  [TAK]  RQ1-A4
+           Jakie domeny zastosowań są najczęściej rozpatrywane w wykorzystywanych zbiorach danych?
+           → Środowisko i klimat: 24
+
+========================================================================
+
+RQ2: Jaka jest charakterystyka danych? (Jakie są kluczowe cechy statystyczne i domenowe analizowanych szeregów czasowych?)
+------------------------------------------------------------------------
+  Podsumowanie RQ [RQ2]: [TAK]
+  Szeregi czasowe są przede wszystkim wielowymiarowe (54 artykułów) i często transformowane (46 artykułów).
+
+  [TAK]  RQ2-A1
+           Jak charakteryzują się dane pod kątem wymiarowości?
+           → Multivariate: 54
+
+  [TAK]  RQ2-A2
+           Jak charakteryzują się dane pod kątem częstotliwości?
+           → Yearly: 9
+
+  [TAK]  RQ2-A3
+           Jaka jest zależność między wymiarowością a częstotliwością?
+           → Artykuły z obiema informacjami: 62 / 148
+
+  [TAK]  RQ2-A4
+           Jak charakteryzują się dane pod kątem obecności transformacji?
+           → Transformed: 46
+
+  [TAK]  RQ2-A5
+           Jakie dokładnie transformacje są wykonywane na danych?
+           → Opisy z kolumny Transformation description zgrupowane według typu rozwiązania:
+
+========================================================================
+
+RQ3: Jaka jest natura i charakterystyka zniekształceń danych w literaturze? (Jakie mechanizmy powstawania zniekształceń są najczęściej poddawane analizie?) [Jak kształtuje się struktura oraz metodologia reprezentacji zniekształceń szeregów czasowych poddawanych korekcie?]
+------------------------------------------------------------------------
+  Podsumowanie RQ [RQ3]: [TAK]
+  Dominuje degradacja syntetyczna (51 artykułów). Najczęstsze ogólne kategorie: missingness, sposób powstawania degradacji.
+
+  [TAK]  RQ3-A1
+           Czy badacze częściej mierzą się z realnymi problemami, czy symulują je sztucznie?
+           → Synthetic: 51
+
+  [TAK]  RQ3-A2
+           Które kategorie uszkodzeń danych dominują w badaniach?
+           → Sposób powstawania degradacji: 76
+
+  [TAK]  RQ3-A3
+           Jaki rodzaj zaszumienia uszkodzonych danych dominują w badaniach?
+           → Unknown noise: 10
+
+  [TAK]  RQ3-A4
+           Jakie typy uszkodzeń danych typu missingness dominują w badaniach?
+           → Unknown missingness: 33
+
+  [TAK]  RQ3-A5
+           Jakie typy zniekształceń strukturalnych dominują w badanych szeregach czasowych?
+           → Non-linear: 12
+
+  [TAK]  RQ3-A6
+           Jakiego rodzaju dryfy występują w badaniach nad rekonstrukcją szeregów czasowych? (Concept Drift, Time drift...)
+           → Drift: 2 (znikoma próbka · 1.4% artykułów)
+
+  [TAK]  RQ3-A7
+           Jakie metody zakłócania danych występowały w artykułach?
+           → Metody jawnie oznaczone w skoroszycie:
+
+  [TAK]  RQ3-A8
+           W jakich domenach zastosowań zbiorów danych najczęściej występują dane typy zniekształceń?
+           → Domena zastosowania × ogólna kategoria problemu z jakościąMissingnessZniekształcenia strukturalne...
+
+  [TAK]  RQ3-A9
+           Jakie kategorie problemów z jakością wystepują w dziedzinie "Środowisko i klimat"?
+           → Ogólne kategorie problemów z jakością:
+
+  [TAK]  RQ3-A10
+           Jakie kategorie problemów z jakością wystepują w dziedzinie "Chemia"?
+           → Ogólne kategorie problemów z jakością:
+
+  [TAK]  RQ3-A11
+           Jakie kategorie problemów z jakością wystepują w dziedzinie "Finanse i gospodarka"?
+           → Ogólne kategorie problemów z jakością:
+
+  [TAK]  RQ3-A12
+           Jakie kategorie problemów z jakością wystepują w dziedzinie "Medycyna i zdrowie"?
+           → Ogólne kategorie problemów z jakością:
+
+  [TAK]  RQ3-A13
+           Jakie kategorie problemów z jakością wystepują w dziedzinie "Transport"?
+           → Ogólne kategorie problemów z jakością:
+
+  [TAK]  RQ3-A14
+           Jakie kategorie problemów z jakością wystepują w dziedzinie "Geografia"?
+           → Ogólne kategorie problemów z jakością:
+
+  [TAK]  RQ3-A15
+           Jakie kategorie problemów z jakością wystepują w dziedzinie "Przemysł"?
+           → Ogólne kategorie problemów z jakością:
+
+  [TAK]  RQ3-A16
+           Jakie kategorie problemów z jakością wystepują w dziedzinie "Wytrzymałość"?
+           → Ogólne kategorie problemów z jakością:
+
+  [TAK]  RQ3-A17
+           Jakie kategorie problemów z jakością wystepują w dziedzinie "Energia"?
+           → Ogólne kategorie problemów z jakością:
+
+  [TAK]  RQ3-A18
+           Jakie kategorie problemów z jakością wystepują w dziedzinie "Społeczne i behawioralne"?
+           → Ogólne kategorie problemów z jakością:
+
+========================================================================
+
+RQ4: Jaka jest charakterystyka użycia metod rekonstrukcji danych?
+------------------------------------------------------------------------
+  Podsumowanie RQ [RQ4]: [TAK]
+  W 148 artykułach zidentyfikowano wiele metod rekonstrukcji; najczęściej tagowane: IA (4), Zero Imputation (4), LSTM (3), KNN Impute (3), Mean Imputation (3).
+
+  [TAK]  RQ4-A1
+           Jakie makrokategorie podejść są najczęściej stosowane do rekonstrukcji danych?
+           → Modele Statystyczne i Klasyczne: 36
+
+  [TAK]  RQ4-A2
+           Jakie Modele Statystyczne i Klasyczne są wykorzystywane do rekonstrukcji szeregów czasowych?
+           → Zero Imputation: 4
+
+  [TAK]  RQ4-A3
+           Jakie modele Klasycznego Uczenia Maszynowego są wykorzystywane do rekonstrukcji szeregów czasowych?
+           → KNN Impute: 3
+
+  [TAK]  RQ4-A4
+           Jakie Sieci Rekurencyjne i ich warianty są wykorzystywane do rekonstrukcji szeregów czasowych?
+           → LSTM: 3
+
+  [TAK]  RQ4-A5
+           Jakie Transformery i Mechanizmy Uwagi są wykorzystywane do rekonstrukcji szeregów czasowych?
+           → GPT4TS: 1 (znikoma próbka · 0.7% artykułów)
+
+  [TAK]  RQ4-A6
+           Jakie Sieci Splotowe i Czasowe są wykorzystywane do rekonstrukcji szeregów czasowych?
+           → Uni-FCNN: 1 (znikoma próbka · 0.7% artykułów)
+
+  [TAK]  RQ4-A7
+           Jakie Grafowe Sieci Neuronowe są wykorzystywane do rekonstrukcji szeregów czasowych?
+           → GRIN: 2 (znikoma próbka · 1.4% artykułów)
+
+  [TAK]  RQ4-A8
+           Jakie Faktoryzacje Macierzowe i Dekompozycje są wykorzystywane do rekonstrukcji szeregów czasowych?
+           → Time Series Decomposition: 3
+
+  [TAK]  RQ4-A9
+           Jakie Modele Generatywne i Probabilistyczne są wykorzystywane do rekonstrukcji szeregów czasowych?
+           → TRF: 1 (znikoma próbka · 0.7% artykułów)
+
+  [TAK]  RQ4-A10
+           Jakie Architektury Hybrydowe są wykorzystywane do rekonstrukcji szeregów czasowych?
+           → LSTNet: 1 (znikoma próbka · 0.7% artykułów)
+
+  [TAK]  RQ4-A11
+           Jakie Logiki Rozmyte i Systemy Hybrydowe są wykorzystywane do rekonstrukcji szeregów czasowych?
+           → GFTS: 1 (znikoma próbka · 0.7% artykułów)
+
+  [TAK]  RQ4-A12
+           Jakie modele stanowią "bazę porównawczą" (baselines) w kontekście rekonstrukcji szeregów czasowych?
+           → Mean: 3
+
+  [TAK]  RQ4-A13
+           Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Środowisko i klimat"?
+           → Środowisko i klimat
+
+  [TAK]  RQ4-A14
+           Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Chemia"?
+           → Chemia
+
+  [TAK]  RQ4-A15
+           Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Finanse i gospodarka"?
+           → Finanse i gospodarka
+
+  [TAK]  RQ4-A16
+           Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Medycyna i zdrowie"?
+           → Medycyna i zdrowie
+
+  [TAK]  RQ4-A17
+           Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Transport"?
+           → Transport
+
+  [TAK]  RQ4-A18
+           Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Geografia"?
+           → Geografia
+
+  [TAK]  RQ4-A19
+           Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Przemysł "?
+           → Przemysł
+
+  [TAK]  RQ4-A20
+           Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Wytrzymałość"?
+           → Przemysł wytrzymałościowy
+
+  [TAK]  RQ4-A21
+           Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Energia"?
+           → Energia
+
+  [TAK]  RQ4-A22
+           Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Społeczne i behawioralne"?
+           → Społeczne i behawioralne
+
+========================================================================
+
+RQ5: Jaka jest charakterystyka użycia modeli zadaniowych (downstream task)? (W jakich zadaniach końcowych (downstream tasks) wykorzystuje się zrekonstruowane dane?)
+------------------------------------------------------------------------
+  Podsumowanie RQ [RQ5]: [TAK]
+  Najczęstsze zadanie końcowe: Prediction (60 artykułów).
+
+  [TAK]  RQ5-A1
+           Jakie kategorie zadań są w wykorzystywane w artykułach naukowych? [Jakie zadania aplikacyjne (downstream tasks) oraz powiązane z nimi modele zadaniowe są najczęściej wykorzystywane w literaturze do weryfikacji skuteczności metod rekonstrukcji danych?]
+           → Prediction: 60
+
+  [TAK]  RQ5-A2
+           Jakie architektury związane z predykcją są wykorzystywane do ewaluacji skuteczności rekonstrukcji szeregów czasowych?
+           → LSTM: 6
+
+  [TAK]  RQ5-A3
+           Jaki rodzaj predykcji jest najczęściej wykorzystywany?
+           → Interval: 43
+
+  [TAK]  RQ5-A4
+           Jakie architektury związane z klasyfikacją są wykorzystywane do ewaluacji skuteczności rekonstrukcji szeregów czasowych?
+           → GRU-D: 1 (znikoma próbka · 0.7% artykułów)
+
+  [TAK]  RQ5-A5
+           Jakie architektury związane z wykrywaniem anomalii są wykorzystywane do ewaluacji skuteczności rekonstrukcji szeregów czasowych?
+           → MA: 1 (znikoma próbka · 0.7% artykułów)
+
+  [NIE]  RQ5-A6
+           Jakie modele zadania segmentacji szeregów czasowych stosuje się jako metoda walidacji poprawności strukturalnej danych?
+           → brak danych w projekcie
+
+========================================================================
+
+RQ6: Jaki jest wpływ rekonstrukcji na zadania końcowego? (W jakim stopniu i w jaki sposób jakość rekonstrukcji wpływa na skuteczność zadania końcowego?)
+------------------------------------------------------------------------
+  Podsumowanie RQ [RQ6]: [TAK]
+  Najczęściej raportowane metryki rekonstrukcji: RMSE, MSE, MAE. Ranking zwycięzców i kombinacje konfiguracyjne — patrz RQ6-A2.
+
+  [TAK]  RQ6-A1
+           Jakie metryki występują w temacie poprawy jakości danych?
+           → RMSE: 33
+
+  [TAK]  RQ6-A2
+           Który model najczęściej wygrywa w testach jakości (Top Performer)? + RANKING MODELI
+           → Ogólny ranking algorytmów (SUMMARY):
+
+  [TAK]  RQ6-A3
+           Czy lepsze modele rekonstrukcji przekładają się na lepsze wyniki zadań końcowych?
+           → Podsumowanie RQ6-A3
+
+  [TAK]  RQ6-A4
+           Jaki model rekonstrukcji wybrać dla konkretnej kolejności danych ("order")?
+           → Reguły per wartość order:
+
+  [TAK]  RQ6-A5
+           Jaki model rekonstrukcji wybrać dla danych domen zastosowań?
+           → Reguły per domena zbioru danych:
+
+  [TAK]  RQ6-A6
+           Jaki model rekonstrukcji wybrać dla konkretnego stopnia uszkodzenia danych, aby była najdokładniejsza predykcja? (Jaki model wybrać dla konkretnego stopnia uszkodzenia danych?)
+           → Głos konfiguracji (missing rate):
+
+========================================================================
+
+PODSUMOWANIE
+------------------------------------------------------------------------
+Pytania badawcze (RQ):           6
+Pytania analityczne łącznie:     61
+  [TAK]       — gotowe:          60
+  [CZĘŚCIOWO] — wymaga doprac.:  0
+  [NIE]       — do zrobienia:    1
+
+Priorytet pracy: pytania [NIE] i [CZĘŚCIOWO].
+Pytania [TAK] są już w html/wyniki_badawcze.html — można je przejrzeć i sformułować narrację.

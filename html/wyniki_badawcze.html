@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wyniki pytań badawczych — SLR</title>
+  <style>
+    :root {
+      --bg: #f4f6f8; --card: #fff; --border: #c5d0dc; --text: #1a2a3a;
+      --muted: #5a6a7a; --accent: #2e6b8a; --th-bg: #e8eef3; --warn: #b45309;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 2rem 1rem; font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.5; }
+    .page { max-width: 960px; margin: 0 auto; }
+    h1 { font-size: 1.75rem; margin: 0 0 0.5rem; color: var(--accent); }
+    .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+    .rq-block { margin-bottom: 2.5rem; }
+    .rq-table { width: 100%; border-collapse: collapse; background: var(--card);
+      box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    .rq-table th, .rq-table td { border: 1px solid var(--border); padding: 0.85rem 1rem;
+      text-align: left; vertical-align: top; }
+    .rq-table th { background: var(--th-bg); font-weight: 600; font-size: 0.95rem; }
+    .rq-table td h2 { margin: 0; font-size: 1.15rem; }
+    details { margin: 0; }
+    summary { cursor: pointer; color: var(--accent); font-size: 0.85rem; margin-bottom: 0.5rem; }
+    .answer-body { font-size: 0.95rem; overflow-x: auto; }
+    .empty { color: var(--muted); font-style: italic; margin: 0; }
+    .sample-warn { color: var(--warn); font-size: 0.82em; font-style: italic; }
+    .bullet-list { margin: 0.4rem 0 0.8rem 1.2rem; padding: 0; }
+    .sub-answer { margin-top: 0.75rem; padding: 0.5rem 0.75rem;
+      border-left: 3px solid var(--accent); background: #f8fbfd; }
+    .data-matrix { border-collapse: collapse; margin: 0.75rem 0; font-size: 0.88rem; }
+    .data-matrix th, .data-matrix td { border: 1px solid var(--border); padding: 0.4rem 0.55rem;
+      text-align: center; min-width: 2.5rem; }
+    .data-matrix th { background: var(--th-bg); }
+    .data-matrix caption { caption-side: top; text-align: left; font-size: 0.85rem;
+      color: var(--muted); margin-bottom: 0.35rem; }
+    .heat-legend { display: flex; align-items: center; gap: 0.5rem; margin: 0.5rem 0 1rem;
+      font-size: 0.82rem; color: var(--muted); flex-wrap: wrap; }
+    .heat-legend-bar { display: flex; border: 1px solid var(--border); border-radius: 3px;
+      overflow: hidden; }
+    .heat-legend-swatch { display: block; width: 2rem; height: 0.85rem; }
+    .heat-legend-label { white-space: nowrap; }
+    nav.toc { background: var(--card); border: 1px solid var(--border);
+      padding: 1rem 1.25rem; margin-bottom: 2rem; }
+    nav.toc ul { margin: 0.5rem 0 0; padding-left: 1.25rem; }
+    nav.toc a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>Wyniki pytań badawcze</h1>
+    <p class="meta">Wygenerowano: 2026-07-01 · Źródła: input_csv, csv_results, rules_results</p>
+    <nav class="toc">
+      <strong>Spis pytań badawczych</strong>
+      <ul>
+        <li><a href="#RQ1">RQ1 — Jakie zbiory danych są wykorzystywane w badaniach?</a></li><li><a href="#RQ2">RQ2 — Jaka jest charakterystyka danych? (Jakie są kluczowe cechy statystyczne i domeno…</a></li><li><a href="#RQ3">RQ3 — Jaka jest natura i charakterystyka zniekształceń danych w literaturze? (Jakie me…</a></li><li><a href="#RQ4">RQ4 — Jaka jest charakterystyka użycia metod rekonstrukcji danych?</a></li><li><a href="#RQ5">RQ5 — Jaka jest charakterystyka użycia modeli zadaniowych (downstream task)? (W jakich…</a></li><li><a href="#RQ6">RQ6 — Jaki jest wpływ rekonstrukcji na zadania końcowego? (W jakim stopniu i w jaki sp…</a></li>
+      </ul>
+    </nav>
+    <section class="rq-block" id="RQ1">
+  <table class="rq-table">
+    <tr><th colspan="1">Pytanie badawcze (RQ1)</th></tr>
+    <tr><td><h2>Jakie zbiory danych są wykorzystywane w badaniach?</h2></td></tr>
+    <tr><th>Odpowiedź na pytanie badawcze</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Przeanalizowano 148 artykułów. Zidentyfikowano 99 nazw zbiorów danych i 23 nazw benchmarkowych (121 unikalnych po połączeniu).</div>
+</details></td></tr>
+    <tr><th>RQ1-A1: Jakie zbiory danych były wykorzystywane w badaniach dotyczących zakłócania i naprawy danych typu szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Self-generated: 7<br>
+GSA: 4<br>
+METR-LA: 4<br>
+Motes: 4<br>
+Exchange Rate: 3<br>
+MIMIC-III: 3<br>
+Not specified: 3<br>
+PEMS-BAY: 3<br>
+PEMS04: 3<br>
+Sea-Surface Temperature: 3<br>
+Air Quality: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+China AQI: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+ETT: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+MIMIC-IV: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Mexico: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+PEMS08: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+PhysioNet2012: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span>
+<details class="sub-answer"><summary>Pełna lista (również pojedyncze wystąpienia)</summary>Self-generated: 7<br>
+GSA: 4<br>
+METR-LA: 4<br>
+Motes: 4<br>
+Exchange Rate: 3<br>
+MIMIC-III: 3<br>
+Not specified: 3<br>
+PEMS-BAY: 3<br>
+PEMS04: 3<br>
+Sea-Surface Temperature: 3<br>
+Air Quality: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+China AQI: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+ETT: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+MIMIC-IV: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Mexico: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+PEMS08: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+PhysioNet2012: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+ADNI: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+AEP : Appliances Energy Prediction: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+AQ : Air Quality: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ASE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+AUST-Gait: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Annual Energy Review: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BanLuang: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BeLyfe: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Beijing and London Air KDD Cup 2018: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BoonKota: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BoonPegoh: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BosniaDam: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CMPASS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CNNpred: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+California&#x27;a Proposition 99: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CaliforniaRenewableProduction: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ChinaBejing: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ChinaGangzhou: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ChinaShanghai: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CinC_ECG_torso: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Cooperation hospitals: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DASYA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ECG5000: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ECL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ENCODE Mouse Midbrain Data: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ETTh1: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ElecDem: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+EliaWindPower: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Emergency medical services calls in Lazio: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+EuropeanWindFarmsA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+EuropeanWindFarmsB: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GECCO 2015: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GEFCom2012WindPower: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GermanTransmissionSystemOperator: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Germany Weather: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Google Flu Trends: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+HEK293 rAAV Cell Culture Biomass: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+HandOutlines: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Haptics: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Hepatitis / Thrombosis (PKDD): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Household Budget Survey (HBS): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+HubeiWindPower: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Influenza-Like Illness: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+InlineSkate: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Italian Private Consumption from National Accounts (NA): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+JapanEconomy: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+JiangsuWindPower: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+KAIST: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+M356 environmental time series: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+M356, M395, and M778 environmental time series: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MALLAT: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MIMIC-CXR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Maracaibo: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MicroTom Growth Data: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Multi-Modal Gait Database: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+N-CMPASS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+OLD : Ozone Level Detection: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PEMS-M: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PW (Polish Weather): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PeMS-Kim2025: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Phoneme: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Port of Ulsan Liquid Cargo: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Porto Taxi: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Reactor coolant pumps leakage: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SSM/I and DMSP satellite data: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SWaT: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ShipSpeed: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+StarLightCurves: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+TSDL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+TurkeyWindPower: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+UCI Electricity: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+US Embassy Beijing: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+USHCN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+UWaveGestureLibraryAll: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+WTH: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+WTI: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Weather10minutes: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Wind2seconds: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Worms: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+WormsTwoClass: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+YangTraffic: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+YangWindSpeed: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+    <tr><th>RQ1-A2: Jakie zbiory danych były wykorzystywane w badaniach dotyczących zakłócania i naprawy danych typu szeregów czasowych, określane jako benchmarkowe?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">PhysioNet2012: 3<br>
+solar: 3<br>
+Jenkins-Box Gas Furnace: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Mackey-Glass Chaotic Time Series Data: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+NN3: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Poland&#x27;s electricity load: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Sunspot: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+traffic: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span>
+<details class="sub-answer"><summary>Pełna lista (również pojedyncze wystąpienia)</summary>PhysioNet2012: 3<br>
+solar: 3<br>
+Jenkins-Box Gas Furnace: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Mackey-Glass Chaotic Time Series Data: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+NN3: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Poland&#x27;s electricity load: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Sunspot: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+traffic: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+CATS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ENR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ESTSP2007: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Exchange-Rate: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Gauge: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Lorenz Attractor: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+M3: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+NAB (Numenta Anomaly Benchmark): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+NCAA2022: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PEMS03: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+electricity: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+m1_quarterly: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+m4_hourly: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+uber_hourly: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+wikipedia: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+    <tr><th>RQ1-A3: Jakie zbiory danych występują najczęściej w badaniach? (Połączenie dwóch powyższych pytań)</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p>Dla każdej nazwy zbioru: <strong>liczba artykułów = suma</strong> z kolumny <em>Dataset</em> (RQ1-A1) i <em>Benchmark datasets</em> (RQ1-A2). Unikalnych nazw po połączeniu: <strong>121</strong>.</p><p>Nazwy występujące w obu kolumnach (przykłady): PhysioNet2012: 2+3=5.</p><p>Poniżej zbiory z ≥2 wystąpieniami; pełna lista w sekcji rozwijanej.</p>
+Self-generated: 7<br>
+PhysioNet2012: 5<br>
+METR-LA: 4<br>
+Motes: 4<br>
+GSA: 4<br>
+PEMS-BAY: 3<br>
+PEMS04: 3<br>
+Exchange Rate: 3<br>
+Sea-Surface Temperature: 3<br>
+Not specified: 3<br>
+MIMIC-III: 3<br>
+solar: 3<br>
+PEMS08: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+China AQI: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Mexico: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+MIMIC-IV: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Air Quality: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+ETT: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Poland&#x27;s electricity load: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Jenkins-Box Gas Furnace: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Mackey-Glass Chaotic Time Series Data: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+NN3: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Sunspot: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+traffic: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span>
+<details class="sub-answer"><summary>Pełna lista połączona (również pojedyncze wystąpienia)</summary>Self-generated: 7<br>
+PhysioNet2012: 5<br>
+METR-LA: 4<br>
+Motes: 4<br>
+GSA: 4<br>
+PEMS-BAY: 3<br>
+PEMS04: 3<br>
+Exchange Rate: 3<br>
+Sea-Surface Temperature: 3<br>
+Not specified: 3<br>
+MIMIC-III: 3<br>
+solar: 3<br>
+PEMS08: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+China AQI: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Mexico: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+MIMIC-IV: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Air Quality: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+ETT: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Poland&#x27;s electricity load: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Jenkins-Box Gas Furnace: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Mackey-Glass Chaotic Time Series Data: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+NN3: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Sunspot: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+traffic: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+DASYA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BanLuang: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BosniaDam: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+UCI Electricity: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Germany Weather: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ETTh1: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+USHCN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+WTI: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ADNI: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MIMIC-CXR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Cooperation hospitals: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ShipSpeed: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Maracaibo: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BoonPegoh: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BoonKota: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Annual Energy Review: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+US Embassy Beijing: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PeMS-Kim2025: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Google Flu Trends: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PEMS-M: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ECL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+WTH: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Influenza-Like Illness: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+AUST-Gait: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Multi-Modal Gait Database: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Reactor coolant pumps leakage: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Port of Ulsan Liquid Cargo: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Hepatitis / Thrombosis (PKDD): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+M356 environmental time series: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SSM/I and DMSP satellite data: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Emergency medical services calls in Lazio: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+M356, M395, and M778 environmental time series: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+HEK293 rAAV Cell Culture Biomass: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Porto Taxi: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Beijing and London Air KDD Cup 2018: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MicroTom Growth Data: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ENCODE Mouse Midbrain Data: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GECCO 2015: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CNNpred: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+KAIST: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+TSDL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PW (Polish Weather): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+AQ : Air Quality: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+AEP : Appliances Energy Prediction: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+OLD : Ozone Level Detection: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+California&#x27;a Proposition 99: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ASE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Italian Private Consumption from National Accounts (NA): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Household Budget Survey (HBS): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GEFCom2012WindPower: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CaliforniaRenewableProduction: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GermanTransmissionSystemOperator: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CMPASS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+N-CMPASS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ECG5000: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ChinaBejing: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ChinaGangzhou: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ChinaShanghai: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+TurkeyWindPower: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Weather10minutes: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ElecDem: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Wind2seconds: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CinC_ECG_torso: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+HandOutlines: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Haptics: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+InlineSkate: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MALLAT: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+StarLightCurves: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Phoneme: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+UWaveGestureLibraryAll: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Worms: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+WormsTwoClass: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+JiangsuWindPower: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+HubeiWindPower: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+EliaWindPower: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+EuropeanWindFarmsA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+EuropeanWindFarmsB: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BeLyfe: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SWaT: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+JapanEconomy: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+YangTraffic: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+YangWindSpeed: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Gauge: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ESTSP2007: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Exchange-Rate: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+NCAA2022: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CATS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+M3: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+NAB (Numenta Anomaly Benchmark): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ENR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Lorenz Attractor: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+electricity: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+m4_hourly: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+m1_quarterly: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PEMS03: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+uber_hourly: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+wikipedia: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+    <tr><th>RQ1-A4: Jakie domeny zastosowań są najczęściej rozpatrywane w wykorzystywanych zbiorach danych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Środowisko i klimat: 24<br>
+Finanse i gospodarka: 15<br>
+Energia: 12<br>
+Medycyna i zdrowie: 12<br>
+Chemia: 6<br>
+Transport: 6<br>
+Geografia: 5<br>
+Przemysł wytrzymałościowy: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Przemysł: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Społeczne i behawioralne: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></div>
+</details></td></tr>
+  </table>
+</section>
+<section class="rq-block" id="RQ2">
+  <table class="rq-table">
+    <tr><th colspan="1">Pytanie badawcze (RQ2)</th></tr>
+    <tr><td><h2>Jaka jest charakterystyka danych? (Jakie są kluczowe cechy statystyczne i domenowe analizowanych szeregów czasowych?)</h2></td></tr>
+    <tr><th>Odpowiedź na pytanie badawcze</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Szeregi czasowe są przede wszystkim wielowymiarowe (54 artykułów) i często transformowane (46 artykułów).</div>
+</details></td></tr>
+    <tr><th>RQ2-A1: Jak charakteryzują się dane pod kątem wymiarowości?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Multivariate: 54<br>
+Univariate: 26</div>
+</details></td></tr>
+    <tr><th>RQ2-A2: Jak charakteryzują się dane pod kątem częstotliwości?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Yearly: 9<br>
+Half a year: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Quaterly: 4<br>
+Monthly: 13<br>
+Weekly: 3<br>
+Daily: 16<br>
+Hourly: 22<br>
+Half an hour: 3<br>
+15 minutes: 3<br>
+10 minutes: 5<br>
+5 minutes: 8<br>
+Minute: 6<br>
+5 seconds: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Seconds: 8<br>
+100 milliseconds: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Other: 6</div>
+</details></td></tr>
+    <tr><th>RQ2-A3: Jaka jest zależność między wymiarowością a częstotliwością?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p>Artykuły z obiema informacjami: <strong>62</strong> / 148</p>
+<table class="data-matrix"><caption>Oś X: wymiarowość · Oś Y: częstotliwość (od najniższej do najwyższej)</caption><thead><tr><th></th><th>Univariate</th><th>Multivariate</th></tr></thead><tbody><tr><th>Yearly</th><td class="heat" style="background:rgb(219,221,240)">5</td><td class="heat" style="background:rgb(240,235,247)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td></tr><tr><th>Half a year</th><td class="heat" style="background:rgb(240,235,247)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:rgb(247,240,249)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td></tr><tr><th>Quaterly</th><td class="heat" style="background:rgb(247,240,249)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:rgb(240,235,247)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td></tr><tr><th>Monthly</th><td class="heat" style="background:rgb(212,216,237)">6</td><td class="heat" style="background:rgb(212,216,237)">6</td></tr><tr><th>Weekly</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(233,230,244)">3</td></tr><tr><th>Daily</th><td class="heat" style="background:rgb(219,221,240)">5</td><td class="heat" style="background:rgb(170,188,223)">12</td></tr><tr><th>Hourly</th><td class="heat" style="background:rgb(212,216,237)">6</td><td class="heat" style="background:rgb(135,165,212)">17</td></tr><tr><th>Half an hour</th><td class="heat" style="background:rgb(247,240,249)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:rgb(240,235,247)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td></tr><tr><th>15 minutes</th><td class="heat" style="background:rgb(247,240,249)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:rgb(240,235,247)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td></tr><tr><th>10 minutes</th><td class="heat" style="background:rgb(247,240,249)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:rgb(219,221,240)">5</td></tr><tr><th>5 minutes</th><td class="heat" style="background:rgb(240,235,247)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:rgb(205,212,235)">7</td></tr><tr><th>Minute</th><td class="heat" style="background:rgb(247,240,249)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:rgb(226,226,242)">4</td></tr><tr><th>5 seconds</th><td class="heat" style="background:rgb(247,240,249)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Seconds</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(198,207,233)">8</td></tr><tr><th>100 milliseconds</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(247,240,249)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td></tr><tr><th>Other</th><td class="heat" style="background:rgb(233,230,244)">3</td><td class="heat" style="background:rgb(247,240,249)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td></tr></tbody></table><div class="heat-legend"><span class="heat-legend-label">mniej artykułów</span><div class="heat-legend-bar"><span class="heat-legend-swatch" style="background:#f8fafb"></span><span class="heat-legend-swatch" style="background:rgb(233,230,244)"></span><span class="heat-legend-swatch" style="background:rgb(205,212,235)"></span><span class="heat-legend-swatch" style="background:rgb(184,197,228)"></span><span class="heat-legend-swatch" style="background:rgb(156,179,219)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span></div><span class="heat-legend-label">więcej artykułów (max 17)</span></div>
+<p><strong>Other</strong> (częstotliwość): jednostka czasu niepasująca do standardowej siatki w skoroszycie — np. nieregularne próbkowanie, Hz, niestandardowy interwał lub brak jednoznacznej informacji u autorów.</p>
+<p>Artykuły z częstotliwością <em>Other</em>:</p><ul class="bullet-list"><li><strong>ID 20</strong>: Time Series Prediction as a Problem of Missing Values: Application to ESTSP2007 … — Autorzy nie podali standardowej jednostki czasu w skoroszycie (np. nieregularna próbkowanie, Hz, niestandardowy interwał).</li><li><strong>ID 24</strong>: Time series prediction with missing values: a bidirectional fully connected neur… — Autorzy nie podali standardowej jednostki czasu w skoroszycie (np. nieregularna próbkowanie, Hz, niestandardowy interwał).</li><li><strong>ID 349</strong>: Forecasting time series with missing data using Holt&#x27;s model — Autorzy nie podali standardowej jednostki czasu w skoroszycie (np. nieregularna próbkowanie, Hz, niestandardowy interwał).</li></ul></div>
+</details></td></tr>
+    <tr><th>RQ2-A4: Jak charakteryzują się dane pod kątem obecności transformacji?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Transformed: 46<br>
+Raw: 22</div>
+</details></td></tr>
+    <tr><th>RQ2-A5: Jakie dokładnie transformacje są wykonywane na danych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p>Opisy z kolumny <em>Transformation description</em> zgrupowane według typu rozwiązania:</p>
+Dekompozycja i różnicowanie: 7<br>
+Normalizacja i skalowanie: 6<br>
+Imputacja i uzupełnianie braków: 5<br>
+Redukcja wymiarów i reprezentacja cech: 5<br>
+Inne / specyficzne dla domeny: 3<br>
+Resampling i agregacja czasowa: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Transformacje logarytmiczne i nieliniowe: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Interpolacja i wypełnianie szeregów: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span>
+<details class="sub-answer"><summary>Imputacja i uzupełnianie braków (5)</summary><ul class="bullet-list"><li>From the original set of available attributes (logged parameters), only those related (directly or indirectly) to the parameter under study (STW) were taken into account. The total number of attributes taken into account decreased from the original 178 entries to 49. All the attributes that have an extremely high correlation with STW and originate from the same sensor were excluded. All the instances that had missing values for attributes related to meteorological conditions and in which missingness was continuous for very long time spans were also excluded from the dataset used: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Input data is degraded: &quot;When there are bad data such as null values, negative values, and abnormal values in the datasets, the data needs to be cleaned.&quot;: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Missing data filled with not-a-number values: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Missing data imputation: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Missing data imputation, fixed-length inputs: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li></ul></details>
+<details class="sub-answer"><summary>Interpolacja i wypełnianie szeregów (1)</summary><ul class="bullet-list"><li>Used linear interpolation: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li></ul></details>
+<details class="sub-answer"><summary>Normalizacja i skalowanie (6)</summary><ul class="bullet-list"><li>All data were normalized: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Each dataset was standardized using the mean and standard deviation from the training set.: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Standardized: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Sub-datasets are clustered according to the operating condition parameters then, the samples of each type of operating condition are separately standardized. It was also used: exponential averaging, sliding time window, sample label usage, fault initiation threshold set to 125. For second dataset data was downsampled from 1Hz to 0.01Hz.: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>The data sets are scaled by using the minimum/maximum
+normalization method: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Zero-mean, unit variance normalization and kernel-induced mapping to high-dimensional feature space: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li></ul></details>
+<details class="sub-answer"><summary>Dekompozycja i różnicowanie (7)</summary><ul class="bullet-list"><li>&quot;heteroscedasticity elimination, removal of linear trends through differencing the ln data&quot;: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>7-day moving averages and classical multiplicative decomposition for detrending seasonality: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Complete Ensemble Empirical Mode Decomposition with Adaptive Noise (CEEMDAN): <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Differencing: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Differencing, Exponential Smoothing: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Forecast-error approximation-based bottom-up (FeAB) segmentation and double exponential smoothing: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>lagged first difference, transformacja strukturalna modelu (je?li czerwiec 2008 to 1, w przeciwnym  przypadku 0): <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li></ul></details>
+<details class="sub-answer"><summary>Resampling i agregacja czasowa (2)</summary><ul class="bullet-list"><li>&quot;We create daily time series data by mean 24 hours of data into a single data point.&quot; also &quot;we randomly remove approximately 30% of the data from each dataset.&quot;: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>10-minute resolution data was re-sampled to 30-minute resolution: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li></ul></details>
+<details class="sub-answer"><summary>Transformacje logarytmiczne i nieliniowe (2)</summary><ul class="bullet-list"><li>First dataset: applying a log transformation, a bias correction. Second one is a raw input.: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Modeling non-linear sigmoid growth through its reciprocal linear dynamic representation: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li></ul></details>
+<details class="sub-answer"><summary>Redukcja wymiarów i reprezentacja cech (5)</summary><ul class="bullet-list"><li>(Using FiG) Transforming the original data into granules with similar characteristics, resulting in reduced data size, computational complexity, and resource consumption: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Sparse representation basis design via 1st and 2nd derivative approximation (FD/SD): <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Spatial-temporal data fusion, vectorization through node-to-vector algorithm, and scaling to 01 range: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>The CXR images were extracted directly from DICOM files and resized to 256  256. Transform the original 1D time series into a structured 2D tensor processed by 2D kernels.: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Weighting H3K27ac state by fold change in chromatin accessibility between reference and training points: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li></ul></details>
+<details class="sub-answer"><summary>Inne / specyficzne dla domeny (3)</summary><ul class="bullet-list"><li>Add n sets of positive and negative auxiliary white noise pairs to time series X to obtain new times series Z.: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Mapping weights and bias of MLP-ANN to stochastic state space equations: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Replacing NaN values by the mean of the other cycles: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li></ul></details></div>
+</details></td></tr>
+  </table>
+</section>
+<section class="rq-block" id="RQ3">
+  <table class="rq-table">
+    <tr><th colspan="1">Pytanie badawcze (RQ3)</th></tr>
+    <tr><td><h2>Jaka jest natura i charakterystyka zniekształceń danych w literaturze? (Jakie mechanizmy powstawania zniekształceń są najczęściej poddawane analizie?) [Jak kształtuje się struktura oraz metodologia reprezentacji zniekształceń szeregów czasowych poddawanych korekcie?]</h2></td></tr>
+    <tr><th>Odpowiedź na pytanie badawcze</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Dominuje degradacja syntetyczna (51 artykułów). Najczęstsze ogólne kategorie: missingness, sposób powstawania degradacji.</div>
+</details></td></tr>
+    <tr><th>RQ3-A1: Czy badacze częściej mierzą się z realnymi problemami, czy symulują je sztucznie?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Synthetic: 51<br>
+Natural: 19<br>
+Unknown Degradation: 9</div>
+</details></td></tr>
+    <tr><th>RQ3-A2: Które kategorie uszkodzeń danych dominują w badaniach?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Sposób powstawania degradacji: 76<br>
+Missingness: 71<br>
+Szum: 25<br>
+Zniekształcenia strukturalne: 18<br>
+Drift (wyodrębnione ze strukturalnych): 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Outliers (wyodrębnione ze strukturalnych): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ3-A3: Jaki rodzaj zaszumienia uszkodzonych danych dominują w badaniach?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Unknown noise: 10<br>
+Gaussian Noise: 8<br>
+White Noise: 6<br>
+Additive distortions: 3</div>
+</details></td></tr>
+    <tr><th>RQ3-A4: Jakie typy uszkodzeń danych typu missingness dominują w badaniach?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Unknown missingness: 33<br>
+MAR: 26<br>
+MCAR: 8<br>
+MNAR: 7</div>
+</details></td></tr>
+    <tr><th>RQ3-A5: Jakie typy zniekształceń strukturalnych dominują w badanych szeregach czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Non-linear: 12<br>
+Non-stationarity: 8<br>
+Interrupted time series: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Outliers: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ3-A6: Jakiego rodzaju dryfy występują w badaniach nad rekonstrukcją szeregów czasowych? (Concept Drift, Time drift...)</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Drift: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ3-A7: Jakie metody zakłócania danych występowały w artykułach?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Metody jawnie oznaczone w skoroszycie:</strong></p>
+Random pattern: 10<br>
+Downsampling: 9<br>
+Outliers removal: 3<br>
+Regular pattern: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span>
+<p><strong>Uzupełnienia z kolumny Comments:</strong></p>
+<ul class="bullet-list"><li>[24] Reducing dimensions to a single one</li><li>[61] Downsampling from 48 sequence to an hour period</li><li>[63] Sampling from 1 minute to 2, 5, 10 and 20 minutes intervals</li><li>[77] Reducing 10x 100ms samples to 1x 1000ms sample</li><li>[106] Observations in Physionet12,
+MIMIC-III and MIMIC-IV were rounded to intervals of 1
+hr, 30 min and 1minrespectively.</li><li>[117] Changing NaN values by the mean ones</li><li>[286] Nie ma usuwania, ale s? oznaczane outliery 1 i inaczej te warto?ci s? traktowane w algorytmie</li><li>[11] information about processing one of the datasets: &quot;The dataset records measurements every 15 minutes, resulting in 96 measurements per day. To create a daily time series, we summarize 96 measurements into one data point.&quot;</li><li>[205] &quot;When there are bad data such as null values, negative values, and abnormal values in the datasets, the data needs to be cleaned.&quot;</li><li>[239] Adding NaN values</li></ul></div>
+</details></td></tr>
+    <tr><th>RQ3-A8: W jakich domenach zastosowań zbiorów danych najczęściej występują dane typy zniekształceń?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><table class="data-matrix"><caption>Domena zastosowania × ogólna kategoria problemu z jakością</caption><thead><tr><th></th><th>Missingness</th><th>Zniekształcenia strukturalne</th><th>Szum</th><th>Misalignment</th></tr></thead><tbody><tr><th>Środowisko i klimat</th><td class="heat" style="background:rgb(135,165,212)">23</td><td class="heat" style="background:rgb(223,224,241)">6</td><td class="heat" style="background:rgb(202,210,234)">10</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Finanse i gospodarka</th><td class="heat" style="background:rgb(192,203,231)">12</td><td class="heat" style="background:rgb(234,231,245)">4</td><td class="heat" style="background:rgb(234,231,245)">4</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Energia</th><td class="heat" style="background:rgb(192,203,231)">12</td><td class="heat" style="background:rgb(239,234,246)">3</td><td class="heat" style="background:rgb(244,238,248)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Medycyna i zdrowie</th><td class="heat" style="background:rgb(202,210,234)">10</td><td class="heat" style="background:rgb(244,238,248)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:rgb(249,241,250)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Chemia</th><td class="heat" style="background:rgb(223,224,241)">6</td><td class="heat" style="background:rgb(244,238,248)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:rgb(234,231,245)">4</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Transport</th><td class="heat" style="background:rgb(223,224,241)">6</td><td class="heat" style="background:rgb(239,234,246)">3</td><td class="heat" style="background:rgb(249,241,250)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Geografia</th><td class="heat" style="background:rgb(234,231,245)">4</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(244,238,248)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Przemysł wytrzymałościowy</th><td class="heat" style="background:rgb(244,238,248)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:rgb(249,241,250)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:rgb(249,241,250)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Przemysł</th><td class="heat" style="background:rgb(244,238,248)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(249,241,250)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Społeczne i behawioralne</th><td class="heat" style="background:rgb(244,238,248)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr></tbody></table><div class="heat-legend"><span class="heat-legend-label">mniej artykułów</span><div class="heat-legend-bar"><span class="heat-legend-swatch" style="background:#f8fafb"></span><span class="heat-legend-swatch" style="background:rgb(228,227,243)"></span><span class="heat-legend-swatch" style="background:rgb(208,213,236)"></span><span class="heat-legend-swatch" style="background:rgb(181,196,227)"></span><span class="heat-legend-swatch" style="background:rgb(161,182,220)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span></div><span class="heat-legend-label">więcej artykułów (max 23)</span></div><p><em>Szczegółowe zniekształcenia strukturalne (podpytanie):</em></p>Środowisko i klimat + Non-linear: 4<br>
+Finanse i gospodarka + Non-stationarity: 3<br>
+Energia + Non-linear: 2<br>
+Transport + Non-linear: 2<br>
+Środowisko i klimat + Non-stationarity: 2<br>
+Medycyna i zdrowie + Non-linear: 1<br>
+Finanse i gospodarka + Interrupted time series: 1<br>
+Finanse i gospodarka + Outliers: 1<br>
+Chemia + Non-linear: 1<br>
+Przemysł wytrzymałościowy + Non-linear: 1<br>
+Przemysł wytrzymałościowy + Non-stationarity: 1<br>
+Energia + Non-stationarity: 1<br>
+Medycyna i zdrowie + Non-stationarity: 1<br>
+Transport + Non-stationarity: 1</div>
+</details></td></tr>
+    <tr><th>RQ3-A9: Jakie kategorie problemów z jakością wystepują w dziedzinie &quot;Środowisko i klimat&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Ogólne kategorie problemów z jakością:</strong></p>
+Sposób powstawania degradacji: 23<br>
+Missingness: 23<br>
+Szum: 10<br>
+Zniekształcenia strukturalne: 6
+<p><strong>Mapa ciepła: szczegółowe problemy × ogólna kategoria</strong></p>
+<table class="data-matrix"><caption>Oś Y: szczegółowy problem · Oś X: ogólna kategoria jakości danych</caption><thead><tr><th></th><th>Missingness</th><th>Zniekształcenia strukturalne</th><th>Szum</th><th>Misalignment</th></tr></thead><tbody><tr><th>Synthetic</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown missingness</th><td class="heat" style="background:rgb(163,183,221)">13</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>MAR</th><td class="heat" style="background:rgb(205,212,235)">7</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Gaussian Noise</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(212,216,237)">6</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown noise</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(226,226,242)">4</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Non-linear</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(226,226,242)">4</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Natural</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown Degradation</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>MNAR</th><td class="heat" style="background:rgb(240,235,247)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>White Noise</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(240,235,247)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Non-stationarity</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(240,235,247)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Drift</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(247,240,249)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>MCAR</th><td class="heat" style="background:rgb(247,240,249)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr></tbody></table><div class="heat-legend"><span class="heat-legend-label">mniej artykułów</span><div class="heat-legend-bar"><span class="heat-legend-swatch" style="background:#f8fafb"></span><span class="heat-legend-swatch" style="background:rgb(233,230,244)"></span><span class="heat-legend-swatch" style="background:rgb(205,212,235)"></span><span class="heat-legend-swatch" style="background:rgb(184,197,228)"></span><span class="heat-legend-swatch" style="background:rgb(156,179,219)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span></div><span class="heat-legend-label">więcej artykułów (max 17)</span></div>
+<details class="sub-answer"><summary>Szczegóły — Środowisko i klimat</summary>Synthetic: 17<br>
+Unknown missingness: 13<br>
+MAR: 7<br>
+Gaussian Noise: 6<br>
+Unknown noise: 4<br>
+Non-linear: 4<br>
+Natural: 3<br>
+Unknown Degradation: 3<br>
+MNAR: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+White Noise: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Non-stationarity: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Drift: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MCAR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+    <tr><th>RQ3-A10: Jakie kategorie problemów z jakością wystepują w dziedzinie &quot;Chemia&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Ogólne kategorie problemów z jakością:</strong></p>
+Sposób powstawania degradacji: 6<br>
+Missingness: 6<br>
+Szum: 4<br>
+Zniekształcenia strukturalne: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span>
+<p><strong>Mapa ciepła: szczegółowe problemy × ogólna kategoria</strong></p>
+<table class="data-matrix"><caption>Oś Y: szczegółowy problem · Oś X: ogólna kategoria jakości danych</caption><thead><tr><th></th><th>Missingness</th><th>Zniekształcenia strukturalne</th><th>Szum</th><th>Misalignment</th></tr></thead><tbody><tr><th>MAR</th><td class="heat" style="background:rgb(135,165,212)">4</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Synthetic</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Gaussian Noise</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(165,185,222)">3</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown missingness</th><td class="heat" style="background:rgb(195,205,232)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown noise</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(225,225,242)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Drift</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(225,225,242)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Natural</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown Degradation</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Non-linear</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(225,225,242)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr></tbody></table><div class="heat-legend"><span class="heat-legend-label">mniej artykułów</span><div class="heat-legend-bar"><span class="heat-legend-swatch" style="background:#f8fafb"></span><span class="heat-legend-swatch" style="background:rgb(225,225,242)"></span><span class="heat-legend-swatch" style="background:rgb(195,205,232)"></span><span class="heat-legend-swatch" style="background:rgb(195,205,232)"></span><span class="heat-legend-swatch" style="background:rgb(165,185,222)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span></div><span class="heat-legend-label">więcej artykułów (max 4)</span></div>
+<details class="sub-answer"><summary>Szczegóły — Chemia</summary>MAR: 4<br>
+Synthetic: 4<br>
+Gaussian Noise: 3<br>
+Unknown missingness: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Unknown noise: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Drift: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Natural: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Unknown Degradation: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Non-linear: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+    <tr><th>RQ3-A11: Jakie kategorie problemów z jakością wystepują w dziedzinie &quot;Finanse i gospodarka&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Ogólne kategorie problemów z jakością:</strong></p>
+Sposób powstawania degradacji: 12<br>
+Missingness: 12<br>
+Szum: 4<br>
+Zniekształcenia strukturalne: 4
+<p><strong>Mapa ciepła: szczegółowe problemy × ogólna kategoria</strong></p>
+<table class="data-matrix"><caption>Oś Y: szczegółowy problem · Oś X: ogólna kategoria jakości danych</caption><thead><tr><th></th><th>Missingness</th><th>Zniekształcenia strukturalne</th><th>Szum</th><th>Misalignment</th></tr></thead><tbody><tr><th>Synthetic</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown missingness</th><td class="heat" style="background:rgb(165,185,222)">6</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>MAR</th><td class="heat" style="background:rgb(195,205,232)">4</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown Degradation</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Non-stationarity</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(210,215,237)">3</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>White Noise</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(225,225,242)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown noise</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(225,225,242)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>MCAR</th><td class="heat" style="background:rgb(225,225,242)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Interrupted time series</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(240,235,247)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Natural</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Outliers</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(240,235,247)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr></tbody></table><div class="heat-legend"><span class="heat-legend-label">mniej artykułów</span><div class="heat-legend-bar"><span class="heat-legend-swatch" style="background:#f8fafb"></span><span class="heat-legend-swatch" style="background:rgb(225,225,242)"></span><span class="heat-legend-swatch" style="background:rgb(210,215,237)"></span><span class="heat-legend-swatch" style="background:rgb(180,195,227)"></span><span class="heat-legend-swatch" style="background:rgb(165,185,222)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span></div><span class="heat-legend-label">więcej artykułów (max 8)</span></div>
+<details class="sub-answer"><summary>Szczegóły — Finanse i gospodarka</summary>Synthetic: 8<br>
+Unknown missingness: 6<br>
+MAR: 4<br>
+Unknown Degradation: 3<br>
+Non-stationarity: 3<br>
+White Noise: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Unknown noise: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+MCAR: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Interrupted time series: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Natural: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Outliers: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+    <tr><th>RQ3-A12: Jakie kategorie problemów z jakością wystepują w dziedzinie &quot;Medycyna i zdrowie&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Ogólne kategorie problemów z jakością:</strong></p>
+Sposób powstawania degradacji: 11<br>
+Missingness: 10<br>
+Zniekształcenia strukturalne: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Szum: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span>
+<p><strong>Mapa ciepła: szczegółowe problemy × ogólna kategoria</strong></p>
+<table class="data-matrix"><caption>Oś Y: szczegółowy problem · Oś X: ogólna kategoria jakości danych</caption><thead><tr><th></th><th>Missingness</th><th>Zniekształcenia strukturalne</th><th>Szum</th><th>Misalignment</th></tr></thead><tbody><tr><th>Synthetic</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown missingness</th><td class="heat" style="background:rgb(211,215,237)">4</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>MAR</th><td class="heat" style="background:rgb(211,215,237)">4</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>MCAR</th><td class="heat" style="background:rgb(233,230,244)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Non-linear</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(244,237,248)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown noise</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(244,237,248)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Non-stationarity</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(244,237,248)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr></tbody></table><div class="heat-legend"><span class="heat-legend-label">mniej artykułów</span><div class="heat-legend-bar"><span class="heat-legend-swatch" style="background:#f8fafb"></span><span class="heat-legend-swatch" style="background:rgb(233,230,244)"></span><span class="heat-legend-swatch" style="background:rgb(211,215,237)"></span><span class="heat-legend-swatch" style="background:rgb(178,194,226)"></span><span class="heat-legend-swatch" style="background:rgb(156,179,219)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span></div><span class="heat-legend-label">więcej artykułów (max 11)</span></div>
+<details class="sub-answer"><summary>Szczegóły — Medycyna i zdrowie</summary>Synthetic: 11<br>
+Unknown missingness: 4<br>
+MAR: 4<br>
+MCAR: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Non-linear: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Unknown noise: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Non-stationarity: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+    <tr><th>RQ3-A13: Jakie kategorie problemów z jakością wystepują w dziedzinie &quot;Transport&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Ogólne kategorie problemów z jakością:</strong></p>
+Missingness: 6<br>
+Sposób powstawania degradacji: 5<br>
+Zniekształcenia strukturalne: 3<br>
+Szum: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span>
+<p><strong>Mapa ciepła: szczegółowe problemy × ogólna kategoria</strong></p>
+<table class="data-matrix"><caption>Oś Y: szczegółowy problem · Oś X: ogólna kategoria jakości danych</caption><thead><tr><th></th><th>Missingness</th><th>Zniekształcenia strukturalne</th><th>Szum</th><th>Misalignment</th></tr></thead><tbody><tr><th>MAR</th><td class="heat" style="background:rgb(135,165,212)">3</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown missingness</th><td class="heat" style="background:rgb(135,165,212)">3</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Natural</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown Degradation</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Non-linear</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(175,191,225)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>MCAR</th><td class="heat" style="background:rgb(215,218,238)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Drift</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(215,218,238)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>MNAR</th><td class="heat" style="background:rgb(215,218,238)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Non-stationarity</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(215,218,238)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Gaussian Noise</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(215,218,238)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>White Noise</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(215,218,238)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Synthetic</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr></tbody></table><div class="heat-legend"><span class="heat-legend-label">mniej artykułów</span><div class="heat-legend-bar"><span class="heat-legend-swatch" style="background:#f8fafb"></span><span class="heat-legend-swatch" style="background:rgb(215,218,238)"></span><span class="heat-legend-swatch" style="background:rgb(215,218,238)"></span><span class="heat-legend-swatch" style="background:rgb(175,191,225)"></span><span class="heat-legend-swatch" style="background:rgb(175,191,225)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span></div><span class="heat-legend-label">więcej artykułów (max 3)</span></div>
+<details class="sub-answer"><summary>Szczegóły — Transport</summary>MAR: 3<br>
+Unknown missingness: 3<br>
+Natural: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Unknown Degradation: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Non-linear: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+MCAR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Drift: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MNAR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Non-stationarity: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Gaussian Noise: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+White Noise: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Synthetic: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+    <tr><th>RQ3-A14: Jakie kategorie problemów z jakością wystepują w dziedzinie &quot;Geografia&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Ogólne kategorie problemów z jakością:</strong></p>
+Sposób powstawania degradacji: 4<br>
+Missingness: 4<br>
+Szum: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span>
+<p><strong>Mapa ciepła: szczegółowe problemy × ogólna kategoria</strong></p>
+<table class="data-matrix"><caption>Oś Y: szczegółowy problem · Oś X: ogólna kategoria jakości danych</caption><thead><tr><th></th><th>Missingness</th><th>Zniekształcenia strukturalne</th><th>Szum</th><th>Misalignment</th></tr></thead><tbody><tr><th>Unknown missingness</th><td class="heat" style="background:rgb(135,165,212)">4</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown noise</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(195,205,232)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Synthetic</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Natural</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown Degradation</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr></tbody></table><div class="heat-legend"><span class="heat-legend-label">mniej artykułów</span><div class="heat-legend-bar"><span class="heat-legend-swatch" style="background:#f8fafb"></span><span class="heat-legend-swatch" style="background:rgb(225,225,242)"></span><span class="heat-legend-swatch" style="background:rgb(195,205,232)"></span><span class="heat-legend-swatch" style="background:rgb(195,205,232)"></span><span class="heat-legend-swatch" style="background:rgb(165,185,222)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span></div><span class="heat-legend-label">więcej artykułów (max 4)</span></div>
+<details class="sub-answer"><summary>Szczegóły — Geografia</summary>Unknown missingness: 4<br>
+Unknown noise: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Synthetic: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Natural: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Unknown Degradation: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+    <tr><th>RQ3-A15: Jakie kategorie problemów z jakością wystepują w dziedzinie &quot;Przemysł&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Ogólne kategorie problemów z jakością:</strong></p>
+Sposób powstawania degradacji: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Missingness: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Szum: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span>
+<p><strong>Mapa ciepła: szczegółowe problemy × ogólna kategoria</strong></p>
+<table class="data-matrix"><caption>Oś Y: szczegółowy problem · Oś X: ogólna kategoria jakości danych</caption><thead><tr><th></th><th>Missingness</th><th>Zniekształcenia strukturalne</th><th>Szum</th><th>Misalignment</th></tr></thead><tbody><tr><th>Synthetic</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>MCAR</th><td class="heat" style="background:rgb(195,205,232)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Gaussian Noise</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(195,205,232)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>MNAR</th><td class="heat" style="background:rgb(195,205,232)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr></tbody></table><div class="heat-legend"><span class="heat-legend-label">mniej artykułów</span><div class="heat-legend-bar"><span class="heat-legend-swatch" style="background:#f8fafb"></span><span class="heat-legend-swatch" style="background:rgb(195,205,232)"></span><span class="heat-legend-swatch" style="background:rgb(195,205,232)"></span><span class="heat-legend-swatch" style="background:rgb(195,205,232)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span></div><span class="heat-legend-label">więcej artykułów (max 2)</span></div>
+<details class="sub-answer"><summary>Szczegóły — Przemysł</summary>Synthetic: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+MCAR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Gaussian Noise: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MNAR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+    <tr><th>RQ3-A16: Jakie kategorie problemów z jakością wystepują w dziedzinie &quot;Wytrzymałość&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Ogólne kategorie problemów z jakością:</strong></p>
+Sposób powstawania degradacji: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Missingness: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Zniekształcenia strukturalne: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Szum: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span>
+<p><strong>Mapa ciepła: szczegółowe problemy × ogólna kategoria</strong></p>
+<table class="data-matrix"><caption>Oś Y: szczegółowy problem · Oś X: ogólna kategoria jakości danych</caption><thead><tr><th></th><th>Missingness</th><th>Zniekształcenia strukturalne</th><th>Szum</th><th>Misalignment</th></tr></thead><tbody><tr><th>Unknown missingness</th><td class="heat" style="background:rgb(135,165,212)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown Degradation</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Non-stationarity</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(195,205,232)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Non-linear</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(195,205,232)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown noise</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(195,205,232)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Synthetic</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr></tbody></table><div class="heat-legend"><span class="heat-legend-label">mniej artykułów</span><div class="heat-legend-bar"><span class="heat-legend-swatch" style="background:#f8fafb"></span><span class="heat-legend-swatch" style="background:rgb(195,205,232)"></span><span class="heat-legend-swatch" style="background:rgb(195,205,232)"></span><span class="heat-legend-swatch" style="background:rgb(195,205,232)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span></div><span class="heat-legend-label">więcej artykułów (max 2)</span></div>
+<details class="sub-answer"><summary>Szczegóły — Przemysł wytrzymałościowy</summary>Unknown missingness: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Unknown Degradation: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Non-stationarity: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Non-linear: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Unknown noise: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Synthetic: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+    <tr><th>RQ3-A17: Jakie kategorie problemów z jakością wystepują w dziedzinie &quot;Energia&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Ogólne kategorie problemów z jakością:</strong></p>
+Missingness: 12<br>
+Sposób powstawania degradacji: 11<br>
+Zniekształcenia strukturalne: 3<br>
+Szum: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span>
+<p><strong>Mapa ciepła: szczegółowe problemy × ogólna kategoria</strong></p>
+<table class="data-matrix"><caption>Oś Y: szczegółowy problem · Oś X: ogólna kategoria jakości danych</caption><thead><tr><th></th><th>Missingness</th><th>Zniekształcenia strukturalne</th><th>Szum</th><th>Misalignment</th></tr></thead><tbody><tr><th>Synthetic</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>MAR</th><td class="heat" style="background:rgb(200,208,233)">5</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>MNAR</th><td class="heat" style="background:rgb(222,223,241)">3</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Unknown missingness</th><td class="heat" style="background:rgb(222,223,241)">3</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Non-linear</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(233,230,244)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>White Noise</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(244,237,248)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Additive distortions</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(244,237,248)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Non-stationarity</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:rgb(244,237,248)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>MCAR</th><td class="heat" style="background:rgb(244,237,248)">1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr></tbody></table><div class="heat-legend"><span class="heat-legend-label">mniej artykułów</span><div class="heat-legend-bar"><span class="heat-legend-swatch" style="background:#f8fafb"></span><span class="heat-legend-swatch" style="background:rgb(233,230,244)"></span><span class="heat-legend-swatch" style="background:rgb(211,215,237)"></span><span class="heat-legend-swatch" style="background:rgb(178,194,226)"></span><span class="heat-legend-swatch" style="background:rgb(156,179,219)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span></div><span class="heat-legend-label">więcej artykułów (max 11)</span></div>
+<details class="sub-answer"><summary>Szczegóły — Energia</summary>Synthetic: 11<br>
+MAR: 5<br>
+MNAR: 3<br>
+Unknown missingness: 3<br>
+Non-linear: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+White Noise: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Additive distortions: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Non-stationarity: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MCAR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+    <tr><th>RQ3-A18: Jakie kategorie problemów z jakością wystepują w dziedzinie &quot;Społeczne i behawioralne&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Ogólne kategorie problemów z jakością:</strong></p>
+Sposób powstawania degradacji: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Missingness: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span>
+<p><strong>Mapa ciepła: szczegółowe problemy × ogólna kategoria</strong></p>
+<table class="data-matrix"><caption>Oś Y: szczegółowy problem · Oś X: ogólna kategoria jakości danych</caption><thead><tr><th></th><th>Missingness</th><th>Zniekształcenia strukturalne</th><th>Szum</th><th>Misalignment</th></tr></thead><tbody><tr><th>Unknown missingness</th><td class="heat" style="background:rgb(135,165,212)">2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Natural</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr><tr><th>Synthetic</th><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td><td class="heat" style="background:#f8fafb">0</td></tr></tbody></table><div class="heat-legend"><span class="heat-legend-label">mniej artykułów</span><div class="heat-legend-bar"><span class="heat-legend-swatch" style="background:#f8fafb"></span><span class="heat-legend-swatch" style="background:rgb(195,205,232)"></span><span class="heat-legend-swatch" style="background:rgb(195,205,232)"></span><span class="heat-legend-swatch" style="background:rgb(195,205,232)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span><span class="heat-legend-swatch" style="background:rgb(135,165,212)"></span></div><span class="heat-legend-label">więcej artykułów (max 2)</span></div>
+<details class="sub-answer"><summary>Szczegóły — Społeczne i behawioralne</summary>Unknown missingness: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Natural: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Synthetic: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+  </table>
+</section>
+<section class="rq-block" id="RQ4">
+  <table class="rq-table">
+    <tr><th colspan="1">Pytanie badawcze (RQ4)</th></tr>
+    <tr><td><h2>Jaka jest charakterystyka użycia metod rekonstrukcji danych?</h2></td></tr>
+    <tr><th>Odpowiedź na pytanie badawcze</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">W 148 artykułach zidentyfikowano wiele metod rekonstrukcji; najczęściej tagowane: IA (4), Zero Imputation (4), LSTM (3), KNN Impute (3), Mean Imputation (3).</div>
+</details></td></tr>
+    <tr><th>RQ4-A1: Jakie makrokategorie podejść są najczęściej stosowane do rekonstrukcji danych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Modele Statystyczne i Klasyczne: 36<br>
+Faktoryzacja Macierzowa i Dekompozycja: 14<br>
+Sieci Rekurencyjne i ich warianty: 11<br>
+Architektury Hybrydowe: 9<br>
+Klasyczne Uczenie Maszynowe: 9<br>
+Modele Generatywne i Probabilistyczne: 7<br>
+Grafowe Sieci Neuronowe: 4<br>
+Sieci Splotowe i Czasowe: 4<br>
+Transformery i Mechanizmy Uwagi: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Logika Rozmyta i Systemy Hybrydowe: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A2: Jakie Modele Statystyczne i Klasyczne są wykorzystywane do rekonstrukcji szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Zero Imputation: 4<br>
+Mean Imputation: 3<br>
+MICE: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+ARIMA: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+LOCF: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Forward Forecasting: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+IMPWE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ETS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Pre-intervention period isolation: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+mv_pts_correlatederr: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ARL Simpute: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DropNaN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SARIMA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Backward Fill: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Filtering process: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Backward Forecasting: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Random walk: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+LTI: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SBL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Kalman filter: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Intervension Analysis: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Holt-Winters: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Forward Fill: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Multiple Imputation: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+OMP: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+EM algorithm: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+IRW: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Inverse Probability Weights: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Stochastic Simulation: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A3: Jakie modele Klasycznego Uczenia Maszynowego są wykorzystywane do rekonstrukcji szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">KNN Impute: 3<br>
+BP: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+SVR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+kNNE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+RVFL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ELM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A4: Jakie Sieci Rekurencyjne i ich warianty są wykorzystywane do rekonstrukcji szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">LSTM: 3<br>
+GRU-D: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Bi-LSTM: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+NARX: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BRITS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+M-RNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GRUI: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A5: Jakie Transformery i Mechanizmy Uwagi są wykorzystywane do rekonstrukcji szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">SAITS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GPT4TS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A6: Jakie Sieci Splotowe i Czasowe są wykorzystywane do rekonstrukcji szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">CNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+TimesNet: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Uni-FCNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Bi-FCNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A7: Jakie Grafowe Sieci Neuronowe są wykorzystywane do rekonstrukcji szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">GRIN: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+GATGPT: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SPIN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A8: Jakie Faktoryzacje Macierzowe i Dekompozycje są wykorzystywane do rekonstrukcji szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Time Series Decomposition: 3<br>
+CEEMD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Wt: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+RMD-FSE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+EmD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+TRMF: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PSR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SsA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MF: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DLMCC: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SVmD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+VmD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A9: Jakie Modele Generatywne i Probabilistyczne są wykorzystywane do rekonstrukcji szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Gaussian Distribution: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DVQ: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+US-GAN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GAN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+TRF: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GMM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CSDI: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A10: Jakie Architektury Hybrydowe są wykorzystywane do rekonstrukcji szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">IA+CL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+EEMD-RVFL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Ensemble (Forward + Backward): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+VMD-RVFL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+LSTNet: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Meta-learning + Transfer-learning (for NN): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+R-VMD-RVFL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+M-LSTNet: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+R-EEMD-RVFL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A11: Jakie Logiki Rozmyte i Systemy Hybrydowe są wykorzystywane do rekonstrukcji szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">GFTS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A12: Jakie modele stanowią &quot;bazę porównawczą&quot; (baselines) w kontekście rekonstrukcji szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Mean: 3<br>
+Hot-Deck: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+AR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Standard attention mechanism: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A13: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie &quot;Środowisko i klimat&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Środowisko i klimat</strong></p>
+IA: 3<br>
+LSTM: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Bi-LSTM: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+GRIN: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+IRW: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+OMP: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BP: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SBL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DropNaN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SARIMA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Holt-Winters: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ARIMA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+LTI: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ARL Simpute: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+KNN Impute: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+RMD-FSE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+pi - mi: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI - M: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI - mi: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+pi - M: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI^m-mi/M: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI (pisane wielkim symbolem): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+pi (pisane ma?ym symbolem): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI^m: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Stochastic Simulation: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+K-step prediction: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Meta-learning + Transfer-learning (for NN): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CEEMD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Time Series Decomposition: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SsA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+EmD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+VmD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SVmD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Wt: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Uni-FCNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Bi-FCNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Forward Fill: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Zero Imputation: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BRITS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Backward Fill: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Mean Imputation: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SPIN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+IA+CL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GPT4TS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GATGPT: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A14: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie &quot;Chemia&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Chemia</strong></p>
+IRW: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+OMP: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BP: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SBL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DropNaN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SARIMA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Holt-Winters: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+LSTM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ARIMA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+LTI: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A15: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie &quot;Finanse i gospodarka&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Finanse i gospodarka</strong></p>
+GRIN: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+VMD-RVFL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+R-VMD-RVFL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SVR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+EEMD-RVFL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Random walk: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BP: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+RVFL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ELM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+R-EEMD-RVFL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Intervension Analysis: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DVQ: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+EM algorithm: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ARL Simpute: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+KNN Impute: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+mv_pts_correlatederr: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+pi - mi: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI - M: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI - mi: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+pi - M: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI^m-mi/M: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI (pisane wielkim symbolem): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+pi (pisane ma?ym symbolem): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI^m: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Filtering process: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Forward Forecasting: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Ensemble (Forward + Backward): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Backward Forecasting: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Bi-LSTM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Uni-FCNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Bi-FCNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Forward Fill: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Zero Imputation: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BRITS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Backward Fill: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Mean Imputation: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SPIN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+IA+CL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+IA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GPT4TS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GATGPT: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A16: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie &quot;Medycyna i zdrowie&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Medycyna i zdrowie</strong></p>
+GRU-D: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Zero Imputation: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Mean Imputation: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+NARX: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MICE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MF: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+KNN Impute: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MTSSP: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+M-RNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GRUI: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+LOCF: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GAN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Bi-LSTM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Uni-FCNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Bi-FCNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Forward Fill: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BRITS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Backward Fill: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GRIN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A17: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie &quot;Transport&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Transport</strong></p>
+ETS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ARIMA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+mv_pts_correlatederr: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SPIN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+IA+CL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+IA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GPT4TS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GATGPT: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GRIN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A18: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie &quot;Geografia&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Geografia</strong></p>
+IA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ARL Simpute: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+KNN Impute: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+RMD-FSE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A19: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie &quot;Przemysł &quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Przemysł</strong></p>
+Forward Forecasting: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Ensemble (Forward + Backward): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Backward Forecasting: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A20: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie &quot;Wytrzymałość&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Przemysł wytrzymałościowy</strong></p>
+Neural Networks: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Time Series Decomposition: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A21: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie &quot;Energia&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Energia</strong></p>
+Mean Imputation: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Zero Imputation: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+IA: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+GRIN: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Multiple Imputation: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Inverse Probability Weights: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PSR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Time Series Decomposition: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+LTI: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+mv_pts_correlatederr: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+pi - mi: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI - M: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI - mi: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+pi - M: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI^m-mi/M: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI (pisane wielkim symbolem): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+pi (pisane ma?ym symbolem): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI^m: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+KNN Impute: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+IMPWE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Bi-LSTM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Uni-FCNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Bi-FCNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Forward Fill: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BRITS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Backward Fill: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SPIN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+IA+CL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GPT4TS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GATGPT: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ4-A22: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie &quot;Społeczne i behawioralne&quot;?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Społeczne i behawioralne</strong></p>
+Kalman filter: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DLMCC: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Correlation: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+pi - mi: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI - M: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI - mi: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+pi - M: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI^m-mi/M: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI (pisane wielkim symbolem): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+pi (pisane ma?ym symbolem): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PI^m: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+  </table>
+</section>
+<section class="rq-block" id="RQ5">
+  <table class="rq-table">
+    <tr><th colspan="1">Pytanie badawcze (RQ5)</th></tr>
+    <tr><td><h2>Jaka jest charakterystyka użycia modeli zadaniowych (downstream task)? (W jakich zadaniach końcowych (downstream tasks) wykorzystuje się zrekonstruowane dane?)</h2></td></tr>
+    <tr><th>Odpowiedź na pytanie badawcze</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Najczęstsze zadanie końcowe: Prediction (60 artykułów).</div>
+</details></td></tr>
+    <tr><th>RQ5-A1: Jakie kategorie zadań są w wykorzystywane w artykułach naukowych? [Jakie zadania aplikacyjne (downstream tasks) oraz powiązane z nimi modele zadaniowe są najczęściej wykorzystywane w literaturze do weryfikacji skuteczności metod rekonstrukcji danych?]</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Prediction: 60<br>
+Classification: 3<br>
+Anomaly detection: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ5-A2: Jakie architektury związane z predykcją są wykorzystywane do ewaluacji skuteczności rekonstrukcji szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">(A)NN: 6<br>
+LSTM: 6<br>
+AR: 4<br>
+Transformer: 4<br>
+ARIMA: 4<br>
+SVM: 3<br>
+BPNN: 3<br>
+DLinear: 3<br>
+PMF: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+DCMF: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+NMF: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+LI: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+BPMF: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+RNN: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Random forest: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+MA: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+FFNN: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+CNN-LSTM: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+CNN: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+TriD-MAE: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+BiTGraph: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+FourierGNN + GATGPT: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+GC-VRNN: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+DCRNN+GPT4TS: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+MTGNN+GRIN: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+STID: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+LGnet: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+ELM: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+GRU: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Informer: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span>
+<details class="sub-answer"><summary>Pełna lista (również pojedyncze wystąpienia)</summary>(A)NN: 6<br>
+LSTM: 6<br>
+AR: 4<br>
+Transformer: 4<br>
+ARIMA: 4<br>
+SVM: 3<br>
+BPNN: 3<br>
+DLinear: 3<br>
+PMF: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+DCMF: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+NMF: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+LI: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+BPMF: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+RNN: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Random forest: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+MA: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+FFNN: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+CNN-LSTM: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+CNN: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+TriD-MAE: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+BiTGraph: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+FourierGNN + GATGPT: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+GC-VRNN: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+DCRNN+GPT4TS: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+MTGNN+GRIN: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+STID: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+LGnet: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+ELM: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+GRU: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Informer: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+TSKCS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SI: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+TDMF: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ARIMA + CNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Linear regression: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+N-Beats: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+KELM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+RVFLNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+RBF NN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+XGBoost: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BLS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+TimesNet: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PatchTST: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MICN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MOPSTM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SAMSTS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DLM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DLMCC: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Holt-Winters: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MegaCRN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GinAR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DFDGCN+TimesNet: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DSformer: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+LSSVM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CRUs: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+HETVAE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GraFITi+: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ProFITi: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GPR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GRU-ODE-Bayes: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Neural-Flows: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+FIR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GARCH: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+VAR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GPVar: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+EOF: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SOM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PEC-NN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+WNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PEC-WNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+FPLSIM+kNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+FPLSIM+Kernel: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CEEMD-EW-FTS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CEEMD-KFCM-FTS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SVR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+KFCM-FTS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CEEMD-ELM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CEEMD-FCM-FTS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+FCM-FTS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CEEMD-EF-FTS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ABMS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SAnD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ROCKET: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BRITS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GRU-D: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+LIFE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+WPfRnL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BiLSTM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Holt&#x27;s Expotential Smoothing: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ARM-OGD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ARM-ONS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+YW: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+EI-LOGD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ARM-SOGD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ARM-SONS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GCU-Trans.: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GCNSAGpool: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MS-DCNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PAOLTrans.: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+KGHM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+VAE + LSTM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CATA-TCN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Multi-Head Net: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Trans. + TCNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+IMDSSN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MCLSTM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+TCN-BiGRU: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+AT-LSTM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PM2FN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ATCN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+SCTA-LSTM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GAT-DAT: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DP-TSDDC: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Autoformer: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+NBeats: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GBoost: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DFDGCN + SPIN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+iTransformer + CSDI: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PatchTST + SAITS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+STID + TimesNet: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GinAR+: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Stationary: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ETSFormer: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+FPTFormer: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CSTN-DG: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+LightTS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+N-HiTS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Temporal ConvNet: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+FEDformer: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MICLe: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+LSSL: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MIL-ILA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+    <tr><th>RQ5-A3: Jaki rodzaj predykcji jest najczęściej wykorzystywany?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Interval: 43<br>
+Single-value: 39<br>
+Unknown: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ5-A4: Jakie architektury związane z klasyfikacją są wykorzystywane do ewaluacji skuteczności rekonstrukcji szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">SAnD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+ROCKET: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BRITS: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+GRU-D: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+LSTM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+LIFE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ5-A5: Jakie architektury związane z wykrywaniem anomalii są wykorzystywane do ewaluacji skuteczności rekonstrukcji szeregów czasowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">MA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+FFNN: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CUSUM: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+FDA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Autoencoder: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Static thresholding: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></div>
+</details></td></tr>
+    <tr><th>RQ5-A6: Jakie modele zadania segmentacji szeregów czasowych stosuje się jako metoda walidacji poprawności strukturalnej danych?</th></tr>
+    <tr><td><p class="empty">— do uzupełnienia ręcznie —</p></td></tr>
+  </table>
+</section>
+<section class="rq-block" id="RQ6">
+  <table class="rq-table">
+    <tr><th colspan="1">Pytanie badawcze (RQ6)</th></tr>
+    <tr><td><h2>Jaki jest wpływ rekonstrukcji na zadania końcowego? (W jakim stopniu i w jaki sposób jakość rekonstrukcji wpływa na skuteczność zadania końcowego?)</h2></td></tr>
+    <tr><th>Odpowiedź na pytanie badawcze</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Najczęściej raportowane metryki rekonstrukcji: RMSE, MSE, MAE. Ranking zwycięzców i kombinacje konfiguracyjne — patrz RQ6-A2.</div>
+</details></td></tr>
+    <tr><th>RQ6-A1: Jakie metryki występują w temacie poprawy jakości danych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">RMSE: 33<br>
+MSE: 23<br>
+MAE: 18<br>
+MAPE: 14<br>
+NRMSE: 5<br>
+AUC (AUROC): 4<br>
+SMAPE: 4<br>
+IA: 3<br>
+IFCP / PICP: 3<br>
+MAD: 3<br>
+NIFAW / IFNAW / PINAW: 3<br>
+CRPS: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+F1-score: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Precision: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+R2: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+RSE: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+RSquare (RSQ): 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Recall: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+TIC: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span>
+<details class="sub-answer"><summary>Pełna lista (również pojedyncze wystąpienia)</summary>RMSE: 33<br>
+MSE: 23<br>
+MAE: 18<br>
+MAPE: 14<br>
+NRMSE: 5<br>
+AUC (AUROC): 4<br>
+SMAPE: 4<br>
+IA: 3<br>
+IFCP / PICP: 3<br>
+MAD: 3<br>
+NIFAW / IFNAW / PINAW: 3<br>
+CRPS: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+F1-score: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Precision: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+R2: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+RSE: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+RSquare (RSQ): 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+Recall: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+TIC: 2 <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span><br>
+ACE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+AUPRC: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Accuracy: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+BIC: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+CORR: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+DSC: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Dstat: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+LMI: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Log-likelihood: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Log-likelihood ratio: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MASE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MPE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MSD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+MSD index: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+NMAE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+NMSE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PA: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+PCC (COR): 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+RISE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+RRMSE: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+STD: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Sensivity: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+Specifity: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+U Theila: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span><br>
+VEcv: 1 <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></details></div>
+</details></td></tr>
+    <tr><th>RQ6-A2: Który model najczęściej wygrywa w testach jakości (Top Performer)? + RANKING MODELI</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><p><strong>Ogólny ranking algorytmów (SUMMARY):</strong></p>
+<ul class="bullet-list"><li>SVmD — łącznie 10, artykuły 1: <strong>10</strong></li><li>KNN Impute — łącznie 5, artykuły 3: <strong>5</strong></li><li>DLMCC — łącznie 5, artykuły 1: <strong>5</strong></li><li>EEMD-RVFL — łącznie 5, artykuły 1: <strong>5</strong></li><li>TMF — łącznie 5, artykuły 1: <strong>5</strong></li><li>TempoMAGE — łącznie 5, artykuły 1: <strong>5</strong></li><li>FeAB — łącznie 4, artykuły 1: <strong>4</strong></li><li>UASA — łącznie 4, artykuły 1: <strong>4</strong></li><li>GAN — łącznie 3, artykuły 2: <strong>3</strong></li><li>x — łącznie 3, artykuły 2: <strong>3</strong></li><li>ALIX — łącznie 3, artykuły 1: <strong>3</strong></li><li>GGPF — łącznie 3, artykuły 1: <strong>3</strong></li><li>Holt-Winters — łącznie 3, artykuły 1: <strong>3</strong></li><li>Intervension Analysis — łącznie 3, artykuły 1: <strong>3</strong></li><li>LGnet — łącznie 3, artykuły 1: <strong>3</strong></li></ul>
+<p><strong>Najczęściej wygrywające algorytmy wg metryki rekonstrukcji</strong> (top 5 metryk wg użycia w literaturze: RMSE, MSE, MAE, MAPE, NRMSE):</p>
+<p>RMSE: ALIX (1), ARIMA with Filtering (1), Bi-FCNN (1)</p>
+<p>MSE: KNN Impute (2), AERR / AELR (1), ARIMA with Filtering (1)</p>
+<p>MAE: KNN Impute (2), (A)NN (1), BiTGraph (1)</p>
+<p>MAPE: Bi-LSTM (1), EEMD-RVFL (1), EM DBN (1)</p>
+<p>NRMSE: ARL Simpute (1), GPR (1), LTI (1)</p>
+<p><strong>Zwycięzcy w artykułach z zadaniem: predykcja</strong> (60 artykułów):</p>
+<ul class="bullet-list"><li>SVmD: <strong>10</strong></li><li>EEMD-RVFL: <strong>5</strong></li><li>DLMCC: <strong>5</strong></li><li>x: <strong>3</strong></li><li>Holt-Winters: <strong>3</strong></li><li>ARIMA with Filtering: <strong>2</strong> <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></li><li>LNS_PM: <strong>2</strong> <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></li><li>Bi-LSTM: <strong>2</strong> <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></li><li>M-LSTNet: <strong>2</strong> <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></li><li>SBL: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li></ul>
+<p><strong>Zwycięzcy w artykułach z zadaniem: klasyfikacja</strong> (3 artykułów):</p>
+<ul class="bullet-list"><li>CME-PDTW: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>GAN: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li></ul>
+<p><strong>Kombinacje dataset + task model + artykuł</strong> (best data recon models): <strong>28</strong> wierszy konfiguracyjnych, <strong>28</strong> artykułów.</p>
+<p>Najczęstsze pary dataset–model zadaniowy:</p>
+<ul class="bullet-list"><li>METR-LA + STID: <strong>2</strong> <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></li><li>Not specified + AR: <strong>2</strong> <span class="sample-warn">(znikoma próbka · 1.4% artykułów)</span></li><li>Self-generated + FPLSIM+kNN: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>California&#x27;a Proposition 99 + ARIMA (Interrupted ARIMA): <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Exchange-Rate + Not specified: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>BosniaDam + Not specified: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Sunspot + (A)NN: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Generated + Setting 1 (sanity check): <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>WTI + Not specified: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li><li>Motes + Not specified: <strong>1</strong> <span class="sample-warn">(znikoma próbka · 0.7% artykułów)</span></li></ul></div>
+</details></td></tr>
+    <tr><th>RQ6-A3: Czy lepsze modele rekonstrukcji przekładają się na lepsze wyniki zadań końcowych?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body">Podsumowanie RQ6-A3<br>
+<br>
+Przedziały missing rate: co 10% (0-10%, 10-20%, ..., 90-100%).<br>
+Nieznany procent = brak_wartosci | nienumeryczna_wartosc | ujemna_wartosc | poza_zakresem.<br>
+<br>
+A) Rekonstrukcja vs zadanie końcowe (bezpośrednio):<br>
+   - konfiguracje z oboma typami metryk: 0<br>
+   - pełna zgodność top-1: 0<br>
+   - częściowa zgodność: 0<br>
+   - brak zgodności: 0<br>
+   - tylko jeden typ metryki w konfiguracji: 258<br>
+   UWAGA: W tym pliku SLR prawie wyłącznie metryki rekonstrukcji;<br>
+   pełna odpowiedź na RQ6-A3 wymaga też danych o metrykach zadania końcowego.<br>
+<br>
+B) Spójność wielu metryk rekonstrukcji (proxy w tym pliku):<br>
+   - konfiguracje z &gt;=2 metrykami: 99<br>
+   - ten sam zwycięzca na wszystkich metrykach: 71<br>
+   - różni zwycięzcy: 28<br>
+   - tylko 1 metryka: 159<br>
+   - odsetek spójności multi-metric: 71.7%</div>
+</details></td></tr>
+    <tr><th>RQ6-A4: Jaki model rekonstrukcji wybrać dla konkretnej kolejności danych (&quot;order&quot;)?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><strong>Reguły per wartość order:</strong><br><br>
+JEŚLI Order = reverse TO rozważ model rekonstrukcji: Bi-LSTM (support=5/7)<br>
+JEŚLI Order = 3 TO rozważ model rekonstrukcji: ARL Simpute (support=3/3)<br>
+JEŚLI Order = 4 TO rozważ model rekonstrukcji: ARL Simpute (support=3/3)<br><br>
+<strong>Reguły order × przedział missing rate:</strong><br><br>
+JEŚLI Order = 3 i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: ARL Simpute (support=2/2)<br>
+JEŚLI Order = 4 i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: ARL Simpute (support=2/2)</div>
+</details></td></tr>
+    <tr><th>RQ6-A5: Jaki model rekonstrukcji wybrać dla danych domen zastosowań?</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><strong>Reguły per domena zbioru danych:</strong><br><br>
+JEŚLI Dataset domain = Climate TO rozważ model rekonstrukcji: RMD-FSE (support=12/36)<br>
+JEŚLI Dataset domain = Traffic TO rozważ model rekonstrukcji: IA (support=8/16)<br>
+JEŚLI Dataset domain = Electrical TO rozważ model rekonstrukcji: KNN Impute (support=7/12)<br>
+JEŚLI Dataset domain = Chemical TO rozważ model rekonstrukcji: LTI (support=5/8)<br>
+JEŚLI Dataset domain = Electricity TO rozważ model rekonstrukcji: Hot-Deck (support=5/6)<br>
+JEŚLI Dataset domain = Finance TO rozważ model rekonstrukcji: EEMD-RVFL (support=5/8)<br>
+JEŚLI Dataset domain = Medicine TO rozważ model rekonstrukcji: LTI (support=4/7)<br>
+JEŚLI Dataset domain = Endurance TO rozważ model rekonstrukcji: GFTS (support=2/3)<br><br>
+<strong>Reguły domena × przedział missing rate:</strong><br><br>
+JEŚLI Dataset domain = Climate i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: RMD-FSE (support=6/7)<br>
+JEŚLI Dataset domain = Climate i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: RMD-FSE (support=6/8)<br>
+JEŚLI Dataset domain = Chemical i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: LTI (support=2/2)<br>
+JEŚLI Dataset domain = Chemical i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: LTI (support=2/2)<br>
+JEŚLI Dataset domain = Climate i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: LTI (support=2/4)<br>
+JEŚLI Dataset domain = Electrical i missing_rate_band = 30-40% TO rozważ model rekonstrukcji: KNN Impute (support=2/2)<br>
+JEŚLI Dataset domain = Electricity i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: Hot-Deck (support=2/2)<br>
+JEŚLI Dataset domain = Electricity i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: Hot-Deck (support=2/2)<br>
+JEŚLI Dataset domain = Traffic i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: IA (support=2/4)<br>
+JEŚLI Dataset domain = Traffic i missing_rate_band = 50-60% TO rozważ model rekonstrukcji: IA (support=2/4)<br>
+JEŚLI Dataset domain = Traffic i missing_rate_band = 70-80% TO rozważ model rekonstrukcji: IA (support=2/4)<br>
+JEŚLI Dataset domain = Traffic i missing_rate_band = 90-100% TO rozważ model rekonstrukcji: IA (support=2/4)</div>
+</details></td></tr>
+    <tr><th>RQ6-A6: Jaki model rekonstrukcji wybrać dla konkretnego stopnia uszkodzenia danych, aby była najdokładniejsza predykcja? (Jaki model wybrać dla konkretnego stopnia uszkodzenia danych?)</th></tr>
+    <tr><td><details open>
+  <summary>Pokaż / ukryj odpowiedź</summary>
+  <div class="answer-body"><strong>Głos konfiguracji (missing rate):</strong><br><br>
+JEŚLI missing_rate ∈ [0-10%] TO rozważ model rekonstrukcji: TRF (support=12/45, confidence=26.67%)<br>
+JEŚLI missing_rate ∈ [10-20%] TO rozważ model rekonstrukcji: TRF (support=12/54, confidence=22.22%)<br>
+JEŚLI missing_rate ∈ [20-30%] TO rozważ model rekonstrukcji: TRF (support=12/48, confidence=25.00%)<br>
+JEŚLI missing_rate ∈ [30-40%] TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=6/16, confidence=37.50%)<br>
+JEŚLI missing_rate ∈ [40-50%] TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=6/15, confidence=40.00%)<br>
+JEŚLI missing_rate ∈ [90-100%] TO rozważ model rekonstrukcji: SBL (support=6/12, confidence=50.00%)<br>
+JEŚLI missing_rate ∈ [nieznany] TO rozważ model rekonstrukcji: Bi-LSTM (support=6/43, confidence=13.95%)<br>
+JEŚLI missing_rate ∈ [50-60%] TO rozważ model rekonstrukcji: IA (support=3/16, confidence=18.75%)<br>
+JEŚLI missing_rate ∈ [70-80%] TO rozważ model rekonstrukcji: IA (support=3/6, confidence=50.00%)<br>
+JEŚLI missing_rate ∈ [80-90%] TO rozważ model rekonstrukcji: SBL (support=3/3, confidence=100.00%)<br><br>
+<strong>Głos artykułu (mniej stronnicze):</strong><br><br>
+JEŚLI missing_rate ∈ [0-10%] TO rozważ: LTI (głosy artykułów=1/6)<br>
+JEŚLI missing_rate ∈ [10-20%] TO rozważ: LTI (głosy artykułów=1/9)<br>
+JEŚLI missing_rate ∈ [20-30%] TO rozważ: IA (głosy artykułów=1/11)<br>
+JEŚLI missing_rate ∈ [30-40%] TO rozważ: AERR (głosy artykułów=1/5)<br>
+JEŚLI missing_rate ∈ [40-50%] TO rozważ: LNS_PM (głosy artykułów=1/4)<br>
+JEŚLI missing_rate ∈ [50-60%] TO rozważ: IA (głosy artykułów=1/5)<br>
+JEŚLI missing_rate ∈ [70-80%] TO rozważ: IA (głosy artykułów=1/2)<br>
+JEŚLI missing_rate ∈ [80-90%] TO rozważ: SBL (głosy artykułów=1/1)<br>
+JEŚLI missing_rate ∈ [90-100%] TO rozważ: IA (głosy artykułów=1/3)<br>
+JEŚLI missing_rate ∈ [nieznany] TO rozważ: (A)NN (głosy artykułów=1/19)<br><br>
+<strong>Per przedział missing rate:</strong><br><br>
+JEŚLI Missing rate band = 0-10% TO rozważ model rekonstrukcji: TRF (support=12/45)<br>
+JEŚLI Missing rate band = 10-20% TO rozważ model rekonstrukcji: TRF (support=12/54)<br>
+JEŚLI Missing rate band = 20-30% TO rozważ model rekonstrukcji: TRF (support=12/48)<br>
+JEŚLI Missing rate band = 30-40% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=6/16)<br>
+JEŚLI Missing rate band = 40-50% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=6/15)<br>
+JEŚLI Missing rate band = 90-100% TO rozważ model rekonstrukcji: SBL (support=6/12)<br>
+JEŚLI Missing rate band = 50-60% TO rozważ model rekonstrukcji: IA (support=3/16)<br>
+JEŚLI Missing rate band = 70-80% TO rozważ model rekonstrukcji: IA (support=3/6)<br>
+JEŚLI Missing rate band = 80-90% TO rozważ model rekonstrukcji: SBL (support=3/3)<br><br>
+<strong>Kontekst × przedział missing rate (top 10):</strong><br><br>
+JEŚLI Task Models = LSSVM i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: LTI (support=9/12)<br>
+JEŚLI Task Models = LSSVM i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: LTI (support=8/12)<br>
+JEŚLI Dataset domain = Climate i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: RMD-FSE (support=6/7)<br>
+JEŚLI Dataset domain = Climate i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: RMD-FSE (support=6/8)<br>
+JEŚLI Task Models = FIR i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: RMD-FSE (support=6/6)<br>
+JEŚLI Task Models = FIR i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: RMD-FSE (support=6/6)<br>
+JEŚLI Task Models = LSSVM i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: LTI (support=5/6)<br>
+JEŚLI Task Models = Transformer i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: Decay attention (support=5/5)<br>
+JEŚLI Task Models = AR i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: ARL Simpute (support=4/5)<br>
+JEŚLI Task Models = ASTGCN i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: TRF (support=4/4)<br><br>
+<details class="sub-answer"><summary>Pozostałe reguły kontekst × przedział missing rate (89)</summary>JEŚLI Task Models = ASTGCN i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: TRF (support=4/4)<br>
+JEŚLI Task Models = ASTGCN i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: TRF (support=4/4)<br>
+JEŚLI Task Models = Informer i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: No imputation (support=4/5)<br>
+JEŚLI Task Models = MTGNN i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: TRF (support=4/4)<br>
+JEŚLI Task Models = MTGNN i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: TRF (support=4/4)<br>
+JEŚLI Task Models = MTGNN i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: TRF (support=4/4)<br>
+JEŚLI Task Models = T-GCN i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: TRF (support=4/4)<br>
+JEŚLI Task Models = T-GCN i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: TRF (support=4/4)<br>
+JEŚLI Task Models = T-GCN i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: TRF (support=4/4)<br>
+JEŚLI Dataset = BanLuang i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: RMD-FSE (support=3/3)<br>
+JEŚLI Dataset = BanLuang i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: RMD-FSE (support=3/3)<br>
+JEŚLI Dataset = ECG5000 i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: TRF (support=3/3)<br>
+JEŚLI Dataset = ECG5000 i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: TRF (support=3/3)<br>
+JEŚLI Dataset = ECG5000 i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: TRF (support=3/3)<br>
+JEŚLI Dataset = Influenza-Like Illness i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: Decay attention (support=3/3)<br>
+JEŚLI Dataset = M3 i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=3/3)<br>
+JEŚLI Dataset = M3 i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=3/3)<br>
+JEŚLI Dataset = M3 i missing_rate_band = 30-40% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=3/3)<br>
+JEŚLI Dataset = M3 i missing_rate_band = 40-50% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=3/3)<br>
+JEŚLI Dataset = METR-LA i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: TRF (support=3/3)<br>
+JEŚLI Dataset = METR-LA i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: TRF (support=3/3)<br>
+JEŚLI Dataset = METR-LA i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: TRF (support=3/5)<br>
+JEŚLI Dataset = NN3 i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=3/3)<br>
+JEŚLI Dataset = NN3 i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=3/3)<br>
+JEŚLI Dataset = NN3 i missing_rate_band = 30-40% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=3/3)<br>
+JEŚLI Dataset = NN3 i missing_rate_band = 40-50% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=3/3)<br>
+JEŚLI Dataset = Sunspot i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: RMD-FSE (support=3/4)<br>
+JEŚLI Dataset = Sunspot i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: RMD-FSE (support=3/5)<br>
+JEŚLI Dataset = solar i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: TRF (support=3/3)<br>
+JEŚLI Dataset = solar i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: TRF (support=3/3)<br>
+JEŚLI Dataset = solar i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: TRF (support=3/3)<br>
+JEŚLI Dataset = traffic i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: TRF (support=3/3)<br>
+JEŚLI Dataset = traffic i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: TRF (support=3/3)<br>
+JEŚLI Dataset = traffic i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: TRF (support=3/3)<br>
+JEŚLI Task Models = Autoformer i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: Decay attention (support=3/5)<br>
+JEŚLI Task Models = LSSVM i missing_rate_band = 50-60% TO rozważ model rekonstrukcji: LTI (support=3/6)<br>
+JEŚLI Task Models = RNN i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: pi - M (support=3/10)<br>
+JEŚLI Task Models = RNN i missing_rate_band = 40-50% TO rozważ model rekonstrukcji: pi - mi (support=3/6)<br>
+JEŚLI Task Models = STID i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: IA (support=3/6)<br>
+JEŚLI Task Models = STID i missing_rate_band = 50-60% TO rozważ model rekonstrukcji: IA (support=3/6)<br>
+JEŚLI Task Models = STID i missing_rate_band = 70-80% TO rozważ model rekonstrukcji: IA (support=3/6)<br>
+JEŚLI Task Models = STID i missing_rate_band = 90-100% TO rozważ model rekonstrukcji: IA (support=3/6)<br>
+JEŚLI Dataset = Annual Energy Review i missing_rate_band = 30-40% TO rozważ model rekonstrukcji: KNN Impute (support=2/2)<br>
+JEŚLI Dataset = ECL i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: No imputation (support=2/3)<br>
+JEŚLI Dataset = ETT i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: Decay attention (support=2/3)<br>
+JEŚLI Dataset = Exchange Rate i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: No imputation (support=2/3)<br>
+JEŚLI Dataset = GSA i missing_rate_band = 90-100% TO rozważ model rekonstrukcji: SBL (support=2/2)<br>
+JEŚLI Dataset = Jenkins-Box Gas Furnace i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: LTI (support=2/2)<br>
+JEŚLI Dataset = Jenkins-Box Gas Furnace i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: LTI (support=2/2)<br>
+JEŚLI Dataset = Motes i missing_rate_band = 90-100% TO rozważ model rekonstrukcji: SBL (support=2/2)<br>
+JEŚLI Dataset = NAB (Numenta Anomaly Benchmark) i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: pi - M (support=2/2)<br>
+JEŚLI Dataset = OLD : Ozone Level Detection i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: PI (pisane wielkim symbolem) (support=2/2)<br>
+JEŚLI Dataset = Poland&#x27;s electricity load i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: Hot-Deck (support=2/2)<br>
+JEŚLI Dataset = Poland&#x27;s electricity load i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: Hot-Deck (support=2/2)<br>
+JEŚLI Dataset = Sea-Surface Temperature i missing_rate_band = 90-100% TO rozważ model rekonstrukcji: SBL (support=2/2)<br>
+JEŚLI Dataset = Sinc i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: LTI (support=2/2)<br>
+JEŚLI Dataset = Sinc i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: LTI (support=2/2)<br>
+JEŚLI Dataset = Sine i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: LTI (support=2/2)<br>
+JEŚLI Dataset = Sine i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: LTI (support=2/2)<br>
+JEŚLI Dataset = Sunspot i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: LTI (support=2/2)<br>
+JEŚLI Dataset = WTH i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: Decay attention (support=2/3)<br>
+JEŚLI Dataset domain = Chemical i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: LTI (support=2/2)<br>
+JEŚLI Dataset domain = Chemical i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: LTI (support=2/2)<br>
+JEŚLI Dataset domain = Climate i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: LTI (support=2/4)<br>
+JEŚLI Dataset domain = Electrical i missing_rate_band = 30-40% TO rozważ model rekonstrukcji: KNN Impute (support=2/2)<br>
+JEŚLI Dataset domain = Electricity i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: Hot-Deck (support=2/2)<br>
+JEŚLI Dataset domain = Electricity i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: Hot-Deck (support=2/2)<br>
+JEŚLI Dataset domain = Traffic i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: IA (support=2/4)<br>
+JEŚLI Dataset domain = Traffic i missing_rate_band = 50-60% TO rozważ model rekonstrukcji: IA (support=2/4)<br>
+JEŚLI Dataset domain = Traffic i missing_rate_band = 70-80% TO rozważ model rekonstrukcji: IA (support=2/4)<br>
+JEŚLI Dataset domain = Traffic i missing_rate_band = 90-100% TO rozważ model rekonstrukcji: IA (support=2/4)<br>
+JEŚLI Order = 3 i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: ARL Simpute (support=2/2)<br>
+JEŚLI Order = 4 i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: ARL Simpute (support=2/2)<br>
+JEŚLI Task Models = AR i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: ARL Simpute (support=2/3)<br>
+JEŚLI Task Models = FFNN i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=2/2)<br>
+JEŚLI Task Models = FFNN i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=2/2)<br>
+JEŚLI Task Models = FFNN i missing_rate_band = 30-40% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=2/2)<br>
+JEŚLI Task Models = FFNN i missing_rate_band = 40-50% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=2/2)<br>
+JEŚLI Task Models = Holt&#x27;s Expotential Smoothing i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=2/2)<br>
+JEŚLI Task Models = Holt&#x27;s Expotential Smoothing i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=2/2)<br>
+JEŚLI Task Models = Holt&#x27;s Expotential Smoothing i missing_rate_band = 30-40% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=2/2)<br>
+JEŚLI Task Models = Holt&#x27;s Expotential Smoothing i missing_rate_band = 40-50% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=2/2)<br>
+JEŚLI Task Models = MA i missing_rate_band = 10-20% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=2/2)<br>
+JEŚLI Task Models = MA i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=2/2)<br>
+JEŚLI Task Models = MA i missing_rate_band = 30-40% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=2/2)<br>
+JEŚLI Task Models = MA i missing_rate_band = 40-50% TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=2/2)<br>
+JEŚLI Task Models = RNN i missing_rate_band = 0-10% TO rozważ model rekonstrukcji: PI - mi (support=2/5)<br>
+JEŚLI Task Models = RNN i missing_rate_band = 20-30% TO rozważ model rekonstrukcji: Standard attention mechanism (support=2/5)<br>
+JEŚLI Task Models = RNN i missing_rate_band = 30-40% TO rozważ model rekonstrukcji: pi - M (support=2/6)</details></div>
+</details></td></tr>
+  </table>
+</section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+﻿Numer;Pytanie badawcze;Numer pytania anlitycznego;Pytanie analityczne;Szczegóły odpowiedzi;Odniesienie do literatury;Komentarz;;Legenda;Wyjaśnienie
+RQ1;Jakie zbiory danych są wykorzystywane w badaniach?;RQ1-A1;Jakie zbiory danych były wykorzystywane w badaniach dotyczących zakłócania i naprawy danych typu szeregów czasowych?;"Różny przekrój zbiorów danych: Self-generated,7
+METR-LA,4
+Motes,4
+GSA,4
+PEMS-BAY,3
+PEMS04,3
+Exchange Rate,3
+Sea-Surface Temperature,3
+Not specified,3
+MIMIC-III,3
+PEMS08,2
+China AQI,2
+Mexico,2
+MIMIC-IV,2
+Air Quality,2
+ETT,2
+PhysioNet2012,2 (Wypisane tylko te, które były wykorzystane przynajmniej dwa razy. W pracy będą uwzględnione wszystkie.)";Spis artykułów, kolumna Zbiory Danych ;;;Do zweryfikowania;W trakcie przeglądania artykułów natknąłem się na odpowiedzi dla danego pytania, lecz nie odnotowałem tego
+;;RQ1-A2;Jakie zbiory danych były wykorzystywane w badaniach dotyczących zakłócania i naprawy danych typu szeregów czasowych, określane jako benchmarkowe?;"Były wykorzystane następujące zbiory danych: PhysioNet2012,3
+solar,3
+Poland's electricity load,2
+Jenkins-Box Gas Furnace,2
+Mackey-Glass Chaotic Time Series Data,2
+NN3,2
+Sunspot,2
+traffic,2 (Tak jak wyżej, wypisane tylko te, co wystąpiły przynajmniej dwa razy, dla czytelności)";Spis artykułów, kolumna Zbiory Danych, jeśli zaznaczono tak w danym artykule;;;Jeszcze nie znaleziono;Nie napotkałem się jeszcze na odpowiedź na dane zagadnienie w żadnym z opisanych artykułów
+;;RQ1-A3;Jakie zbiory danych występują najczęściej w badaniach? (Połączenie dwóch powyższych pytań);Połączenie dwóch powyższych odpowiedzi.;Spis artykułów, kolumna Zbiory Danych ;;;;
+;;RQ1-A4;Jakie domeny zastosowań są najczęściej rozpatrywane w wykorzystywanych zbiorach danych?;"Climate,21
+medicine,12...";Spis artykułów, kolumna Domeny zastosowań;;;;
+RQ2;Jaka jest charakterystyka danych? (Jakie są kluczowe cechy statystyczne i domenowe analizowanych szeregów czasowych?);RQ2-A1;Jak charakteryzują się dane pod kątem wymiarowości?;"Wymiarowość: Multivariate,54; Univariate,26";Do zweryfikowania;Kilka artykułów wspomniało to, lecz nie odnotowałem które dokładnie.;;;
+;;RQ2-A2;Jak charakteryzują się dane pod kątem częstotliwości?;"Częstotliwość: Hourly,22; Daily,16; Monthly,13; Yearly,9";Spis artykułów: ID 9, 11;;;;
+;;RQ2-A3;Jaka jest zależność między wymiarowością a częstotliwością?;;;;;;
+;;RQ2-A4;Jak charakteryzują się dane pod kątem obecności transformacji?;"Transformed,46;Raw,22";Jeszcze nie znaleziono;"Zliczyć wystąpienia x; ";;;
+;;RQ2-A5;Jakie dokładnie transformacje są wykonywane na danych?;"Stworzyć kategorie na podstawie opisów w kolumnie ""Transformation description""";Jeszcze nie znaleziono;;;;
+RQ3;Jaka jest natura i charakterystyka zniekształceń danych w literaturze? (Jakie mechanizmy powstawania zniekształceń są najczęściej poddawane analizie?) [Jak kształtuje się struktura oraz metodologia reprezentacji zniekształceń szeregów czasowych poddawanych korekcie?] ;RQ3-A1;Czy badacze częściej mierzą się z realnymi problemami, czy symulują je sztucznie?;"Synthetic,51
+Natural,19
+Unknown Degradation,9";Do zweryfikowania;Kilka artykułów wspomniało to, lecz nie odnotowałem które dokładnie.;;;
+;;RQ3-A2;Które kategorie uszkodzeń danych dominują w badaniach?;Ogólne zliczenie każdej z kategorii;Jeszcze nie znaleziono;Zbyt szerokie pojęcie, żeby artykuły naukowe opisywały wszystkie poniższe pojęcia z kolejnych pytań analitycznych. Tutaj ogólnie trzeba zliczyć.;;;
+;;RQ3-A3;Jaki rodzaj zaszumienia uszkodzonych danych dominują w badaniach?;"Unknown noise,10
+Gaussian Noise,8
+White Noise,6
+Additive distortions,3";Spis artykułów: Rodzaje szumów ID: 13, 14;Poza wspomnieniem o tym, że algorytmy naprawiają addytywne białe szumy gaussowskie, są raptem pojedyczne artykuły, które wspominają o innych rodzajach szumów, lecz nie są powiązane stricte z szeregami czasowymi, a bardziej pod kątem obrazów.;;;
+;;RQ3-A4;Jakie typy uszkodzeń danych typu missingness dominują w badaniach?;"Unknown,30;MAR,22; MNAR,6 MCAR,6";ID: 1, 5, 12;;;;
+;;RQ3-A5;Jakie typy zniekształceń strukturalnych dominują w badanych szeregach czasowych?;"Non-linear,12
+Non-stationarity,8
+Drift,2
+Interrupted time series,2";"Changepoint: 15; (Concept) Drift: 16, 17, 18; Nonlinear: 16";"Odnośnie ""Drift"" to artykuły podsumowujące inne artykuły naukowe związane z szeregami czasowymi wspominają raczej o ""Concept Drift"", niż o dryfie czasowym.";;;
+;;RQ3-A6;Jakiego rodzaju dryfy występują w badaniach nad rekonstrukcją szeregów czasowych? (Concept Drift, Time drift...);;"Drift: 16, 17, 18;";Przejrzeć artykuły, jak definiują dryf.;;;
+;;RQ3-A7;Jakie metody zakłócania danych występowały w artykułach? ;"Tylko mała część z badanych artykułów ma jawnie określoną metodę degradacji danych: Random pattern,10; Downsampling,9; Outliers removal,3; Regular pattern,1. Ręcznie dopisać metody z komentarzy.
+";Jeszcze nie znaleziono;;;;
+;;RQ3-A8;W jakich domenach zastosowań zbiorów danych najczęściej występują dane typy zniekształceń?;Powiązanie RQ2-A4 z (RQ0-A4);;Reguła, gdzie można powiązać domenę zastosować z danym zniekształceniem.;;;
+;;RQ3-A9;"Jakie kategorie problemów z jakością wystepują w dziedzinie ""Środowisko i klimat""?";;;;;;
+;;RQ3-A10;"Jakie kategorie problemów z jakością wystepują w dziedzinie ""Chemia""?";;;;;;
+;;RQ3-A11;"Jakie kategorie problemów z jakością wystepują w dziedzinie ""Finanse i gospodarka""?";;;;;;
+;;RQ3-A12;"Jakie kategorie problemów z jakością wystepują w dziedzinie ""Medycyna i zdrowie""?";;;;;;
+;;RQ3-A13;"Jakie kategorie problemów z jakością wystepują w dziedzinie ""Transport""?";;;;;;
+;;RQ3-A14;"Jakie kategorie problemów z jakością wystepują w dziedzinie ""Geografia""?";;;;;;
+;;RQ3-A15;"Jakie kategorie problemów z jakością wystepują w dziedzinie ""Przemysł""?";;;;;;
+;;RQ3-A16;"Jakie kategorie problemów z jakością wystepują w dziedzinie ""Wytrzymałość""?";;;;;;
+;;RQ3-A17;"Jakie kategorie problemów z jakością wystepują w dziedzinie ""Energia""?";;;;;;
+;;RQ3-A18;"Jakie kategorie problemów z jakością wystepują w dziedzinie ""Społeczne i behawioralne""?";;;;;;
+RQ4;Jaka jest charakterystyka użycia metod rekonstrukcji danych?;RQ4-A1;Jakie makrokategorie podejść są najczęściej stosowane do rekonstrukcji danych?;"Modele Statystyczne i Klasyczne,
+Klasyczne Uczenie Maszynowe,
+Sieci Rekurencyjne i ich warianty,
+Transformery i Mechanizmy Uwagi,
+Sieci Splotowe i Czasowe,
+Grafowe Sieci Neuronowe,
+Faktoryzacja Macierzowa i Dekompozycja,
+Modele Generatywne i Probabilistyczne,
+Architektury Hybrydowe,
+Logika Rozmyta i Systemy Hybrydowe.";Spis artykułów, kolumna Kategorie Modeli ID: wszystkie z wyjątkiem nr 7;"Przykładowo [Zero Imputation,4; 
+KNN Impute,3; Mean Imputation,3] -> Imputation,10 itd.";;;
+;;RQ4-A2;Jakie Modele Statystyczne i Klasyczne są wykorzystywane do rekonstrukcji szeregów czasowych?;"Wyszukanie w kolumnie ""Kategorie modeli"" ARIMA, sprawdzenie czy w tym samym wierszu w kolumnie ""Wspomniane modele"" występuje dany model. Zliczenie jeśli występuje.";Szczególnie ID: 4,8,9;;;;
+;;RQ4-A3;Jakie modele Klasycznego Uczenia Maszynowego są wykorzystywane do rekonstrukcji szeregów czasowych?;"Wyszukanie w kolumnie ""Kategorie modeli"" imputacji, sprawdzenie czy w tym samym wierszu w kolumnie ""Wspomniane modele"" występuje dany model. Zliczenie jeśli występuje.";Szczególnie ID: 4,8,10;;;;
+;;RQ4-A4;Jakie Sieci Rekurencyjne i ich warianty są wykorzystywane do rekonstrukcji szeregów czasowych?;"Wyszukanie w kolumnie ""Kategorie modeli"" LSTM, sprawdzenie czy w tym samym wierszu w kolumnie ""Wspomniane modele"" występuje dany model. Zliczenie jeśli występuje.";Do zweryfikowania;;;;
+;;RQ4-A5;Jakie Transformery i Mechanizmy Uwagi są wykorzystywane do rekonstrukcji szeregów czasowych?;;;;;;
+;;RQ4-A6;Jakie Sieci Splotowe i Czasowe są wykorzystywane do rekonstrukcji szeregów czasowych?;;;;;;
+;;RQ4-A7;Jakie Grafowe Sieci Neuronowe są wykorzystywane do rekonstrukcji szeregów czasowych?;;;;;;
+;;RQ4-A8;Jakie Faktoryzacje Macierzowe i Dekompozycje są wykorzystywane do rekonstrukcji szeregów czasowych?;;;;;;
+;;RQ4-A9;Jakie Modele Generatywne i Probabilistyczne są wykorzystywane do rekonstrukcji szeregów czasowych?;;;;;;
+;;RQ4-A10;Jakie Architektury Hybrydowe są wykorzystywane do rekonstrukcji szeregów czasowych?;;;;;;
+;;RQ4-A11;Jakie Logiki Rozmyte i Systemy Hybrydowe są wykorzystywane do rekonstrukcji szeregów czasowych?;;;;;;
+;;RQ4-A12;"Jakie modele stanowią ""bazę porównawczą"" (baselines) w kontekście rekonstrukcji szeregów czasowych?";Pojedyncze artykuły, w których zostały użyte modele rekonstrukcji danych jako modele porównawcze (Bench Model Data Recon);Do zweryfikowania;;;;
+;;RQ4-A13;"Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie ""Środowisko i klimat""?";;;;;;
+;;RQ4-A14;"Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie ""Chemia""?";;;;;;
+;;RQ4-A15;"Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie ""Finanse i gospodarka""?";;;;;;
+;;RQ4-A16;"Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie ""Medycyna i zdrowie""?";;;;;;
+;;RQ4-A17;"Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie ""Transport""?";;;;;;
+;;RQ4-A18;"Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie ""Geografia""?";;;;;;
+;;RQ4-A19;"Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie ""Przemysł ""?";;;;;;
+;;RQ4-A20;"Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie ""Wytrzymałość""?";;;;;;
+;;RQ4-A21;"Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie ""Energia""?";;;;;;
+;;RQ4-A22;"Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie ""Społeczne i behawioralne""?";;;;;;
+RQ5;Jaka jest charakterystyka użycia modeli zadaniowych (downstream task)? (W jakich zadaniach końcowych (downstream tasks) wykorzystuje się zrekonstruowane dane?);RQ5-A1;Jakie kategorie zadań są w wykorzystywane w artykułach naukowych? [Jakie zadania aplikacyjne (downstream tasks) oraz powiązane z nimi modele zadaniowe są najczęściej wykorzystywane w literaturze do weryfikacji skuteczności metod rekonstrukcji danych?];Zliczyć ogólne kategorie zadań (anomalia, predykcja, klasyfikacja, segmentacja);Spis artykułów: Kategoria zadań;;;;
+;;RQ5-A2;Jakie architektury związane z predykcją są wykorzystywane do ewaluacji skuteczności rekonstrukcji szeregów czasowych?;;Spis artykułów: Kategoria zadań oraz Wspomniane modele;;;;
+;;RQ5-A3;Jaki rodzaj predykcji jest najczęściej wykorzystywany?;"Interval,43
+Single-value,39,Unknown,2";Jeszcze nie znaleziono;;;;
+;;RQ5-A4;Jakie architektury związane z klasyfikacją są wykorzystywane do ewaluacji skuteczności rekonstrukcji szeregów czasowych?;;;;;;
+;;RQ5-A5;Jakie architektury związane z wykrywaniem anomalii są wykorzystywane do ewaluacji skuteczności rekonstrukcji szeregów czasowych?;;Spis artykułów: Kategoria zadań oraz Wspomniane modele;;;;
+;;RQ5-A6;Jakie modele zadania segmentacji szeregów czasowych stosuje się jako metoda walidacji poprawności strukturalnej danych?;;Spis artykułów: Kategoria zadań oraz Wspomniane modele;;;;
+RQ6;Jaki jest wpływ rekonstrukcji na zadania końcowego? (W jakim stopniu i w jaki sposób jakość rekonstrukcji wpływa na skuteczność zadania końcowego?);RQ6-A1;Jakie metryki występują w temacie poprawy jakości danych?;"RMSE,33;
+MSE,23;MAE,18 ;MAPE,14;NRMSE,5";Spis artykułów: Kolumna metryki;Przy niektórych artykułach odnotowano w jakim przypadku występuje dana metryka.;;;
+;;RQ6-A2;Który model najczęściej wygrywa w testach jakości (Top Performer)? + RANKING MODELI;;Do zweryfikowania;;;;
+;;RQ6-A3;Czy lepsze modele rekonstrukcji przekładają się na lepsze wyniki zadań końcowych?;Jedynie po ręcznym skategoryzowaniu do ogólnych grup task modeli oraz reconstruction modeli, gdyż badacze zazwyczaj testują własne algorytmy na podstawie znanych rozwiązań;Jeszcze nie znaleziono;;;;
+;;RQ6-A4;"Jaki model rekonstrukcji wybrać dla konkretnej kolejności danych (""order"")?";;;;;;
+;;RQ6-A5;Jaki model rekonstrukcji wybrać dla danych domen zastosowań?;;;;;;
+;;RQ6-A6;Jaki model rekonstrukcji wybrać dla konkretnego stopnia uszkodzenia danych, aby była najdokładniejsza predykcja? (Jaki model wybrać dla konkretnego stopnia uszkodzenia danych?);;Jeszcze nie znaleziono;W trakcie analizowania takich artykułów naukowych. Na razie natrafiam na ogólne wspomnienie tych procentów dla danych modeli, bądź porównania wyłącznie kilku modeli.;;;
+KONIEC;KONIEC;KONIEC;KONIEC;KONIEC;KONIEC;KONIEC;;;
+;;;;;;;;;
+;;Stary eksperyment;"Trzy zbiory danych z różnych kategorii (multivariate) (+- czyste), celowo zdegradować ich jakość. Wziąć trzy dowolne modele naprawy jakości. Naprawić w ten sposób dane. Liczenie błędu rekonstrukcji trzema metrykami. Chociaż dwie metody predykcji i ją wykonać. (Podzielić na zbiór treningowy i testowy)
+";;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;Nowy eksperyment;Wygenerować reguły na podstawie literatury, by odpowiedzieć na pytania RQ6-A3 i RQ6-A4, na podstawie najlepiej rokujących reguł przeprowadzić walidację przyjnajmniej kliku z nich na benchmarkowych datasetach.;;;;;;
+;;;;;;;;;
+;;;Jak wygląda rozkład artykułów po dziedzinach?;Zliczymy wystepowanie poszczegolnych dziedzin  - ranking.;;;;;
+;;;"Jakie kategorie problemów z jakością wystepują w dziedzinie ""Climate""?";Zliczamy występowanie poszczególnych problemów z jakości;;;;;
+;;;"Jakie kategorie problemów z jakością wystepują w dziedzinie ""Finance""?";;;;;;
+;;;"Jakie kategorie problemów z jakością wystepują w dziedzinie ""Geography""?";;;;;;
+;;;;;;;;;
+;;;....;;;;;;
+;;;;;;;;;
+;;;"Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie ""Climate""?";Zliczamy występowanie poszczególnych modeli poprawy jakości;;;;;
+;;;"Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie ""Finance""?";;;;;;
+;;;"Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie ""Geography""?";;;;;;
+;;;...;;;;;;

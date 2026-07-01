@@ -1,0 +1,151 @@
+;;Field;PREDICTION TYPE;;;;NUMBER OF FEATURES;;INPUT DATA TYPE;;;FREQUENCY;;;;;;;;;;;;;;;
+ID;Title;Tagger;Interval;Single-value;Unknown;Other;Univariate;Multivariate;Raw;Transformed;Transformation description;Yearly;Half a year;Quaterly;Monthly;Weekly;Daily;Hourly;Half an hour;15 minutes;10 minutes;5 minutes;Minute;5 seconds;Seconds;100 milliseconds;Other
+2;GinAR: An End-To-End Multivariate Time Series Forecasting Model Suitable for Variable Missing;PN;;;;;;x;;;;;;;;;;x;;;;x;;;;;
+7;Time series forecasting with missing values;PN;x;;;;x;x;x;;;x;;;;;;;;;;;;;;;
+8;Time-Series Forecasting to Fill Missing Data in IoT Sensor Data;PN;x;;;;x;;;x;;;;;;;;x;;;;;;x;;;
+9;Time series forecasting with missing data using neural network and meta-transfer learning;PN;x;;;;x;;;x;;;;;;;;x;;;;;;;;;
+16;Imputation for the analysis of missing values and prediction of time series data;PN;x;;;;x;;x;;;;;;x;;;;;;;;;;;;
+18;Time-series data prediction based on reconstruction of missing samples and selective ensembling of FIR neural networks;PN;x;;;;x;;x;;;;;;x;;;;;;;;;;;;
+19;Multilevel prediction of missing time series dam displacements data based on artificial neural networks voting evaluation;PN;x;;;;x;;;x;;x;x;;;;;;;;;;;;;;
+20;Time Series Prediction as a Problem of Missing Values: Application to ESTSP2007 and NN3 Competition Benchmarks;PN;x;;;;x;;;x;;;;;;;;;;;;;;;;;x
+21;Robust Time Series Prediction with Missing Data Based on Deep Convolutional Neural Networks;PN;;x;;;x;;x;;;;;;;;x;;;;;;;;;;
+22;Any-Time Methods for Time-Series Prediction with Missing Observations;PN;x;;;;;;;;;;;;;;;;;;;;;;;;
+23;Nonlinear Time-Series Prediction with Missing and Noisy Data;PN;x;;;;x;;x;;;x;;;;;;;;;;;;;;;
+24;Time series prediction with missing values: a bidirectional fully connected neural network approach;PN;x;;;;x;x;;x;;;;;;;;;;;;;;;;;x
+25;Predicting Missing Image in Remote Sensing Time Series Using Spatial-Temporal-Spectral Data;PN;;;;;;;;;;;;;;;;;;;;;;;;;
+26;Nonlinear prediction of the hourly FoF2 time series and the nonlinear interpolation of missing points;PN;This article is too short (Quality criteria is not satisfied);;;;x;;;;;;;;;;;;;;;;;;;;
+61;End-to-end Multi-task Learning of Missing Value Imputation and Forecasting in Time-Series Data;PN;x;;;;;x;;x;;;;;;;;x;;;;;;;;;
+62;Double quantization forecasting method for filling missing data in the CATS time series;PN;x;;;;;;;;;;;;;;;;;;;;;;;;
+63;Missing Data Dynamic Forecasting of Fuzzy Time Series Based on Gaussian Mixture Model;PN;;x;;;x;;x;;;;;;x;;;;;;;;x;;;;
+64;GinAR+: A Robust End-to-End Framework for Multivariate Time Series Forecasting With Missing Values;PN;x;;;;;x;x;;;;;;;;x;x;;;x;x;;;;;
+73;Effective Prediction of Missing Data on Apache Spark over Multivariable Time Series;PN;x;;;;;x;x;;;;;;;;;;;;;;;;x;;
+74;Temporal Dynamic Matrix Factorization for Missing Data Prediction in Large Scale Coevolving Time Series;PN;x;;;;;x;x;;;;;;;;;;;;;;;;x;;
+75;Traffic prediction, data compression, abnormal data detection and missing data imputation: An integrated study based on the decomposition of traffic time series;PN;x;;;;x;;;x;;;;;;;;;;;;x;;;;;
+77;LIFE: Learning Individual Features for Multivariate Time Series Prediction with Missing Values;PN;x;;;;;x;;x;;;;;;;;;;;;;;;;x;
+78;MTSSP: Missing Value Imputation in Multivariate Time Series for Survival Prediction;PN;x;;;;;x;;x;;;;;;;x;;;;;;;;;;
+79;Nonlinear Time-Series Prediction with Missing and Noisy Data;PN;Duplicate of ID 23;;;;;;;;;;;;;;;;;;;;;;;;
+106;Probabilistic Forecasting of Irregularly Sampled Time Series with Missing Values via Conditional Normalizing Flows;PN;x;;;;;x;;x;;;;;;;;x;x;;;;x;;;;
+107;The Development of an LSTM Model to Predict Time Series Missing Data of Air Temperature inside Fattening Pig Houses;PN;x;;;;;x;;x;;;;;;;;;;;;x;;;x;;
+117;Time-series NARX feedback neural network for forecasting impedance cardiography ICG missing points: a predictive model;PN;x;;;;;x;;x;Replacing NaN values by the mean of the other cycles;;;;;;;;;;;;;;;;
+119;The Association between Parental Child Vaccination Refusal Rate and the Impact of Mass Vaccination against COVID-19 in Kazakhstan: An Interrupted Time Series Analysis with Predictive Modelling of Nationwide Data Sources from 2013 to 2022;PN;No experimental evaluation of algorithm validation. (Quality Criteria is not satisfied);;;;;;;;;;;;;;;;;;;;;;;;
+121;Reconstruction and Prediction of Chaotic Time Series with Missing Data: Leveraging Dynamical Correlations Between Variables;PN;x;;;;;x;;x;;;;;;;;;;;;;;;x;;
+129;Denoising or distortion: Does decomposition-reconstruction modeling paradigm provide a reliable prediction for crude oil price time series?;PN;x;;;;;x;;x;;;;;x;x;;;;;;;;;;;
+131;A residual GRU method with deep cross fusion for Alzheimer's disease progression prediction using missing variable-length time series data;PN;;x;;;;x;;x;Missing data imputation, fixed-length inputs;;;;;;x;;;;;;;;;;
+140;Forecasting interrupted time series;PN;x;;;;;;x;x;First dataset: applying a log transformation, a bias correction. Second one is a raw input.;;;;x;;x;;;;;;;;;;
+142;Conditional Time Series Modeling for Pneumoconiosis Progression Risk Prediction with Missing Data;PN;;x;;;;;;x;The CXR images were extracted directly from DICOM files and resized to 256 � 256. Transform the original 1D time series into a structured 2D tensor processed by 2D kernels.;x;;;;;;;;;;;;;;;
+143;Sensor Data Quality in Ships: A Time Series Forecasting Approach to Compensate for Missing Data and Drift in Measurements of Speed through Water Sensors;PN;x;;;;;;;x;From the original set of available attributes (logged parameters), only those related (directly or indirectly) to the parameter under study (STW) were taken into account. The total number of attributes taken into account decreased from the original 178 entries to 49. All the attributes that have an extremely high correlation with STW and originate from the same sensor were excluded. All the instances that had missing values for attributes related to meteorological conditions and in which missingness was continuous for very long time spans were also excluded from the dataset used;;;;;;;;;;;;x;;;;
+148;Time Series Prediction with Missing Data by an Iterated Deep Gaussian Process;PN;;;;;;;;;;;;;;;;;;;;;;;;;
+153;Time Series Forecasting with Missing Data Using Generative Adversarial Networks and Bayesian Inference;PN;x;;;;;x;;x;All data were normalized;;;;;;;x;;;;;;;;;
+154;Effects of missing data imputation methods on univariate blood pressure time series data analysis and forecasting with ARIMA and LSTM;PN;x;;;;x;;;x;Missing data imputation;;;;;;;;;x;;;;;;;
+156;Assessment of Time Series Model for Predicting Long-Interval Consecutive Missing Values in Air Quality Dataset;PN;x;;;;;x;;x;Used linear interpolation;;;;;;;x;;;;;;;;;
+157;TIformer: A Transformer-Based Framework for Time-Series Forecasting with Missing Data;AK;A ResearchGate request sent;;;;;;;;;;;;;;;;;;;;;;;;
+158;kNN estimators for time series prediction: a functional partial linear single index model with missing responses and error-prone covariates;AK;;x;;;;x;;x;"""heteroscedasticity elimination, removal of linear trends through differencing the ln data""";;;;x;;;;;;;;;;;;
+159;TMF-GNN: Temporal matrix factorization-based graph neural network for multivariate time series forecasting with missing values;AK;;x;;;;x;x;;;;;;;x;;x;;;;;;;;;
+164;Improving traffic time-series predictability by imputing continuous non-random missing data;AK;;x;;;;x;;x;Spatial-temporal data fusion, vectorization through node-to-vector algorithm, and scaling to 0�1 range;;;;;;;;;;;;;;;;15-minute intervals
+165;An improved self-attention for long-sequence time-series data forecasting with missing values;AK;x;;;;;x;;;;x;;;;x;x;x;;;;;x;;;;
+167;BIASED TEMPORAL CONVOLUTION GRAPH NETWORK FOR TIME SERIES FORECASTING WITH MISSING VALUES;AK;;x;;;;x;x;;;;;;;;;x;;;;x;;;;;
+171;Uncertainty-Aware Self-Attention Model for Time Series Prediction with Missing Values;AK;;x;;;;x;;;;;;;;;;;;;;;;;;;The data was sampled at a frequency of 60 Hz
+181;Automatic prediction modeling for Time-Series degradation data via Genetic algorithm with applications in nuclear energy;AK;;x;;;x;;;x;Complete Ensemble Empirical Mode Decomposition with Adaptive Noise (CEEMDAN);;;;;;;;;;;;;;;;4-hour intervals
+186;A Granule-Based Time Series Forecasting (TSF) Model for Underwater Combat with Missing Data;AK;A ResearchGate request sent;;;;;;;;;;;;;;;;;;;;;;;;
+192;A deep learning-based time series model with missing value handling techniques to predict various types of liquid cargo traffic;AK;;x;;;;x;;;;;;;x;;;;;;;;;;;;
+198;Classifying unevenly spaced clinical time series data using forecast error approximation based bottom-up (FeAB) segmented time delay neural network;AK;;x;;;;x;;x;Forecast-error approximation-based bottom-up (FeAB) segmentation and double exponential smoothing;;;;;;;;;;;;;;;;Unevenly spaced/irregular clinical records
+201;Environmental Time Series Prediction with Missing Data by Machine Learning and Dynamics Recostruction;AK;;x;;;x;;;;;;;;;;;x;;;;;;;;;
+203;Research on Multivariate Time Series Prediction Method Based on Missing Data Imputation;AK;No institutional access, and no ResearchGate entry to ask for access;;;;;;;;;;;;;;;;;;;;;;;;
+204;Recursive Least Square: RLS Method-Based Time Series Data Prediction for Many Missing Data;AK;;x;;;;x;x;;;;;;;;;;;;;;;;;;Unequal time intervals based on satellite orbital conditions
+211;Emergency Medical Services Calls Analysis for Trend Prediction during Epidemic Outbreaks: Interrupted Time Series Analysis on 2020–2021 COVID-19 Epidemic in Lazio, Italy;AK;;x;;;;x;;x;7-day moving averages and classical multiplicative decomposition for detrending seasonality;;;;;;x;;;;;;;;;;
+212;Prediction of environmental missing data time series by Support Vector Machine Regression and Correlation Dimension estimation;AK;;x;;;x;;;;;;;;;;;x;;;;;;;;;
+217;Handling Massive Proportion of Missing Labels in Multivariate Long-Term Time Series Forecasting;AK;x;;;;;x;;;;;;;;;;x;;;;;x;;;;
+218;Joint modeling of local and global temporal dynamics for multivariate time series forecasting with missing values;AK;;x;;;;x;;;;;;;;;;x;;;;;;;;;Some data was sampled at a frequency of 60 Hz
+223;Bayesian sigmoid-type time series forecasting with missing data for greenhouse crops;AK;;x;;;;x;;x;Modeling non-linear sigmoid growth through its reciprocal linear dynamic representation;;;;;;x;;;;;;;;;;
+231;Time Series Missing Value Prediction: Algorithms and Applications;AK;A ResearchGate request sent;;;;;;;;;;;;;;;;;;;;;;;;
+235;TempoMAGE: A deep learning framework that exploits the causal dependency between time-series data to predict histone marks in open chromatin regions at time-points with missing ChIP-seq datasets;AK;;x;;;;x;;x;Weighting H3K27ac state by fold change in chromatin accessibility between reference and training points;;;;;;;;;;;;;;;;"The paper uses defelopmental stages as ""time"" points"
+241;Comparison of missing data imputation methods in time series forecasting;AK;;x;;;;x;;;;;;;;;x;x;;;;;x;;;;
+243;A novel approach for missing data prediction in coevolving time series;AK;;x;;;;x;;x;Sparse representation basis design via 1st and 2nd derivative approximation (FD/SD);;;;;;;;;;;;;;;;KAIST - 10 seconds, 31s for MOTES
+262;Hydrostats: A Python package for characterizing errors between observed and predicted time series;AK;REJECT - Introduces a library for error metrics computation, but does not propose any methods for degradation, or data reconstruction, simply shows the tool;;;;;;;;;;;;;;;;;;;;;;;;
+263;Robust kernel adaptive filters based on mean p-power error for noisy chaotic time series prediction;AK;;x;;;;x;;x;Zero-mean, unit variance normalization and kernel-induced mapping to high-dimensional feature space;;;;;;;;;;x;;;;;;Discrete time steps: 0.1 for MG, 0.01 for Lorenz
+265;Multi-step prediction of time series with random missing data;AK;x;;;;x;;;x;Mapping weights and bias of MLP-ANN to stochastic state space equations;;;;;;;;x;;;;;;;;
+276;End-to-end anomaly detection, correction and prediction of missing values in historical daily temperature timeseries;AK;Extended abstract, paper has only 2 pages and near to no technical details;;;;;;;;;;;;;;;;;;;;;;;;
+279;Modelling missing data for PM2.5 time series forecasting with computational intelligence;AK;No institutional access, and no ResearchGate entry to ask for access;;;;;;;;;;;;;;;;;;;;;;;;
+280;"Missing Data Prediction Based on Kronecker Compressing Sensing in Multivariable Time Series; [多变量时间序列中基于克罗内克压缩感知的缺失数据预测算法]";AK;Only abstract in English - text in Chinese;;;;;;;;;;;;;;;;;;;;;;;;
+283;Forward and backward forecasting ensembles for the estimation of time series missing data;TZ;;;;;;;;;;x;;x;x;;;;;;;;;;;;ssome others
+284;Period-aware content attention RNNs for time series forecasting with missing values;TZ;;;;Regression;x;x;x;;;;;;;;x;x;;;x;x;;;;;Every two hoursh, depends on the dataset
+285;Using forecast modelling to evaluate treatment effects in single-group interrupted time series analysis;TZ;x;;;;x;;;x;Differencing, Exponential Smoothing;;;;;;;;;;;;;;;;
+286;Forecasting Construction Cost Index Using Interrupted Time-Series;TZ;;x (one step ahead);;Counterfactual Forecasting;x;;;x;lagged first difference, transformacja strukturalna modelu (je?li czerwiec 2008 to 1, w przeciwnym  przypadku 0);x;;;x;;;;;;;;;;;;
+297;Forecasting estimated missing time series data;TZ;;x;;;x;;;x;Differencing;;;;;;x;;;;;;;;;;
+300;Online time series prediction with missing data;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+302;Improvement of forecasting robustness of time series model for thermal error on CNC machine tool;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+318;Impact of the WHO Framework Convention on Tobacco Control on global cigarette consumption: Quasi-experimental evaluations using interrupted time series analysis and in-sample forecast event modelling;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+319;Development of methods for restoring missing values and forecasting of interdependent time series;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+322;Simple nuclear norm based algorithms for imputing missing data and forecasting in time series;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+324;Forecasting CEMAC's foreign exchange reserves in presence of unanticipated changes in oil prices: An interrupted time series modelling;DK;This article does not align with the aim of the systematic literature review - Degradation not referring to data quality;;;;;;;;;;;;;;;;;;;;;;;;
+329;Toward the development of a conventional time series based web error forecasting framework;DK;;;;;;;;;;;;;;;;;;;;;;;;;
+334;Nonlinear prediction of the hourly FOF2 time series in conjunction with the interpolation of missing data points;DK;;;;;;;;;;;;;;;;;;;;;;;;;
+349;Forecasting time series with missing data using Holt's model;DK;;;x;;x;;x;x;;x;;x;x;;;;;;;;;;;;x
+350;Robustness of forecasting of autoregressive time series for additive distortions;DK;;;;;;;;;;;;;;;;;;;;;;;;;
+356;Nonlinear prediction of the hourly FOF2 time series and the nonlinear interpolation of missing points;DK;x;x;;;x;;x;;;;;;;;;x;;;;;;;;;
+364;Missing and noisy data on nonlinear time-series prediction;DK;x;x;;;;;;;;;;;;;;;;;;;;;;;
+367;Prediction of chaotic time series in the presence of measurement error: The importance of initial conditions;DK;;;;;;;;;;;;;;;;;;;;;;;;;
+368;Generalized unscented Kalman filtering based radial basis function neural network for the prediction of ground radioactivity time series with missing data;DK;;;;;;;;;;;;;;;;;;;;;;;;;
+372;Missing data and forecasting in multivariate time series: An application of the common components dynamic linear model;DK;x;;;;;x;x;;;;;x;;;;;;;;;;;;;
+379;Influence of missing values on the prediction of a stationary time series;DK;Brak eksperymentalnej oceny - walidacji algorytmu;;;;;;;;;;;;;;;;;;;;;;;;
+384;A non-linear time series prediction method for missing daily flow rate data of middle firat catchment;DK;Artyku? nie w tematyce SLR;;;;;;;;;;;;;;;;;;;;;;;;
+401;Prediction of unmet primary care needs for the medically vulnerable post-disaster: An interrupted time-series analysis of health system responses;DK;Artyku? nie w tematyce SLR;;;;;;;;;;;;;;;;;;;;;;;;
+402;Nonlinear forecasting as a way of distinguishing chaos from measurement error in time series;DK;Artyku? nie w tematyce SLR;;;;;;;;;;;;;;;;;;;;;;;;
+403;A Co-training approach for time series prediction with missing data;DK;;;;;;;;;;;;;;;;;;;;;;;;;
+416;Prediction of missing observations in the time series of an economic variable;DK;Artyku? niedost?pny przez PG;;;;;;;;;;;;;;;;;;;;;;;;
+418;Forecasting non-seasonal time series with missing observations;DK;;;;;;;;;;;;;;;;;;;;;;;;;
+428;A Forecasting Method for Metering Error of Electric Energy Based on    Intrinsic Time-Scale Decomposition and Time Series Analysis;DK;;;;;;;;;;;;;;;;;;;;;;;;;
+432;Predicting missing parts in time series using uncertainty theory;DK;;;;;;;;;;;;;;;;;;;;;;;;;
+438;A co-training approach for time series prediction with missing data;DK;Duplikat artyku?u o ID 403;;;;;;;;;;;;;;;;;;;;;;;;
+439;PREDICTION OF MISSING OBSERVATIONS IN TIME SERIES OF AN ECONOMIC    VARIABLE;DK;Duplikat artyku?u o ID 416;;;;;;;;;;;;;;;;;;;;;;;;
+446;Forecasting Method Based on Attenuated LSTM for Time Series With Missing    Data;DK;;;;;;;;;;;;;;;;;;;;;;;;;
+447;Reconstructing Missing Variables for Multivariate Time Series Forecasting via Conditional Generative Flows;DK;;;;;;;;;;;;;;;;;;;;;;;;;
+448;Research on Hybrid Forecasting Method with Time Series and Intelligent    Error Modification;DK;;;;;;;;;;;;;;;;;;;;;;;;;
+450;Case Study 8-Interrupted Time Series Analysis, Holdback Forecasting, and    Variable Transformation;DK;Artyku? niedost?pny przez PG;;;;;;;;;;;;;;;;;;;;;;;;
+452;TIformer: A Transformer-Based Framework for Time-Series Forecasting with    Missing Data;DK;Artyku? niedost?pny przez PG;;;;;;;;;;;;;;;;;;;;;;;;
+456;Double quantization forecasting method for filling missing data in the    CATS time series;DK;;;;;;;;;;;;;;;;;;;;;;;;;
+460;DEEP HYBRID NEURAL NETWORKS FOR PREDICTING MISSING SEGMENTS IN sEMG TIME    SERIES DATA;DK;;;;;;;;;;;;;;;;;;;;;;;;;
+463;A Granule-Based Time Series Forecasting (TSF) Model for Underwater    Combat with Missing Data;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+465;Recursive Least Square: RLS Method-Based Time Series Data Prediction for    Many Missing Data;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+472;Multilevel Prediction of Missing Time Series Dam Displacements Data    Based on Artificial Neural Networks Voting Evaluation;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+473;Time series prediction as a problem of missing values: Application to    ESTSP2007 and NN3 competition benchmarks;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+474;Joint Modeling of Local and Global Temporal Dynamics for Multivariate    Time Series Forecasting with Missing Values;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+475;TIME-SERIES FATIGUE DAMAGE STATES FORECASTING AND PROBABILISTIC    ENVIRONMENTAL FATIGUE LIFE PREDICTION USING MARKOV-CHAIN-MONTE-CARLO    TECHNIQUES;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+476;Spline Cell-Based Hidden Markov Approach for Singular Time Series    Forecasting in Performance Degradation Trend Analysis;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+478;APPLICATION OF HYBRID MODELS IN FORECASTING OF MISSING DATA IN HIGH    FREQUENCY TIME SERIES WITH SYSTEMATIC GAPS;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+480;Time-series data prediction based on reconstruction of missing samples    and selective ensembling of FIR neural networks;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+485;Traffic Prediction, Data Compression, Abnormal Data Detection and    Missing Data Imputation: An Integrated Study Based on the Decomposition    of Traffic Time Series;TZ;;;;;;;;;;;;;;;;;;;;;;;;;
+1;Exploring the Characteristics of Time Series Data Affecting Forecasting Errors Using LSTM;PN;No comparison with other reconstruction models;;;;;;;;;;;;;;;;;;;;;;;;
+10;Feasibility Analysis of State-of-the-Art Time Series Models for Wind Power Forecasting with Irregular Missing Data;PN;x;x;;;;x;;;;;;;;;;;;;x;;;;;;
+11;Neural Networks Fusion for Enhanced Time Series Forecasting with Missing Data;PN;;x;;;;x;;x;"""We create daily time series data by mean 24 hours of data into a single data point."" also ""we randomly remove approximately 30% of the data from each dataset.""";;;;;;x;x;;x;;;;;;;
+17;Missing and noisy data in nonlinear time-series prediction;PN;;;;;;;;;;;;;;;;;;;;;;;;;
+49;Prediction of satellite clock errors based on deterministic intuitionistic fuzzy time series;PN;The article is too short (3� pages of text);;;;;;;;;;;;;;;;;;;;;;;;
+58;High-Performance Time Series Prediction With Predictive Error Compensated Wavelet Neural Networks;PN;;x;;;x;x;;x;"The data sets are scaled by using the minimum/maximum
+normalization method";;x;;x;;x;;;;;;;;;;
+76;An Efficient Missing Data Prediction Method Based on Kronecker Compressive Sensing in Multivariable Time Series;PN;x;;;;;x;x;;;;;;;;;;;;;;;;x;;
+104;A dual-path architecture based on time series decomposition and degradation correction for remaining useful life prediction of aero-engine;PN;x;;;;;x;;x;Sub-datasets are clustered according to the operating condition parameters then, the samples of each type of operating condition are separately standardized. It was also used: exponential averaging, sliding time window, sample label usage, fault initiation threshold set to 125. For second dataset data was downsampled from 1Hz to 0.01Hz.;;;;;;;;;;;;;;x;;
+122;Multivariate Probabilistic Time Series Forecasting with Correlated Errors;PN;x;x;;;;x;;x;Each dataset was standardized using the mean and standard deviation from the training set.;;;x;;;x;x;;;;x;;;;;
+126;Reconstructing Missing Variables for Multivariate Time Series Forecasting via Conditional Generative Flows;PN;x;x;;;;x;x;;;;;;;;;x;;;;x;;;x;;
+128;An intelligent interval forecasting system based on fuzzy time series and error distribution characteristics for air quality index;PN;;x;;;;x;;x;Add n sets of positive and negative auxiliary white noise pairs to time series X to obtain new times series Z.;;;;;;;x;;;;;;;;;
+139;Degradation Modelling and Remaining Useful Life Prediction Methods Based on Time Series Generative Prediction Networks;PN;;;;;;;;;;;;;;;;;;;;;;;;;
+150;A novel wind power forecasting system integrating time series refining, nonlinear multi-objective optimized deep learning and linear error correction;PN;x;;;;;x;;x;(Using FiG) Transforming the original data into granules with similar characteristics, resulting in reduced data size, computational complexity, and resource consumption;;;;;;;;;;;;;;;;
+152;Evaluating the Impact of Error-Bounded Lossy Compression on Time Series Forecasting;PN;;x;;;;x;x;;;;;;;;;;;;;;;;;;
+194;Online Learning for Time Series Prediction of AR Model with Missing Data;PN;;;x;;;x;x;;;;;;;;;;;;;;;;;;There is no time scale provided in any dataset
+205;Wind Power Interval Prediction with Adaptive Rolling Error Correction Based on PSR-BLS-QR;PN;;x;;;;x;;x;"Input data is degraded: ""When there are bad data such as null values, negative values, and abnormal values in the datasets, the data needs to be cleaned.""";;;;;;;;;x;x;;;;;;
+227;Missing data in wind farm time series: Properties and effect on forecasts;PN;;x;;;;x;;x;10-minute resolution data was re-sampled to 30-minute resolution;;;;;;;;x;;;;;;;;
+239;A Novel Framework Based on CNN-LSTM Neural Network for Prediction of Missing Values in Electricity Consumption Time-Series Datasets;PN;;x;;;x;;;x;Missing data filled with not-a-number values;;;;;;x;;;;;;;;;;
+244;Forecasting Error Pattern-Based Anomaly Detection in Multivariate Time Series;PN;x;x;;;;x;;;;;;;;;;;;;;;;;x;;
+249;A method for predicting large-area missing observations in Landsat time series using spectral-temporal metrics;PN;x;;;;;x;;x;;;;;;;x;;;;;;;;;;"""cloud-free observation frequency is lower than that provided by near-daily coarse resolution satellite data"""
+309;Semi-parametric prediction intervals in small areas when auxiliary data are measured with error;PN;Nothing about time series;;;;;;;;;x;;;;;;;;;;;;;;;
+341;Analysis of noisy chaotic time series prediction error;PN;Written in Chinese;;;;;;;;;;;;;;;;;;;;;;;;
+361;Forecasting economic time series with measurement error;PN;;X;;;;X;;X;Standardized;;;;x;;;;;;;;;;;;
+370;An echo state network based on error compensation for prediction of nonlinear time series in industry;PN;Not available through PG Library Access;;;;;;;;;;;;;;;;;;;;;;;;
+377;Predicting missing parts in time series using uncertainty theory;PN;No comparison with other reconstruction models;;;;;;;;;;;;;;;;;;;;;;;;
+381;Reducing error in neural network time series forecasting;PN;;x;;;;x;;;;;;;x;;;;;;;;;;;;
+426;Time Series Regression Forecasting with Measurement Errors;PN;Not available through PG Library Access;;;;;;;;;;;;;;;;;;;;;;;;
+427;Forecasting economic time series with measurement error;PN;Duplicate of ID 361;;;;;;;;;;;;;;;;;;;;;;;;
+433;Forecasting Error Pattern-Based Anomaly Detection in Multivariate Time    Series;PN;Duplicate of ID 244;;;;;;;;;;;;;;;;;;;;;;;;
+443;Prediction of satellite clock errors based on deterministic    intuitionistic fuzzy time series;PN;Duplicate of ID 49;;;;;;;;;;;;;;;;;;;;;;;;
+444;Reduce Forecasting Errors by Low Order Nonlinear Transformations for    Complex Time Series;PN;;x;;;;x;x;;;;;;;;;;;;;;;;;;
+458;ERROR FORMULAS FOR OPTIMAL LINEAR FILTERING, PREDICTION AND    INTERPOLATION OF STATIONARY TIME SERIES;PN;;;;;;;;;;;;;;;;;;;;;;;;;
+66;Spline cell-based hidden Markov approach for singular time series forecasting in performance degradation trend analysis;PN;;;;;;;;;;;;;;;;;;;;;;;;;

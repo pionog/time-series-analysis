@@ -1,0 +1,530 @@
+================================================================================
+RQ4 — MODELE REKONSTRUKCJI — PLIK DO RĘCZNEJ WERYFIKACJI
+================================================================================
+Wygenerowano: 2026-06-25
+Źródło danych: input_csv/SLR(TAGGING-models data reconstruct).csv
+Liczba artykułów w SLR: 148
+
+UWAGA: Sekcje RQ4-A2–A7 odzwierciedlają OBECNE przypisania ze skryptu research_answers.py.
+       Mogą być błędne (np. RQ4-A3 pyta o (A)NN, a lista zawiera metody imputacji).
+
+INSTRUKCJA EDYCJI:
+  1. Przenieś modele między sekcjami według właściwej kategorii.
+  2. Dopisz brakujące modele z sekcji „Nieprzypisane”.
+  3. Uzupełnij makrokategorie w RQ4-A1.
+  4. Po korekcie można zaktualizować research_answers.py lub zaimportować CSV.
+
+--------------------------------------------------------------------------------
+RQ4-A1: Jakie makrokategorie podejść są najczęściej stosowane do rekonstrukcji danych?
+--------------------------------------------------------------------------------
+
+  [1] Modele Statystyczne i Klasyczne
+      (wpisz modele, po jednym w linii, np. „ARIMA — 2”)
+
+  [2] Klasyczne Uczenie Maszynowe
+      (wpisz modele, po jednym w linii, np. „ARIMA — 2”)
+
+  [3] Sieci Rekurencyjne i ich warianty
+      (wpisz modele, po jednym w linii, np. „ARIMA — 2”)
+
+  [4] Transformery i Mechanizmy Uwagi
+      (wpisz modele, po jednym w linii, np. „ARIMA — 2”)
+
+  [5] Sieci Splotowe i Czasowe
+      (wpisz modele, po jednym w linii, np. „ARIMA — 2”)
+
+  [6] Grafowe Sieci Neuronowe
+      (wpisz modele, po jednym w linii, np. „ARIMA — 2”)
+
+  [7] Faktoryzacja Macierzowa i Dekompozycja
+      (wpisz modele, po jednym w linii, np. „ARIMA — 2”)
+
+  [8] Modele Generatywne i Probabilistyczne
+      (wpisz modele, po jednym w linii, np. „ARIMA — 2”)
+
+  [9] Architektury Hybrydowe
+      (wpisz modele, po jednym w linii, np. „ARIMA — 2”)
+
+  [10] Logika Rozmyta i Systemy Hybrydowe
+      (wpisz modele, po jednym w linii, np. „ARIMA — 2”)
+
+
+--------------------------------------------------------------------------------
+RQ4-A2: Jakie klasyczne modele statystyczne (w tym rodzina ARIMA i modele wygładzania wykładniczego) są wykorzystywane do rekonstrukcji szeregów czasowych?
+--------------------------------------------------------------------------------
+
+   1. ARIMA (2)
+   2. ETS (1)
+   3. Holt-Winters (1)
+   4. Kalman filter (1)
+   5. SARIMA (1)
+
+--------------------------------------------------------------------------------
+RQ4-A3: Jakie kategorie modeli są najczęściej stosowane z rodziny (A)NN?
+--------------------------------------------------------------------------------
+
+   1. Zero Imputation (4)
+   2. KNN Impute (3)
+   3. Mean Imputation (3)
+   4. MICE (2)
+   5. Backward Fill (1)
+   6. DropNaN (1)
+   7. Forward Fill (1)
+   8. IMPWE (1)
+   9. LOCF (1)
+  10. Multiple Imputation (1)
+
+--------------------------------------------------------------------------------
+RQ4-A4: Jakie są wykorzystywane sieci rekurencyjne (w tym rodzina LSTM i GRU) w procesie rekonstrukcji szeregów czasowych?
+--------------------------------------------------------------------------------
+
+   1. LSTM (3)
+   2. Bi-LSTM (2)
+   3. GRU-D (2)
+   4. BRITS (1)
+   5. Bi-FCNN (1)
+   6. GRUI (1)
+   7. LSTNet (1)
+   8. M-LSTNet (1)
+   9. M-RNN (1)
+  10. SAITS (1)
+  11. Uni-FCNN (1)
+
+--------------------------------------------------------------------------------
+RQ4-A5: Jakie znaczenie w naprawie danych mają modele uwzględniające relacje przestrzenne, takie jak Grafowe Sieci Neuronowe (GNN)?
+--------------------------------------------------------------------------------
+
+   1. GRIN (2)
+   2. GATGPT (1)
+   3. GRUI (1)
+
+--------------------------------------------------------------------------------
+RQ4-A6: Jak często badacze sięgają po nowoczesne architektury oparte na mechanizmach uwagi (Transformery)?
+--------------------------------------------------------------------------------
+
+   1. GATGPT (1)
+   2. GPT4TS (1)
+   3. Standard attention mechanism (1)
+   4. TimesNet (1)
+
+--------------------------------------------------------------------------------
+RQ4-A7: Jakie modele generatywne oraz oparte na faktoryzacji macierzy są najczęściej implementowane do odzyskiwania utraconych informacji?
+--------------------------------------------------------------------------------
+
+   1. MICE (2)
+   2. CSDI (1)
+   3. GAN (1)
+   4. GMM (1)
+   5. Gaussian Distribution (1)
+   6. MF (1)
+   7. US-GAN (1)
+
+--------------------------------------------------------------------------------
+RQ4-A8: Jakie modele stanowią "bazę porównawczą" (baselines) w kontekście rekonstrukcji szeregów czasowych?
+--------------------------------------------------------------------------------
+
+   1. Mean (3)
+   2. Hot-Deck (2)
+   3. AR (1)
+   4. Standard attention mechanism (1)
+
+--------------------------------------------------------------------------------
+RQ4-A9: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Środowisko i klimat"?
+--------------------------------------------------------------------------------
+
+  Domena: Środowisko i klimat
+     1. IA (3)
+     2. GRIN (2)
+     3. Bi-LSTM (2)
+     4. LSTM (2)
+     5. Backward Fill (1)
+     6. Zero Imputation (1)
+     7. Forward Fill (1)
+     8. BRITS (1)
+     9. Mean Imputation (1)
+    10. CEEMD (1)
+    11. Time Series Decomposition (1)
+    12. Uni-FCNN (1)
+    13. Bi-FCNN (1)
+    14. K-step prediction (1)
+    15. Stochastic Simulation (1)
+    16. SBL (1)
+    17. IRW (1)
+    18. BP (1)
+    19. OMP (1)
+    20. Meta-learning + Transfer-learning (for NN) (1)
+    21. RMD-FSE (1)
+    22. pi - mi (1)
+    23. pi - M (1)
+    24. PI^m (1)
+    25. PI^m-mi/M (1)
+    26. PI (pisane wielkim symbolem) (1)
+    27. PI - mi (1)
+    28. pi (pisane ma?ym symbolem) (1)
+    29. PI - M (1)
+    30. EmD (1)
+    31. SVmD (1)
+    32. SsA (1)
+    33. VmD (1)
+    34. Wt (1)
+    35. LTI (1)
+    36. KNN Impute (1)
+    37. ARL Simpute (1)
+    38. GPT4TS (1)
+    39. SPIN (1)
+    40. IA+CL (1)
+    41. GATGPT (1)
+    42. CNN (1)
+    43. ARIMA (1)
+    44. SARIMA (1)
+    45. Holt-Winters (1)
+    46. DropNaN (1)
+
+--------------------------------------------------------------------------------
+RQ4-A10: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Chemia"?
+--------------------------------------------------------------------------------
+
+  Domena: Chemia
+     1. SBL (1)
+     2. IRW (1)
+     3. BP (1)
+     4. OMP (1)
+     5. LTI (1)
+     6. LSTM (1)
+     7. CNN (1)
+     8. ARIMA (1)
+     9. SARIMA (1)
+    10. Holt-Winters (1)
+    11. DropNaN (1)
+
+--------------------------------------------------------------------------------
+RQ4-A11: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Finanse i gospodarka"?
+--------------------------------------------------------------------------------
+
+  Domena: Finanse i gospodarka
+     1. GRIN (2)
+     2. Backward Fill (1)
+     3. Zero Imputation (1)
+     4. Forward Fill (1)
+     5. BRITS (1)
+     6. Mean Imputation (1)
+     7. Uni-FCNN (1)
+     8. Bi-LSTM (1)
+     9. Bi-FCNN (1)
+    10. mv_pts_correlatederr (1)
+    11. DVQ (1)
+    12. Intervension Analysis (1)
+    13. RVFL (1)
+    14. ELM (1)
+    15. EEMD-RVFL (1)
+    16. R-EEMD-RVFL (1)
+    17. VMD-RVFL (1)
+    18. SVR (1)
+    19. BP (1)
+    20. Random walk (1)
+    21. R-VMD-RVFL (1)
+    22. pi - mi (1)
+    23. pi - M (1)
+    24. PI^m (1)
+    25. PI^m-mi/M (1)
+    26. PI (pisane wielkim symbolem) (1)
+    27. PI - mi (1)
+    28. pi (pisane ma?ym symbolem) (1)
+    29. PI - M (1)
+    30. Backward Forecasting (1)
+    31. Forward Forecasting (1)
+    32. Ensemble (Forward + Backward) (1)
+    33. Filtering process (1)
+    34. KNN Impute (1)
+    35. ARL Simpute (1)
+    36. EM algorithm (1)
+    37. IA (1)
+    38. GPT4TS (1)
+    39. SPIN (1)
+    40. IA+CL (1)
+    41. GATGPT (1)
+
+--------------------------------------------------------------------------------
+RQ4-A12: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Medycyna i zdrowie"?
+--------------------------------------------------------------------------------
+
+  Domena: Medycyna i zdrowie
+     1. Zero Imputation (2)
+     2. Mean Imputation (2)
+     3. GRU-D (2)
+     4. Backward Fill (1)
+     5. GRIN (1)
+     6. Forward Fill (1)
+     7. BRITS (1)
+     8. GAN (1)
+     9. LOCF (1)
+    10. GRUI (1)
+    11. Uni-FCNN (1)
+    12. Bi-LSTM (1)
+    13. Bi-FCNN (1)
+    14. MF (1)
+    15. MTSSP (1)
+    16. MICE (1)
+    17. M-RNN (1)
+    18. KNN Impute (1)
+    19. NARX (1)
+
+--------------------------------------------------------------------------------
+RQ4-A13: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Transport"?
+--------------------------------------------------------------------------------
+
+  Domena: Transport
+     1. ETS (1)
+     2. ARIMA (1)
+     3. mv_pts_correlatederr (1)
+     4. IA (1)
+     5. GRIN (1)
+     6. GPT4TS (1)
+     7. SPIN (1)
+     8. IA+CL (1)
+     9. GATGPT (1)
+
+--------------------------------------------------------------------------------
+RQ4-A14: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Geografia"?
+--------------------------------------------------------------------------------
+
+  Domena: Geografia
+     1. IA (1)
+     2. RMD-FSE (1)
+     3. KNN Impute (1)
+     4. ARL Simpute (1)
+
+--------------------------------------------------------------------------------
+RQ4-A15: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Przemysł "?
+--------------------------------------------------------------------------------
+
+  Domena: Przemysł
+     1. Backward Forecasting (1)
+     2. Forward Forecasting (1)
+     3. Ensemble (Forward + Backward) (1)
+
+--------------------------------------------------------------------------------
+RQ4-A16: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Wytrzymałość"?
+--------------------------------------------------------------------------------
+
+  Domena: Przemysł wytrzymałościowy
+     1. Time Series Decomposition (1)
+     2. Neural Networks (1)
+
+--------------------------------------------------------------------------------
+RQ4-A17: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Energia"?
+--------------------------------------------------------------------------------
+
+  Domena: Energia
+     1. GRIN (2)
+     2. Zero Imputation (2)
+     3. Mean Imputation (2)
+     4. IA (2)
+     5. Backward Fill (1)
+     6. Forward Fill (1)
+     7. BRITS (1)
+     8. Uni-FCNN (1)
+     9. Bi-LSTM (1)
+    10. Bi-FCNN (1)
+    11. mv_pts_correlatederr (1)
+    12. Time Series Decomposition (1)
+    13. pi - mi (1)
+    14. pi - M (1)
+    15. PI^m (1)
+    16. PI^m-mi/M (1)
+    17. PI (pisane wielkim symbolem) (1)
+    18. PI - mi (1)
+    19. pi (pisane ma?ym symbolem) (1)
+    20. PI - M (1)
+    21. LTI (1)
+    22. KNN Impute (1)
+    23. IMPWE (1)
+    24. PSR (1)
+    25. Multiple Imputation (1)
+    26. Inverse Probability Weights (1)
+    27. GPT4TS (1)
+    28. SPIN (1)
+    29. IA+CL (1)
+    30. GATGPT (1)
+
+--------------------------------------------------------------------------------
+RQ4-A18: Jakie kategorie modeli są używane do poprawy jakości danych w dziedzinie "Społeczne i behawioralne"?
+--------------------------------------------------------------------------------
+
+  Domena: Społeczne i behawioralne
+     1. DLMCC (1)
+     2. Correlation (1)
+     3. Kalman filter (1)
+     4. pi - mi (1)
+     5. pi - M (1)
+     6. PI^m (1)
+     7. PI^m-mi/M (1)
+     8. PI (pisane wielkim symbolem) (1)
+     9. PI - mi (1)
+    10. pi (pisane ma?ym symbolem) (1)
+    11. PI - M (1)
+
+--------------------------------------------------------------------------------
+MODELE NIEPRZYPISANE DO RQ4-A2–A7 (pełna lista ze skoroszytu)
+--------------------------------------------------------------------------------
+
+    1. IA (4)
+    2. Time Series Decomposition (3)
+    3. BP (2)
+    4. Neural Networks (2)
+    5. ARL Simpute (1)
+    6. Backward Forecasting (1)
+    7. CEEMD (1)
+    8. CNN (1)
+    9. Correlation (1)
+   10. DLMCC (1)
+   11. DVQ (1)
+   12. EEMD-RVFL (1)
+   13. EFB (1)
+   14. ELM (1)
+   15. EM algorithm (1)
+   16. EmD (1)
+   17. Ensemble (Forward + Backward) (1)
+   18. FDW (1)
+   19. Filtering process (1)
+   20. Forward Forecasting (1)
+   21. GFTS (1)
+   22. IA+CL (1)
+   23. IRW (1)
+   24. Intervension Analysis (1)
+   25. Inverse Probability Weights (1)
+   26. K-step prediction (1)
+   27. LTI (1)
+   28. MTSSP (1)
+   29. Meta-learning + Transfer-learning (for NN) (1)
+   30. NARX (1)
+   31. OMP (1)
+   32. PI (pisane wielkim symbolem) (1)
+   33. PI - M (1)
+   34. PI - mi (1)
+   35. PI^m (1)
+   36. PI^m-mi/M (1)
+   37. PSR (1)
+   38. Pre-intervention period isolation (1)
+   39. R-EEMD-RVFL (1)
+   40. R-VMD-RVFL (1)
+   41. RMD-FSE (1)
+   42. RVFL (1)
+   43. Random walk (1)
+   44. SBL (1)
+   45. SPIN (1)
+   46. SVR (1)
+   47. SVmD (1)
+   48. SsA (1)
+   49. Stochastic Simulation (1)
+   50. TRF (1)
+   51. TRMF (1)
+   52. VMD-RVFL (1)
+   53. VmD (1)
+   54. Wt (1)
+   55. kNNE (1)
+   56. mv_pts_correlatederr (1)
+   57. pi (pisane ma?ym symbolem) (1)
+   58. pi - M (1)
+   59. pi - mi (1)
+
+--------------------------------------------------------------------------------
+SPIS WSZYSTKICH MODELI — OBECNE PRZYPISANIE (do szybkiej korekty)
+Kolumny: model | liczba | obecne_pytanie | docelowe_pytanie | uwagi
+--------------------------------------------------------------------------------
+
+  IA | 4 | — | |
+  Zero Imputation | 4 | RQ4-A3 | |
+  KNN Impute | 3 | RQ4-A3 | |
+  LSTM | 3 | RQ4-A4 | |
+  Mean Imputation | 3 | RQ4-A3 | |
+  Time Series Decomposition | 3 | — | |
+  ARIMA | 2 | RQ4-A2 | |
+  BP | 2 | — | |
+  Bi-LSTM | 2 | RQ4-A4 | |
+  GRIN | 2 | RQ4-A5 | |
+  GRU-D | 2 | RQ4-A4 | |
+  MICE | 2 | RQ4-A3,RQ4-A7 | |
+  Neural Networks | 2 | — | |
+  ARL Simpute | 1 | — | |
+  BRITS | 1 | RQ4-A4 | |
+  Backward Fill | 1 | RQ4-A3 | |
+  Backward Forecasting | 1 | — | |
+  Bi-FCNN | 1 | RQ4-A4 | |
+  CEEMD | 1 | — | |
+  CNN | 1 | — | |
+  CSDI | 1 | RQ4-A7 | |
+  Correlation | 1 | — | |
+  DLMCC | 1 | — | |
+  DVQ | 1 | — | |
+  DropNaN | 1 | RQ4-A3 | |
+  EEMD-RVFL | 1 | — | |
+  EFB | 1 | — | |
+  ELM | 1 | — | |
+  EM algorithm | 1 | — | |
+  ETS | 1 | RQ4-A2 | |
+  EmD | 1 | — | |
+  Ensemble (Forward + Backward) | 1 | — | |
+  FDW | 1 | — | |
+  Filtering process | 1 | — | |
+  Forward Fill | 1 | RQ4-A3 | |
+  Forward Forecasting | 1 | — | |
+  GAN | 1 | RQ4-A7 | |
+  GATGPT | 1 | RQ4-A5,RQ4-A6 | |
+  GFTS | 1 | — | |
+  GMM | 1 | RQ4-A7 | |
+  GPT4TS | 1 | RQ4-A6 | |
+  GRUI | 1 | RQ4-A4,RQ4-A5 | |
+  Gaussian Distribution | 1 | RQ4-A7 | |
+  Holt-Winters | 1 | RQ4-A2 | |
+  IA+CL | 1 | — | |
+  IMPWE | 1 | RQ4-A3 | |
+  IRW | 1 | — | |
+  Intervension Analysis | 1 | — | |
+  Inverse Probability Weights | 1 | — | |
+  K-step prediction | 1 | — | |
+  Kalman filter | 1 | RQ4-A2 | |
+  LOCF | 1 | RQ4-A3 | |
+  LSTNet | 1 | RQ4-A4 | |
+  LTI | 1 | — | |
+  M-LSTNet | 1 | RQ4-A4 | |
+  M-RNN | 1 | RQ4-A4 | |
+  MF | 1 | RQ4-A7 | |
+  MTSSP | 1 | — | |
+  Meta-learning + Transfer-learning (for NN) | 1 | — | |
+  Multiple Imputation | 1 | RQ4-A3 | |
+  NARX | 1 | — | |
+  OMP | 1 | — | |
+  PI (pisane wielkim symbolem) | 1 | — | |
+  PI - M | 1 | — | |
+  PI - mi | 1 | — | |
+  PI^m | 1 | — | |
+  PI^m-mi/M | 1 | — | |
+  PSR | 1 | — | |
+  Pre-intervention period isolation | 1 | — | |
+  R-EEMD-RVFL | 1 | — | |
+  R-VMD-RVFL | 1 | — | |
+  RMD-FSE | 1 | — | |
+  RVFL | 1 | — | |
+  Random walk | 1 | — | |
+  SAITS | 1 | RQ4-A4 | |
+  SARIMA | 1 | RQ4-A2 | |
+  SBL | 1 | — | |
+  SPIN | 1 | — | |
+  SVR | 1 | — | |
+  SVmD | 1 | — | |
+  SsA | 1 | — | |
+  Stochastic Simulation | 1 | — | |
+  TRF | 1 | — | |
+  TRMF | 1 | — | |
+  TimesNet | 1 | RQ4-A6 | |
+  US-GAN | 1 | RQ4-A7 | |
+  Uni-FCNN | 1 | RQ4-A4 | |
+  VMD-RVFL | 1 | — | |
+  VmD | 1 | — | |
+  Wt | 1 | — | |
+  kNNE | 1 | — | |
+  mv_pts_correlatederr | 1 | — | |
+  pi (pisane ma?ym symbolem) | 1 | — | |
+  pi - M | 1 | — | |
+  pi - mi | 1 | — | |

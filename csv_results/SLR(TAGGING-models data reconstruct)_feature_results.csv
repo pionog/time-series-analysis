@@ -1,0 +1,96 @@
+Cecha,Liczba,Procent,Lacznie_artykulow
+IA,4,2.7,148
+Zero Imputation,4,2.7,148
+LSTM,3,2.03,148
+KNN Impute,3,2.03,148
+Mean Imputation,3,2.03,148
+Time Series Decomposition,3,2.03,148
+ARIMA,2,1.35,148
+Neural Networks,2,1.35,148
+Bi-LSTM,2,1.35,148
+GRU-D,2,1.35,148
+GRIN,2,1.35,148
+MICE,2,1.35,148
+BP,2,1.35,148
+LTI,1,0.68,148
+Holt-Winters,1,0.68,148
+SARIMA,1,0.68,148
+CNN,1,0.68,148
+DropNaN,1,0.68,148
+Meta-learning + Transfer-learning (for NN),1,0.68,148
+ARL Simpute,1,0.68,148
+RMD-FSE,1,0.68,148
+LSTNet,1,0.68,148
+M-LSTNet,1,0.68,148
+Stochastic Simulation,1,0.68,148
+K-step prediction,1,0.68,148
+Bi-FCNN,1,0.68,148
+Uni-FCNN,1,0.68,148
+LOCF,1,0.68,148
+GRUI,1,0.68,148
+GAN,1,0.68,148
+DVQ,1,0.68,148
+GFTS,1,0.68,148
+GMM,1,0.68,148
+IA+CL,1,0.68,148
+GATGPT,1,0.68,148
+GPT4TS,1,0.68,148
+SPIN,1,0.68,148
+MF,1,0.68,148
+M-RNN,1,0.68,148
+MTSSP,1,0.68,148
+NARX,1,0.68,148
+EFB,1,0.68,148
+ELM,1,0.68,148
+SVR,1,0.68,148
+Random walk,1,0.68,148
+RVFL,1,0.68,148
+EEMD-RVFL,1,0.68,148
+VMD-RVFL,1,0.68,148
+R-EEMD-RVFL,1,0.68,148
+R-VMD-RVFL,1,0.68,148
+ETS,1,0.68,148
+IMPWE,1,0.68,148
+BRITS,1,0.68,148
+Backward Fill,1,0.68,148
+Forward Fill,1,0.68,148
+TimesNet,1,0.68,148
+Forward Forecasting,1,0.68,148
+Backward Forecasting,1,0.68,148
+Ensemble (Forward + Backward),1,0.68,148
+PI^m,1,0.68,148
+pi (pisane ma?ym symbolem),1,0.68,148
+PI (pisane wielkim symbolem),1,0.68,148
+PI - mi,1,0.68,148
+PI - M,1,0.68,148
+pi - M,1,0.68,148
+pi - mi,1,0.68,148
+PI^m-mi/M,1,0.68,148
+Pre-intervention period isolation,1,0.68,148
+Intervension Analysis,1,0.68,148
+Filtering process,1,0.68,148
+EM algorithm,1,0.68,148
+DLMCC,1,0.68,148
+Kalman filter,1,0.68,148
+Correlation,1,0.68,148
+IRW,1,0.68,148
+SBL,1,0.68,148
+OMP,1,0.68,148
+mv_pts_correlatederr,1,0.68,148
+FDW,1,0.68,148
+TRF,1,0.68,148
+kNNE,1,0.68,148
+TRMF,1,0.68,148
+US-GAN,1,0.68,148
+SAITS,1,0.68,148
+CSDI,1,0.68,148
+Gaussian Distribution,1,0.68,148
+CEEMD,1,0.68,148
+SVmD,1,0.68,148
+EmD,1,0.68,148
+VmD,1,0.68,148
+SsA,1,0.68,148
+Wt,1,0.68,148
+PSR,1,0.68,148
+Inverse Probability Weights,1,0.68,148
+Multiple Imputation,1,0.68,148

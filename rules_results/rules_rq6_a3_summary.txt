@@ -1,0 +1,20 @@
+Podsumowanie RQ6-A3
+
+Przedziały missing rate: co 10% (0-10%, 10-20%, ..., 90-100%).
+Nieznany procent = brak_wartosci | nienumeryczna_wartosc | ujemna_wartosc | poza_zakresem.
+
+A) Rekonstrukcja vs zadanie końcowe (bezpośrednio):
+   - konfiguracje z oboma typami metryk: 0
+   - pełna zgodność top-1: 0
+   - częściowa zgodność: 0
+   - brak zgodności: 0
+   - tylko jeden typ metryki w konfiguracji: 258
+   UWAGA: W tym pliku SLR prawie wyłącznie metryki rekonstrukcji;
+   pełna odpowiedź na RQ6-A3 wymaga też danych o metrykach zadania końcowego.
+
+B) Spójność wielu metryk rekonstrukcji (proxy w tym pliku):
+   - konfiguracje z >=2 metrykami: 99
+   - ten sam zwycięzca na wszystkich metrykach: 71
+   - różni zwycięzcy: 28
+   - tylko 1 metryka: 159
+   - odsetek spójności multi-metric: 71.7%

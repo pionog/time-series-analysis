@@ -1,0 +1,90 @@
+model;gemini;auto;zgodnosc;uwagi
+ARIMA;1;1;TAK;
+ETS;1;1;TAK;
+Holt-Winters;1;1;TAK;
+Kalman filter;1;1;TAK;
+SARIMA;1;1;TAK;
+Zero Imputation;1;1;TAK;imputacja → statystyczne (nie ANN)
+Mean Imputation;1;1;TAK;
+MICE;1;1;TAK;statystyczna imputacja (nie generatywna w sensie GAN)
+Backward Fill;1;1;TAK;
+DropNaN;1;1;TAK;
+Forward Fill;1;1;TAK;
+LOCF;1;1;TAK;
+Multiple Imputation;1;1;TAK;
+IMPWE;1?;1;TAK;waga odwrotności prawdopod. – metoda statystyczna
+Inverse Probability Weights;1;1;TAK;
+KNN Impute;2;2;TAK;kNN to klasyczne ML
+LSTM;3;3;TAK;
+Bi-LSTM;3;3;TAK;
+GRU-D;3;3;TAK;
+GRUI;3;3;TAK;
+BRITS;3;3;TAK;RNN do imputacji
+M-RNN;3;3;TAK;
+Bi-FCNN;5?;5;TAK;FCNN – splotowe/czasowe, nie czyste RNN
+Uni-FCNN;5?;5;TAK;
+LSTNet;9;9;TAK;hybryda CNN+RNN
+M-LSTNet;9;9;TAK;
+SAITS;4;4;TAK;self-attention imputation
+GRIN;6;6;TAK;GNN
+GATGPT;6;6;TAK;graf + transformer → głównie GNN
+GPT4TS;4;4;TAK;
+Standard attention mechanism;4;4;TAK;
+TimesNet;4;4?;CZĘŚCIOWO;TimesNet ma też warstwy czasowe – 4 lub 5
+CNN;5;5;TAK;
+CSDI;8;8;TAK;diffusion / generatywne
+GAN;8;8;TAK;
+US-GAN;8;8;TAK;
+GMM;8;8;TAK;probabilistyczny
+Gaussian Distribution;1?;8;NIE;model rozkładu – raczej generatywne/probabilistyczne
+DVQ;8?;8;TAK;vector quantization generatywne
+MF;7;7;TAK;matrix factorization
+TRMF;7;7;TAK;
+CEEMD;7;7;TAK;dekompozycja
+EmD;7;7;TAK;
+SVmD;7;7;TAK;
+VmD;7;7;TAK;
+SsA;7;7;TAK;
+Wt;7;7;TAK;
+Time Series Decomposition;1;7;NIE;dekompozycja szeregu – kategoria 7
+BP;2?;2;TAK;perceptron wielowarstwowy
+ELM;2;2;TAK;
+SVR;2;2;TAK;
+RVFL;2;2;TAK;
+kNNE;2;2;TAK;
+EEMD-RVFL;9;9;TAK;hybryda dekompozycja + RVFL
+VMD-RVFL;9;9;TAK;
+R-EEMD-RVFL;9;9;TAK;
+R-VMD-RVFL;9;9;TAK;
+Meta-learning + Transfer-learning (for NN);9;9;TAK;
+Ensemble (Forward + Backward);9;9;TAK;
+IA+CL;9?;9;TAK;hybryda
+GFTS;10?;10;TAK;fuzzy time series
+EM algorithm;1;1;TAK;
+Random walk;1;1;TAK;
+Stochastic Simulation;1;1;TAK;
+LTI;1;1;TAK;model liniowy
+OMP;1;1;TAK;sparse recovery
+SBL;1;1;TAK;
+IRW;1;1;TAK;
+Forward Forecasting;1;1;TAK;
+Backward Forecasting;1;1;TAK;
+Filtering process;1;1;TAK;
+Intervension Analysis;1;1;TAK;
+Pre-intervention period isolation;1;1;TAK;
+mv_pts_correlatederr;1;1;TAK;
+PSR;1;7?;CZĘŚCIOWO;rekonstrukcja przestrzeni fazowej – bliżej dekompozycji
+NARX;1?;3;NIE;sieć autoregresyjna z wejściem zewnętrznym – raczej RNN (3)
+ARL Simpute;7?;1?;CZĘŚCIOWO;autoregresyjna imputacja – 1 lub 7
+Neural Networks;2?;X;NIE;meta-tag zbyt ogólny – wymaga rozwinięcia lub X
+IA;1;X;NIE;w SLR często mylone z metryką Index of Agreement
+Correlation;1;X;NIE;opis metody, nie model rekonstrukcji
+K-step prediction;1;X;NIE;opis zadania, nie architektura
+PI (wszystkie warianty);1;X;NIE;metryki/wskaźniki, nie modele
+DLMCC;X;7?;CZĘŚCIOWO;dynamic linear model – 1 lub 7
+MTSSP;X;X;TAK;brak jednoznacznej kategorii w skoroszycie
+RMD-FSE;X;7?;CZĘŚCIOWO;robust matrix decomposition – prawdop. 7
+SPIN;X;6;NIE;graph imputation – powinno być 6 (GNN)
+TRF;X;8?;CZĘŚCIOWO;w danych przy MTGNN/Generative Flows – raczej 8 niż X
+EFB;2?;X;CZĘŚCIOWO;niejasny akronim w skoroszycie
+FDW;1?;X;CZĘŚCIOWO;niejasny akronim

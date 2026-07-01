@@ -1,0 +1,916 @@
+ID 2 | GinAR: An End-To-End Multivariate Time Series Forecasting Model Suitable for Variable Missing
+- liczba konfiguracji (wierszy): 12
+- liczba datasetów: 3
+  datasety: China AQI, METR-LA, PEMS08
+- liczba modeli bazowych: 1
+  modele: STID
+- liczba poziomów missing rate: 4
+  missing rate: 25, 50, 75, 90
+- użyte metryki: MAE (12), Dataset domain (3)
+  - top dla Dataset domain: Traffic (2)
+  - top dla MAE: IA (12)
+
+ID 7 | Time series forecasting with missing values
+- liczba konfiguracji (wierszy): 36
+- liczba datasetów: 6
+  datasety: Jenkins-Box Gas Furnace, Mackey-Glass, Poland's electricity load, Sinc, Sine, Sunspot
+- liczba modeli bazowych: 1
+  modele: LSSVM
+- liczba poziomów missing rate: 6
+  missing rate: 10, 15, 20, 25, 5, 50
+- użyte metryki: NRMSE (36), Dataset domain (6)
+  - top dla Dataset domain: Not specified (2)
+  - top dla NRMSE: LTI (25)
+
+ID 8 | Time-Series Forecasting to Fill Missing Data in IoT Sensor Data
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 9 | Time series forecasting with missing data using neural network and meta-transfer learning
+- liczba konfiguracji (wierszy): 1
+- liczba datasetów: 1
+  datasety: Mexico
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: Dataset domain (1)
+  - top dla Dataset domain: Climate (1)
+
+ID 10 | Feasibility Analysis of State-of-the-Art Time Series Models for Wind Power Forecasting with Irregular Missing Data
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 11 | Neural Networks Fusion for Enhanced Time Series Forecasting with Missing Data
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 16 | Imputation for the analysis of missing values and prediction of time series data
+- liczba konfiguracji (wierszy): 6
+- liczba datasetów: 1
+  datasety: Not specified
+- liczba modeli bazowych: 1
+  modele: AR
+- liczba poziomów missing rate: 3
+  missing rate: 10, 15, 20
+- użyte metryki: NRMSE (6), Dataset domain (2)
+  - top dla Dataset domain: Not specified (2)
+  - top dla NRMSE: ARL Simpute (6)
+
+ID 17 | Missing and noisy data in nonlinear time-series prediction
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 18 | Time-series data prediction based on reconstruction of missing samples and selective ensembling of FIR neural networks
+- liczba konfiguracji (wierszy): 12
+- liczba datasetów: 2
+  datasety: BanLuang, Sunspot
+- liczba modeli bazowych: 1
+  modele: FIR
+- liczba poziomów missing rate: 6
+  missing rate: 10, 12,5, 15, 2,5, 5, 7,5
+- użyte metryki: NRMSE (12), Dataset domain (2)
+  - top dla Dataset domain: Climate (2)
+  - top dla NRMSE: RMD-FSE (12)
+
+ID 19 | Multilevel prediction of missing time series dam displacements data based on artificial neural networks voting evaluation
+- liczba konfiguracji (wierszy): 1
+- liczba datasetów: 1
+  datasety: BosniaDam
+- liczba modeli bazowych: 1
+  modele: Not specified
+- liczba poziomów missing rate: 0
+- użyte metryki: Dataset domain (1), MAE (1)
+  - top dla Dataset domain: Endurance (1)
+  - top dla MAE: (A)NN (1)
+
+ID 20 | Time Series Prediction as a Problem of Missing Values: Application to ESTSP2007 and NN3 Competition Benchmarks
+- liczba konfiguracji (wierszy): 2
+- liczba datasetów: 2
+  datasety: ESTSP2007, NN3
+- liczba modeli bazowych: 1
+  modele: Not specified
+- liczba poziomów missing rate: 0
+- użyte metryki: Dataset domain (2)
+  - top dla Dataset domain: Finance (Stock) (1)
+
+ID 21 | Robust Time Series Prediction with Missing Data Based on Deep Convolutional Neural Networks
+- liczba konfiguracji (wierszy): 1
+- liczba datasetów: 1
+  datasety: Exchange-Rate
+- liczba modeli bazowych: 1
+  modele: Not specified
+- liczba poziomów missing rate: 0
+- użyte metryki: Dataset domain (1), CORR (1), RSE (1)
+  - top dla Dataset domain: Finance (1)
+  - top dla CORR: M-LSTNet (1)
+  - top dla RSE: M-LSTNet (1)
+
+ID 22 | Any-Time Methods for Time-Series Prediction with Missing Observations
+- liczba konfiguracji (wierszy): 8
+- liczba datasetów: 1
+  datasety: Not specified
+- liczba modeli bazowych: 1
+  modele: AR
+- liczba poziomów missing rate: 4
+  missing rate: 0, 10, 20, 30
+- użyte metryki: MSE (8), Dataset domain (2)
+  - top dla Dataset domain: Not specified (2)
+  - top dla MSE: AERR (4)
+
+ID 23 | Nonlinear Time-Series Prediction with Missing and Noisy Data
+- liczba konfiguracji (wierszy): 1
+- liczba datasetów: 1
+  datasety: Sunspot
+- liczba modeli bazowych: 1
+  modele: (A)NN
+- liczba poziomów missing rate: 0
+- użyte metryki: Dataset domain (1), MSE (1)
+  - top dla Dataset domain: Climate (1)
+  - top dla MSE: Stochastic Simulation (1)
+
+ID 24 | Time series prediction with missing values: a bidirectional fully connected neural network approach
+- liczba konfiguracji (wierszy): 5
+- liczba datasetów: 1
+  datasety: Not specified
+- liczba modeli bazowych: 1
+  modele: (A)NN
+- liczba poziomów missing rate: 0
+- użyte metryki: Dataset domain (5), RMSE (5)
+  - top dla Dataset domain: Not specified (5)
+  - top dla RMSE: Bi-FCNN (5)
+
+ID 25 | Predicting Missing Image in Remote Sensing Time Series Using Spatial-Temporal-Spectral Data
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 58 | High-Performance Time Series Prediction With Predictive Error Compensated Wavelet Neural Networks
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 61 | End-to-end Multi-task Learning of Missing Value Imputation and Forecasting in Time-Series Data
+- liczba konfiguracji (wierszy): 1
+- liczba datasetów: 1
+  datasety: Self-generated
+- liczba modeli bazowych: 1
+  modele: (A)NN
+- liczba poziomów missing rate: 0
+- użyte metryki: Dataset domain (1), AUC (1)
+  - top dla Dataset domain: Medicine (1)
+  - top dla AUC: GAN (1)
+
+ID 62 | Double quantization forecasting method for filling missing data in the CATS time series
+- liczba konfiguracji (wierszy): 1
+- liczba datasetów: 1
+  datasety: CATS
+- liczba modeli bazowych: 1
+  modele: AR
+- liczba poziomów missing rate: 0
+- użyte metryki: Dataset domain (1), MSE (1)
+  - top dla Dataset domain: Finance (1)
+  - top dla MSE: DVQ (1)
+
+ID 63 | Missing Data Dynamic Forecasting of Fuzzy Time Series Based on Gaussian Mixture Model
+- liczba konfiguracji (wierszy): 2
+- liczba datasetów: 2
+  datasety: ChinaEndMonth, ChinaIndustrial
+- liczba modeli bazowych: 1
+  modele: Not specified
+- liczba poziomów missing rate: 0
+- użyte metryki: Dataset domain (2), RMSE (2)
+  - top dla Dataset domain: Endurance (2)
+  - top dla RMSE: GFTS (2)
+
+ID 64 | GinAR+: A Robust End-to-End Framework for Multivariate Time Series Forecasting With Missing Values
+- liczba konfiguracji (wierszy): 12
+- liczba datasetów: 3
+  datasety: China AQI, METR-LA, PEMS08
+- liczba modeli bazowych: 1
+  modele: STID
+- liczba poziomów missing rate: 4
+  missing rate: 25, 50, 75, 90
+- użyte metryki: MAE (12), Dataset domain (3)
+  - top dla Dataset domain: Traffic (2)
+  - top dla MAE: IA+CL (12)
+
+ID 66 | Spline cell-based hidden Markov approach for singular time series forecasting in performance degradation trend analysis
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 73 | Effective Prediction of Missing Data on Apache Spark over Multivariable Time Series
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 74 | Temporal Dynamic Matrix Factorization for Missing Data Prediction in Large Scale Coevolving Time Series
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 75 | Traffic prediction, data compression, abnormal data detection and missing data imputation: An integrated study based on the decomposition of traffic time series
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 76 | An Efficient Missing Data Prediction Method Based on Kronecker Compressive Sensing in Multivariable Time Series
+- liczba konfiguracji (wierszy): 12
+- liczba datasetów: 3
+  datasety: GSA, Motes, Sea-Surface Temperature
+- liczba modeli bazowych: 1
+  modele: Not specified
+- liczba poziomów missing rate: 4
+  missing rate: 50, 80, 90, 95
+- użyte metryki: RMSE (12)
+  - top dla RMSE: SBL (12)
+
+ID 77 | LIFE: Learning Individual Features for Multivariate Time Series Prediction with Missing Values
+- liczba konfiguracji (wierszy): 1
+- liczba datasetów: 0
+- liczba modeli bazowych: 1
+  modele: LIFE
+- liczba poziomów missing rate: 0
+- użyte metryki: AUC (1)
+  - top dla AUC: CME-PDTW (1)
+
+ID 78 | MTSSP: Missing Value Imputation in Multivariate Time Series for Survival Prediction
+- liczba konfiguracji (wierszy): 2
+- liczba datasetów: 2
+  datasety: MIMIC-III, MIMIC-IV
+- liczba modeli bazowych: 1
+  modele: Not specified
+- liczba poziomów missing rate: 0
+- użyte metryki: Dataset domain (2), RMSE (2)
+  - top dla Dataset domain: Chemical (2)
+  - top dla RMSE: MTSSP (2)
+
+ID 104 | A dual-path architecture based on time series decomposition and degradation correction for remaining useful life prediction of aero-engine
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 106 | Probabilistic Forecasting of Irregularly Sampled Time Series with Missing Values via Conditional Normalizing Flows
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 107 | The Development of an LSTM Model to Predict Time Series Missing Data of Air Temperature inside Fattening Pig Houses
+- liczba konfiguracji (wierszy): 9
+- liczba datasetów: 1
+  datasety: Imcheon-myeon
+- liczba modeli bazowych: 1
+  modele: Not specified
+- liczba poziomów missing rate: 0
+- użyte metryki: RMSE (9), MAPE (9), Dataset domain (1)
+  - top dla Dataset domain: Climate (1)
+  - top dla RMSE: Bi-LSTM (6)
+  - top dla MAPE: Bi-LSTM (6)
+
+ID 117 | Time-series NARX feedback neural network for forecasting impedance cardiography ICG missing points: a predictive model
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 121 | Reconstruction and Prediction of Chaotic Time Series with Missing Data: Leveraging Dynamical Correlations Between Variables
+- liczba konfiguracji (wierszy): 20
+- liczba datasetów: 1
+  datasety: Self-generated
+- liczba modeli bazowych: 1
+  modele: Not specified
+- liczba poziomów missing rate: 5
+  missing rate: 10, 20, 30, 40, 50
+- użyte metryki: RMSE (20), MAPE (20), Dataset domain (4)
+  - top dla Dataset domain: Not specified (4)
+  - top dla RMSE: LNS_PM (14)
+  - top dla MAPE: LNS_PM (16)
+
+ID 126 | Reconstructing Missing Variables for Multivariate Time Series Forecasting via Conditional Generative Flows
+- liczba konfiguracji (wierszy): 40
+- liczba datasetów: 4
+  datasety: ECG5000, METR-LA, solar, traffic
+- liczba modeli bazowych: 3
+  modele: ASTGCN, MTGNN, T-GCN
+- liczba poziomów missing rate: 3
+  missing rate: 15, 25, 5
+- użyte metryki: RMSE (40), MAE (40)
+  - top dla RMSE: TRF (39)
+  - top dla MAE: TRF (40)
+
+ID 128 | An intelligent interval forecasting system based on fuzzy time series and error distribution characteristics for air quality index
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 129 | Denoising or distortion: Does decomposition-reconstruction modeling paradigm provide a reliable prediction for crude oil price time series?
+- liczba konfiguracji (wierszy): 6
+- liczba datasetów: 1
+  datasety: WTI
+- liczba modeli bazowych: 1
+  modele: Not specified
+- liczba poziomów missing rate: 0
+- użyte metryki: Prediction Horizon (6), RMSE (6), MAPE (6), MAE (6), MASE (6), Dstat (6), Dataset domain (2)
+  - top dla Dataset domain: Finance (2)
+  - top dla Prediction Horizon: 1 (2)
+  - top dla RMSE: EEMD-RVFL (5)
+  - top dla MAPE: EEMD-RVFL (6)
+  - top dla MAE: EEMD-RVFL (5)
+  - top dla MASE: EEMD-RVFL (3)
+  - top dla Dstat: EEMD-RVFL (4)
+
+ID 131 | A residual GRU method with deep cross fusion for Alzheimer's disease progression prediction using missing variable-length time series data
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 139 | Degradation Modelling and Remaining Useful Life Prediction Methods Based on Time Series Generative Prediction Networks
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 140 | Forecasting interrupted time series
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 142 | Conditional Time Series Modeling for Pneumoconiosis Progression Risk Prediction with Missing Data
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 143 | Sensor Data Quality in Ships: A Time Series Forecasting Approach to Compensate for Missing Data and Drift in Measurements of Speed through Water Sensors
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 148 | Time Series Prediction with Missing Data by an Iterated Deep Gaussian Process
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 150 | A novel wind power forecasting system integrating time series refining, nonlinear multi-objective optimized deep learning and linear error correction
+- liczba konfiguracji (wierszy): 4
+- liczba datasetów: 1
+  datasety: Not specified
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: RMSE (4), MAE (4), MSE (4), PCC (COR) (4), STD (4), R2 (4), LMI (4), TIC (4), IA (4)
+  - top dla RMSE: SVmD (4)
+  - top dla MAE: SVmD (4)
+  - top dla MSE: SVmD (4)
+  - top dla PCC (COR): SVmD (4)
+  - top dla STD: SVmD (4)
+  - top dla R2: SVmD (4)
+  - top dla LMI: SVmD (4)
+  - top dla TIC: SVmD (4)
+  - top dla IA: SVmD (4)
+
+ID 152 | Evaluating the Impact of Error-Bounded Lossy Compression on Time Series Forecasting
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 153 | Time Series Forecasting with Missing Data Using Generative Adversarial Networks and Bayesian Inference
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 154 | Effects of missing data imputation methods on univariate blood pressure time series data analysis and forecasting with ARIMA and LSTM
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 156 | Assessment of Time Series Model for Predicting Long-Interval Consecutive Missing Values in Air Quality Dataset
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 158 | kNN estimators for time series prediction: a functional partial linear single index model with missing responses and error-prone covariates
+- liczba konfiguracji (wierszy): 12
+- liczba datasetów: 2
+  datasety: Annual Energy Review, Self-generated
+- liczba modeli bazowych: 2
+  modele: FPLSIM+Kernel, FPLSIM+kNN
+- liczba poziomów missing rate: 6
+  missing rate: 10,2, 22,4, 30,6, 40,8, ~17, ~45
+- użyte metryki: MSE (12), Dataset domain (2)
+  - top dla Dataset domain: Electrical (2)
+  - top dla MSE: KNN Impute (7)
+
+ID 159 | TMF-GNN: Temporal matrix factorization-based graph neural network for multivariate time series forecasting with missing values
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 164 | Improving traffic time-series predictability by imputing continuous non-random missing data
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 165 | An improved self-attention for long-sequence time-series data forecasting with missing values
+- liczba konfiguracji (wierszy): 16
+- liczba datasetów: 5
+  datasety: ECL, ETT, Exchange Rate, Influenza-Like Illness, WTH
+- liczba modeli bazowych: 3
+  modele: Autoformer, Informer, Transformer
+- liczba poziomów missing rate: 2
+  missing rate: 25, 5
+- użyte metryki: MAE (16), MSE (16), RMSE (15), RSquare (15)
+  - top dla RMSE: Decay attention (10)
+  - top dla MAE: Decay attention (10)
+  - top dla MSE: Decay attention (10)
+  - top dla RSquare: Decay attention (8)
+
+ID 167 | BIASED TEMPORAL CONVOLUTION GRAPH NETWORK FOR TIME SERIES FORECASTING WITH MISSING VALUES
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 171 | Uncertainty-Aware Self-Attention Model for Time Series Prediction with Missing Values
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 181 | Automatic prediction modeling for Time-Series degradation data via Genetic algorithm with applications in nuclear energy
+- liczba konfiguracji (wierszy): 1
+- liczba datasetów: 1
+  datasety: No data degradation in the pipeline
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 192 | A deep learning-based time series model with missing value handling techniques to predict various types of liquid cargo traffic
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 194 | Online Learning for Time Series Prediction of AR Model with Missing Data
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 198 | Classifying unevenly spaced clinical time series data using forecast error approximation based bottom-up (FeAB) segmented time delay neural network
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 201 | Environmental Time Series Prediction with Missing Data by Machine Learning and Dynamics Recostruction
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 204 | Recursive Least Square: RLS Method-Based Time Series Data Prediction for Many Missing Data
+- liczba konfiguracji (wierszy): 1
+- liczba datasetów: 1
+  datasety: Focus only on missing values imputation without measurement of metrics, only visual comparisons provided as results
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 205 | Wind Power Interval Prediction with Adaptive Rolling Error Correction Based on PSR-BLS-QR
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 211 | Emergency Medical Services Calls Analysis for Trend Prediction during Epidemic Outbreaks: Interrupted Time Series Analysis on 2020–2021 COVID-19 Epidemic in Lazio, Italy
+- liczba konfiguracji (wierszy): 1
+- liczba datasetów: 1
+  datasety: Focus on correlation between EMS and COVID-19 waves outbreaks, not related to the SLR
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 212 | Prediction of environmental missing data time series by Support Vector Machine Regression and Correlation Dimension estimation
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 217 | Handling Massive Proportion of Missing Labels in Multivariate Long-Term Time Series Forecasting
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 218 | Joint modeling of local and global temporal dynamics for multivariate time series forecasting with missing values
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 223 | Bayesian sigmoid-type time series forecasting with missing data for greenhouse crops
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 227 | Missing data in wind farm time series: Properties and effect on forecasts
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 235 | TempoMAGE: A deep learning framework that exploits the causal dependency between time-series data to predict histone marks in open chromatin regions at time-points with missing ChIP-seq datasets
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 239 | A Novel Framework Based on CNN-LSTM Neural Network for Prediction of Missing Values in Electricity Consumption Time-Series Datasets
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 241 | Comparison of missing data imputation methods in time series forecasting
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 243 | A novel approach for missing data prediction in coevolving time series
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 244 | Forecasting Error Pattern-Based Anomaly Detection in Multivariate Time Series
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 249 | A method for predicting large-area missing observations in Landsat time series using spectral-temporal metrics
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 263 | Robust kernel adaptive filters based on mean p-power error for noisy chaotic time series prediction
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 265 | Multi-step prediction of time series with random missing data
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 283 | Forward and backward forecasting ensembles for the estimation of time series missing data
+- liczba konfiguracji (wierszy): 24
+- liczba datasetów: 2
+  datasety: M3, NN3
+- liczba modeli bazowych: 3
+  modele: FFNN, Holt's Expotential Smoothing, MA
+- liczba poziomów missing rate: 4
+  missing rate: 10, 20, 30, 40
+- użyte metryki: SMAPE (24)
+  - top dla SMAPE: Ensemble (Forward + Backward) (24)
+
+ID 284 | Period-aware content attention RNNs for time series forecasting with missing values
+- liczba konfiguracji (wierszy): 33
+- liczba datasetów: 6
+  datasety: AEP : Appliances Energy Prediction, AQ : Air Quality, NAB (Numenta Anomaly Benchmark), OLD : Ozone Level Detection, PSE(Polish Electricity), PW (Polish Weather)
+- liczba modeli bazowych: 1
+  modele: RNN
+- liczba poziomów missing rate: 6
+  missing rate: 10, 15, 20, 30, 40, 5
+- użyte metryki: SMAPE (32), MSE (15)
+  - top dla SMAPE: pi - mi (7)
+  - top dla MSE: PI^m-mi/M (9)
+
+ID 285 | Using forecast modelling to evaluate treatment effects in single-group interrupted time series analysis
+- liczba konfiguracji (wierszy): 3
+- liczba datasetów: 1
+  datasety: ENR
+- liczba modeli bazowych: 3
+  modele: ARIMA, Holt-Winters, Linear Regression
+- liczba poziomów missing rate: 0
+- użyte metryki: MAPE (2), MAD (2), BIC (2)
+  - top dla MAPE: ARIMA (1)
+  - top dla MAD: ARIMA (1)
+  - top dla BIC: ARIMA (1)
+
+ID 286 | Forecasting Construction Cost Index Using Interrupted Time-Series
+- liczba konfiguracji (wierszy): 1
+- liczba datasetów: 1
+  datasety: California'a Proposition 99
+- liczba modeli bazowych: 1
+  modele: ARIMA (Interrupted ARIMA)
+- liczba poziomów missing rate: 0
+- użyte metryki: RMSE (1), MAPE (1), MAE (1)
+  - top dla RMSE: Intervension Analysis (1)
+  - top dla MAPE: Intervension Analysis (1)
+  - top dla MAE: Intervension Analysis (1)
+
+ID 297 | Forecasting etimated missing time series data
+- liczba konfiguracji (wierszy): 1
+- liczba datasetów: 1
+  datasety: ASE
+- liczba modeli bazowych: 1
+  modele: ARIMA
+- liczba poziomów missing rate: 1
+  missing rate: not given
+- użyte metryki: RMSE (1), MSE (1)
+  - top dla RMSE: ARIMA with Filtering (1)
+  - top dla MSE: ARIMA with Filtering (1)
+
+ID 300 | Online time series prediction with missing data
+- liczba konfiguracji (wierszy): 6
+- liczba datasetów: 1
+  datasety: Generated
+- liczba modeli bazowych: 3
+  modele: AR mixture, Setting 1 (sanity check), heteroscedasticity
+- liczba poziomów missing rate: 2
+  missing rate: 10%, 20%
+- użyte metryki: MSE (6)
+  - top dla MSE: EM (Kalman Filter) (2)
+
+ID 302 | Improvement of forecasting robustness of time series model for thermal error on CNC machine tool
+- liczba konfiguracji (wierszy): 1
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: RMSE (1), MSD (1), Maximum Absolute Error (1)
+  - top dla RMSE: ALIX (1)
+  - top dla MSD: ALIX (1)
+  - top dla Maximum Absolute Error: ALIX (1)
+
+ID 361 | Forecasting economic time series with measurement error
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 364 | Missing and noisy data on nonlinear time-series prediction
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 367 | Prediction of chaotic time series in the presence of measurement error: The importance of initial conditions
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 368 | Generalized unscented Kalman filtering based radial basis function neural network for the prediction of ground radioactivity time series with missing data
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 372 | Missing data and forecasting in multivariate time series: An application of the common components dynamic linear model
+- liczba konfiguracji (wierszy): 1
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: RMSE (1), MSE (1), MAD (1), Log-likelihood (1), Log-likelihood ratio (1)
+  - top dla RMSE: DLMCC (1)
+  - top dla MSE: DLMCC (1)
+  - top dla MAD: DLMCC (1)
+  - top dla Log-likelihood: DLMCC (1)
+  - top dla Log-likelihood ratio: DLMCC (1)
+
+ID 381 | Reducing error in neural network time series forecasting
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 403 | A Co-training approach for time series prediction with missing data
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 418 | Forecasting non-seasonal time series with missing observations
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 428 | A Forecasting Method for Metering Error of Electric Energy Based on    Intrinsic Time-Scale Decomposition and Time Series Analysis
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 432 | Predicting missing parts in time series using uncertainty theory
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 444 | Reduce Forecasting Errors by Low Order Nonlinear Transformations for    Complex Time Series
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 446 | Forecasting Method Based on Attenuated LSTM for Time Series With Missing    Data
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 447 | Reconstructing Missing Variables for Multivariate Time Series Forecasting via Conditional Generative Flows
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 448 | Research on Hybrid Forecasting Method with Time Series and Intelligent    Error Modification
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 456 | Double quantization forecasting method for filling missing data in the    CATS time series
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 458 | ERROR FORMULAS FOR OPTIMAL LINEAR FILTERING, PREDICTION AND    INTERPOLATION OF STATIONARY TIME SERIES
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 460 | DEEP HYBRID NEURAL NETWORKS FOR PREDICTING MISSING SEGMENTS IN sEMG TIME    SERIES DATA
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 463 | A Granule-Based Time Series Forecasting (TSF) Model for Underwater    Combat with Missing Data
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 465 | Recursive Least Square: RLS Method-Based Time Series Data Prediction for    Many Missing Data
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 472 | Multilevel Prediction of Missing Time Series Dam Displacements Data    Based on Artificial Neural Networks Voting Evaluation
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 473 | Time series prediction as a problem of missing values: Application to    ESTSP2007 and NN3 competition benchmarks
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 474 | Joint Modeling of Local and Global Temporal Dynamics for Multivariate    Time Series Forecasting with Missing Values
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 475 | TIME-SERIES FATIGUE DAMAGE STATES FORECASTING AND PROBABILISTIC    ENVIRONMENTAL FATIGUE LIFE PREDICTION USING MARKOV-CHAIN-MONTE-CARLO    TECHNIQUES
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 476 | Spline Cell-Based Hidden Markov Approach for Singular Time Series    Forecasting in Performance Degradation Trend Analysis
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 478 | APPLICATION OF HYBRID MODELS IN FORECASTING OF MISSING DATA IN HIGH    FREQUENCY TIME SERIES WITH SYSTEMATIC GAPS
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 480 | Time-series data prediction based on reconstruction of missing samples    and selective ensembling of FIR neural networks
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+
+ID 485 | Traffic Prediction, Data Compression, Abnormal Data Detection and    Missing Data Imputation: An Integrated Study Based on the Decomposition    of Traffic Time Series
+- liczba konfiguracji (wierszy): 0
+- liczba datasetów: 0
+- liczba modeli bazowych: 0
+- liczba poziomów missing rate: 0
+- użyte metryki: brak
+

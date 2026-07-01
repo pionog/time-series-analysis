@@ -1,0 +1,53 @@
+Podsumowanie algorytmów z pliku: SLR(TAGGING-best data recon SUMMARY).csv
+Liczba unikalnych algorytmów: 47
+Łączna liczba wystąpień algorytmów: 104
+Liczba artykułów z przetworzonych wierszy: 49
+
+Algorytm; Łączne wystąpienia; Artykuły; liczba wystąpień w kolumnach
+SVmD; 10; 1; RMSE: 1, MAE: 1, MSE: 1, PCC (COR): 1, STD: 1, R2: 1, LMI: 1, TIC: 1, IA: 1, ND: 1
+EEMD-RVFL; 5; 1; RMSE: 1, MAPE: 1, MAE: 1, MASE: 1, Dstat: 1
+KNN Impute; 5; 3; MAE: 2, MSE: 2, WMAPE: 1
+TMF; 5; 1; RMSE: 1, MAPE: 1, MAE: 1, NRMSE: 1, ND: 1
+TempoMAGE; 5; 1; AUC: 1, Accuracy: 1, Precision: 1, Recall: 1, AUPRC: 1
+DLMCC; 5; 1; RMSE: 1, MSE: 1, MAD: 1, Log-likelihood: 1, Log-likelihood ratio: 1
+UASA; 4; 1; MSE: 1, AUC: 1, F1-Score: 1, Accuracy: 1
+FeAB; 4; 1; Accuracy: 1, Precision: 1, Specifity: 1, Sensivity: 1
+GAN; 3; 2; RMSE: 1, MAPE: 1, AUC: 1
+linear interpolation; 3; 1; MAPE: 1, MAE: 1, MSE: 1
+LGnet; 3; 1; RMSE: 1, MAPE: 1, MAE: 1
+GGPF; 3; 1; MAPE: 1, MAE: 1, MSE: 1
+Holt-Winters; 3; 1; MAPE: 1, MAD: 1, BIC: 1
+Intervension Analysis; 3; 1; RMSE: 1, MAPE: 1, MAE: 1
+ALIX; 3; 1; RMSE: 1, MSD: 1, Maximum Absolute Error: 1
+x; 3; 2; MAPE: 1, SMAPE: 2
+M-LSTNet; 2; 1; CORR: 1, RSE: 1
+Bi-LSTM; 2; 1; RMSE: 1, MAPE: 1
+LNS_PM; 2; 1; RMSE: 1, MAPE: 1
+BiTGraph; 2; 1; RMSE: 1, MAE: 1
+ARIMA with Filtering; 2; 1; RMSE: 1, MSE: 1
+TRF; 2; 1; RMSE: 1, MAE: 1
+IA; 1; 1; MAE: 1
+LTI; 1; 1; NRMSE: 1
+ARL Simpute; 1; 1; NRMSE: 1
+RMD-FSE; 1; 1; MSE: 1
+(A)NN; 1; 1; MAE: 1
+AERR / AELR; 1; 1; MSE: 1
+Stochastic Simulation; 1; 1; MSE: 1
+Bi-FCNN; 1; 1; RMSE: 1
+DVQ; 1; 1; MSE: 1
+GFTS; 1; 1; RMSE: 1
+IA+CL; 1; 1; MAE: 1
+CME-PDTW; 1; 1; AUC: 1
+MTSSP; 1; 1; RMSE: 1
+Decay attention; 1; 1; MSE: 1
+IPI; 1; 1; MAE: 1
+GPR; 1; 1; NRMSE: 1
+EM DBN; 1; 1; MAPE: 1
+KRLP; 1; 1; MSE: 1
+Ensemble (Forward + Backward); 1; 1; SMAPE: 1
+pi - mi; 1; 1; SMAPE: 1
+PI^m-mi/M; 1; 1; MSE: 1
+Authors' algorithm (not named); 1; 1; MSE: 1
+TimesNet; 1; 1; MAE: 1
+MICN; 1; 1; MSE: 1
+SBL; 1; 1; RMSE: 1

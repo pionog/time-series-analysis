@@ -1,0 +1,24 @@
+Cecha,Liczba,Procent,Lacznie_artykulow
+Multivariate,54,36.49,148
+Transformed,46,31.08,148
+Interval,43,29.05,148
+Single-value,39,26.35,148
+Univariate,26,17.57,148
+Hourly,22,14.86,148
+Raw,22,14.86,148
+Daily,16,10.81,148
+Monthly,13,8.78,148
+Yearly,9,6.08,148
+5 minutes,8,5.41,148
+Seconds,8,5.41,148
+Other,6,4.05,148
+Minute,6,4.05,148
+10 minutes,5,3.38,148
+Quaterly,4,2.7,148
+Half an hour,3,2.03,148
+Weekly,3,2.03,148
+15 minutes,3,2.03,148
+Half a year,2,1.35,148
+Unknown,2,1.35,148
+5 seconds,1,0.68,148
+100 milliseconds,1,0.68,148

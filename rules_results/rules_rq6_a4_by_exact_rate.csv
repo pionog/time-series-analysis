@@ -1,0 +1,25 @@
+rule_id,research_question,condition,recommended_algorithm,support,total_configurations,confidence,unique_articles,article_ids,rule_text
+A4-rate-15,RQ6-A4,missing_rate = 15%,TRF,12,27,0.4444,1,126,JEŚLI missing_rate = 15% TO rozważ: TRF (support=12/27)
+A4-rate-25,RQ6-A4,missing_rate = 25%,TRF,12,25,0.48,1,126,JEŚLI missing_rate = 25% TO rozważ: TRF (support=12/25)
+A4-rate-5,RQ6-A4,missing_rate = 5%,TRF,12,40,0.3,1,126,JEŚLI missing_rate = 5% TO rozważ: TRF (support=12/40)
+A4-rate-10,RQ6-A4,missing_rate = 10%,Ensemble (Forward + Backward),6,23,0.2609,1,283,JEŚLI missing_rate = 10% TO rozważ: Ensemble (Forward + Backward) (support=6/23)
+A4-rate-20,RQ6-A4,missing_rate = 20%,Ensemble (Forward + Backward),6,21,0.2857,1,283,JEŚLI missing_rate = 20% TO rozważ: Ensemble (Forward + Backward) (support=6/21)
+A4-rate-30,RQ6-A4,missing_rate = 30%,Ensemble (Forward + Backward),6,14,0.4286,1,283,JEŚLI missing_rate = 30% TO rozważ: Ensemble (Forward + Backward) (support=6/14)
+A4-rate-40,RQ6-A4,missing_rate = 40%,Ensemble (Forward + Backward),6,13,0.4615,1,283,JEŚLI missing_rate = 40% TO rozważ: Ensemble (Forward + Backward) (support=6/13)
+A4-rate-nieznany,RQ6-A4,missing_rate = nieznany%,Bi-LSTM,6,32,0.1875,1,107,JEŚLI missing_rate = nieznany% TO rozważ: Bi-LSTM (support=6/32)
+A4-rate-50,RQ6-A4,missing_rate = 50%,IA,3,16,0.1875,1,2,JEŚLI missing_rate = 50% TO rozważ: IA (support=3/16)
+A4-rate-75,RQ6-A4,missing_rate = 75%,IA,3,6,0.5,1,2,JEŚLI missing_rate = 75% TO rozważ: IA (support=3/6)
+A4-rate-80,RQ6-A4,missing_rate = 80%,SBL,3,3,1.0,1,76,JEŚLI missing_rate = 80% TO rozważ: SBL (support=3/3)
+A4-rate-90,RQ6-A4,missing_rate = 90%,IA,3,9,0.3333,1,2,JEŚLI missing_rate = 90% TO rozważ: IA (support=3/9)
+A4-rate-95,RQ6-A4,missing_rate = 95%,SBL,3,3,1.0,1,76,JEŚLI missing_rate = 95% TO rozważ: SBL (support=3/3)
+"A4-rate-12,5",RQ6-A4,"missing_rate = 12,5%",RMD-FSE,2,2,1.0,1,18,"JEŚLI missing_rate = 12,5% TO rozważ: RMD-FSE (support=2/2)"
+"A4-rate-2,5",RQ6-A4,"missing_rate = 2,5%",RMD-FSE,2,2,1.0,1,18,"JEŚLI missing_rate = 2,5% TO rozważ: RMD-FSE (support=2/2)"
+A4-rate-20%,RQ6-A4,missing_rate = 20%%,EM (Kalman Filter),2,3,0.6667,1,300,JEŚLI missing_rate = 20%% TO rozważ: EM (Kalman Filter) (support=2/3)
+"A4-rate-30,6",RQ6-A4,"missing_rate = 30,6%",KNN Impute,2,2,1.0,1,158,"JEŚLI missing_rate = 30,6% TO rozważ: KNN Impute (support=2/2)"
+"A4-rate-7,5",RQ6-A4,"missing_rate = 7,5%",RMD-FSE,2,2,1.0,1,18,"JEŚLI missing_rate = 7,5% TO rozważ: RMD-FSE (support=2/2)"
+A4-rate-10%,RQ6-A4,missing_rate = 10%%,ARLSimpute,1,3,0.3333,1,300,JEŚLI missing_rate = 10%% TO rozważ: ARLSimpute (support=1/3)
+"A4-rate-10,2",RQ6-A4,"missing_rate = 10,2%",IMPWE,1,2,0.5,1,158,"JEŚLI missing_rate = 10,2% TO rozważ: IMPWE (support=1/2)"
+"A4-rate-22,4",RQ6-A4,"missing_rate = 22,4%",IMPWE,1,2,0.5,1,158,"JEŚLI missing_rate = 22,4% TO rozważ: IMPWE (support=1/2)"
+"A4-rate-40,8",RQ6-A4,"missing_rate = 40,8%",KNN Impute,1,2,0.5,1,158,"JEŚLI missing_rate = 40,8% TO rozważ: KNN Impute (support=1/2)"
+A4-rate-~17,RQ6-A4,missing_rate = ~17%,IMPWE,1,2,0.5,1,158,JEŚLI missing_rate = ~17% TO rozważ: IMPWE (support=1/2)
+A4-rate-~45,RQ6-A4,missing_rate = ~45%,IMPWE,1,2,0.5,1,158,JEŚLI missing_rate = ~45% TO rozważ: IMPWE (support=1/2)

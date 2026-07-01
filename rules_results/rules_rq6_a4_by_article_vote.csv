@@ -1,0 +1,11 @@
+rule_id,research_question,condition,recommended_algorithm,article_votes,total_articles_in_band,confidence,article_ids,rule_text
+A4-articles-0-10pct,RQ6-A4,missing_rate_band = 0-10%,LTI,1,6,0.1667,7,JEŚLI missing_rate ∈ [0-10%] TO rozważ: LTI (głosy artykułów=1/6)
+A4-articles-10-20pct,RQ6-A4,missing_rate_band = 10-20%,LTI,1,9,0.1111,7,JEŚLI missing_rate ∈ [10-20%] TO rozważ: LTI (głosy artykułów=1/9)
+A4-articles-20-30pct,RQ6-A4,missing_rate_band = 20-30%,IA,1,11,0.0909,2,JEŚLI missing_rate ∈ [20-30%] TO rozważ: IA (głosy artykułów=1/11)
+A4-articles-30-40pct,RQ6-A4,missing_rate_band = 30-40%,AERR,1,5,0.2,22,JEŚLI missing_rate ∈ [30-40%] TO rozważ: AERR (głosy artykułów=1/5)
+A4-articles-40-50pct,RQ6-A4,missing_rate_band = 40-50%,LNS_PM,1,4,0.25,121,JEŚLI missing_rate ∈ [40-50%] TO rozważ: LNS_PM (głosy artykułów=1/4)
+A4-articles-50-60pct,RQ6-A4,missing_rate_band = 50-60%,IA,1,5,0.2,2,JEŚLI missing_rate ∈ [50-60%] TO rozważ: IA (głosy artykułów=1/5)
+A4-articles-70-80pct,RQ6-A4,missing_rate_band = 70-80%,IA,1,2,0.5,2,JEŚLI missing_rate ∈ [70-80%] TO rozważ: IA (głosy artykułów=1/2)
+A4-articles-80-90pct,RQ6-A4,missing_rate_band = 80-90%,SBL,1,1,1.0,76,JEŚLI missing_rate ∈ [80-90%] TO rozważ: SBL (głosy artykułów=1/1)
+A4-articles-90-100pct,RQ6-A4,missing_rate_band = 90-100%,IA,1,3,0.3333,2,JEŚLI missing_rate ∈ [90-100%] TO rozważ: IA (głosy artykułów=1/3)
+A4-articles-nieznany,RQ6-A4,missing_rate_band = nieznany,(A)NN,1,19,0.0526,19,JEŚLI missing_rate ∈ [nieznany] TO rozważ: (A)NN (głosy artykułów=1/19)

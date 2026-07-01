@@ -1,0 +1,99 @@
+ARIMA - 1
+ETS - 1
+Holt-Winters - 1
+Kalman filter - 1
+SARIMA - 1
+Zero Imputation - 1
+KNN Impute - 2
+Mean Imputation - 1
+MICE - 1
+Backward Fill - 1
+DropNaN - 1
+Forward Fill - 1
+IMPWE - 1?
+LOCF - 1
+Multiple Imputation - 1
+LSTM - 3
+Bi-LSTM - 3
+GRU-D - 3
+BRITS - 3
+Bi-FCNN - 5?
+GRUI - 3
+LSTNet - 9
+M-LSTNet - 9
+M-RNN - 3
+SAITS - 4
+Uni-FCNN - 5?
+GRIN - 6
+GATGPT - 6
+GRUI - 3
+GATGPT - 6
+GPT4TS - 4
+Standard attention mechanism - 4
+TimesNet - 5
+MICE - 1
+CSDI - 8
+GAN - 8
+GMM - 8
+Gaussian Distribution - 1?
+MF - 7
+US-GAN - 8
+IA - 1
+Time Series Decomposition - 1
+BP - 2?
+Neural Networks - 2?
+ARL Simpute - 7?
+Backward Forecasting - 1
+CEEMD - 7
+CNN - 5
+Correlation - 1
+DLMCC - X
+DVQ - 8?
+EEMD-RVFL - 9
+EFB - 2?
+ELM - 2
+EM algorithm - 1
+EmD - 7
+Ensemble (Forward + Backward) - 9
+FDW - 1?
+Filtering process - 1
+Forward Forecasting - 1
+GFTS - 10?
+IA+CL - 9?
+IRW - 1
+Intervension Analysis - 1
+Inverse Probability Weights - 1
+K-step prediction - 1
+LTI - 1
+MTSSP - X
+Meta-learning + Transfer-learning (for NN) - 9
+NARX - 1?
+OMP - 1
+PI - 1
+PI - M - 1
+PI - mi - 1
+PI^m - 1
+PI^m-mi/M - 1
+PSR - 1
+Pre-intervention period isolation - 1
+R-EEMD-RVFL - 9
+R-VMD-RVFL - 9
+RMD-FSE - X
+RVFL - 2
+Random walk - 1
+SBL - 1
+SPIN - X
+SVR - 2
+SVmD - 7
+SsA - 7
+Stochastic Simulation - 1
+TRF - X
+TRMF - 7
+VMD-RVFL - 9
+VmD - 7
+Wt - 7
+kNNE - 2
+mv_pts_correlatederr - 1
+pi - 1
+pi - M - 1
+pi - mi - 1

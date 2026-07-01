@@ -1,0 +1,11 @@
+rule_id,research_question,condition,recommended_algorithm,support,total_configurations_in_band,confidence,unique_articles,article_ids,rule_text
+A4-0-10pct,RQ6-A4,missing_rate_band = 0-10%,TRF,12,45,0.2667,1,126,"JEŚLI missing_rate ∈ [0-10%] TO rozważ model rekonstrukcji: TRF (support=12/45, confidence=26.67%)"
+A4-10-20pct,RQ6-A4,missing_rate_band = 10-20%,TRF,12,54,0.2222,1,126,"JEŚLI missing_rate ∈ [10-20%] TO rozważ model rekonstrukcji: TRF (support=12/54, confidence=22.22%)"
+A4-20-30pct,RQ6-A4,missing_rate_band = 20-30%,TRF,12,48,0.25,1,126,"JEŚLI missing_rate ∈ [20-30%] TO rozważ model rekonstrukcji: TRF (support=12/48, confidence=25.00%)"
+A4-30-40pct,RQ6-A4,missing_rate_band = 30-40%,Ensemble (Forward + Backward),6,16,0.375,1,283,"JEŚLI missing_rate ∈ [30-40%] TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=6/16, confidence=37.50%)"
+A4-40-50pct,RQ6-A4,missing_rate_band = 40-50%,Ensemble (Forward + Backward),6,15,0.4,1,283,"JEŚLI missing_rate ∈ [40-50%] TO rozważ model rekonstrukcji: Ensemble (Forward + Backward) (support=6/15, confidence=40.00%)"
+A4-90-100pct,RQ6-A4,missing_rate_band = 90-100%,SBL,6,12,0.5,1,76,"JEŚLI missing_rate ∈ [90-100%] TO rozważ model rekonstrukcji: SBL (support=6/12, confidence=50.00%)"
+A4-nieznany,RQ6-A4,missing_rate_band = nieznany,Bi-LSTM,6,43,0.1395,1,107,"JEŚLI missing_rate ∈ [nieznany] TO rozważ model rekonstrukcji: Bi-LSTM (support=6/43, confidence=13.95%)"
+A4-50-60pct,RQ6-A4,missing_rate_band = 50-60%,IA,3,16,0.1875,1,2,"JEŚLI missing_rate ∈ [50-60%] TO rozważ model rekonstrukcji: IA (support=3/16, confidence=18.75%)"
+A4-70-80pct,RQ6-A4,missing_rate_band = 70-80%,IA,3,6,0.5,1,2,"JEŚLI missing_rate ∈ [70-80%] TO rozważ model rekonstrukcji: IA (support=3/6, confidence=50.00%)"
+A4-80-90pct,RQ6-A4,missing_rate_band = 80-90%,SBL,3,3,1.0,1,76,"JEŚLI missing_rate ∈ [80-90%] TO rozważ model rekonstrukcji: SBL (support=3/3, confidence=100.00%)"
