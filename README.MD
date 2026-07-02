@@ -53,6 +53,7 @@ Po zmianie plików w `input_csv/` uruchom skrypty w tej kolejności:
 .\.venv\Scripts\python.exe convert_results_to_csv.py
 .\.venv\Scripts\python.exe create_charts.py
 .\.venv\Scripts\python.exe extract_rules_from_best_data_recon.py
+.\.venv\Scripts\python.exe build_rules_graph.py
 .\.venv\Scripts\python.exe build_rq6_a3_verification_table.py
 .\.venv\Scripts\python.exe build_research_html.py
 .\.venv\Scripts\python.exe export_questions_status.py
@@ -90,6 +91,7 @@ Opcjonalnie (raport diagnostyczny na konsoli):
 |--------|---------|---------|------|
 | `build_research_html.py` | `html/Pytania badawcze(…).csv`, `csv_results/`, `input_csv/`, `rules_results/` | `html/wyniki_badawcze.html` | Strona z odpowiedziami na pytania badawcze i analityczne. |
 | `export_questions_status.py` | (jak wyżej) | `html/status_pytan.txt` | Lista pytań ze statusem: [TAK] / [CZĘŚCIOWO] / [NIE]. |
+| `build_rules_graph.py` | `rules_results/` | `html/reguly_graf.html`, `edytowalne/reguly_eksperyment.csv` | Interaktywne drzewo decyzyjne i graf reguł RQ6-A4. |
 
 ### Moduły pomocnicze (nie uruchamiać bezpośrednio)
 
@@ -106,6 +108,7 @@ Opcjonalnie (raport diagnostyczny na konsoli):
 ## Wyniki do przeglądu
 
 - **HTML:** `html/wyniki_badawcze.html` — otwórz w przeglądarce
+- **Graf reguł:** `html/reguly_graf.html` — drzewo decyzyjne i graf RQ6-A4
 - **Status pytań:** `html/status_pytan.txt`
 - **Wykresy:** `charts/`
 

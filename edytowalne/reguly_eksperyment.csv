@@ -1,0 +1,9 @@
+priorytet,rule_id,rule_type,condition_label,recommended_algorithm,support,total,confidence,unique_articles,article_ids,wybrac_do_eksperymentu,notatki
+1,A4-ctx-task_model-LSSVM-band-20-30pct,kontekst×pasmo,Model zadania = LSSVM · 20-30%,LTI,9,12,0.7500,1,7,TAK,Jeden artykuł w SLR — wymaga walidacji eksperymentalnej
+2,A4-ctx-dataset_domain-Climate-band-0-10pct,kontekst×pasmo,Domena = Climate · 0-10%,RMD-FSE,6,7,0.8571,1,18,TAK,Jeden artykuł w SLR — wymaga walidacji eksperymentalnej
+3,A4-ctx-task_model-FIR-band-0-10pct,kontekst×pasmo,Model zadania = FIR · 0-10%,RMD-FSE,6,6,1.0000,1,18,TAK,Jeden artykuł w SLR — wymaga walidacji eksperymentalnej
+4,A4-ctx-task_model-Transformer-band-0-10pct,kontekst×pasmo,Model zadania = Transformer · 0-10%,Decay attention,5,5,1.0000,1,165,TAK,Jeden artykuł w SLR — wymaga walidacji eksperymentalnej
+5,A4-20-30pct-MAE,pasmo×metryka,missing rate ∈ [20-30%] · metryka MAE,TRF,16,23,0.6957,1,126,TAK,Jeden artykuł w SLR — wymaga walidacji eksperymentalnej
+6,A4-30-40pct-SMAPE,pasmo×metryka,missing rate ∈ [30-40%] · metryka SMAPE,Ensemble (Forward + Backward),6,12,0.5000,1,283,ROZWAZYC,Jeden artykuł w SLR — wymaga walidacji eksperymentalnej
+7,A4-90-100pct-RMSE,pasmo×metryka,missing rate ∈ [90-100%] · metryka RMSE,SBL,6,6,1.0000,1,76,ROZWAZYC,Jeden artykuł w SLR — wymaga walidacji eksperymentalnej
+8,A4-ctx-task_model-ASTGCN-band-0-10pct,kontekst×pasmo,Model zadania = ASTGCN · 0-10%,TRF,4,4,1.0000,1,126,ROZWAZYC,Jeden artykuł w SLR — wymaga walidacji eksperymentalnej
