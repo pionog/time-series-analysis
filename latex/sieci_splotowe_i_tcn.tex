@@ -1,0 +1,172 @@
+% Fragment LaTeX: sieci splotowe (CNN) oraz czasowe sieci splotowe (TCN)
+% Wymaga: \usepackage[utf8]{inputenc}, \usepackage[polish]{babel},
+%          \usepackage{amsmath}, \usepackage[numbers]{natbib}
+% Bibliografia: sieci_splotowe_i_tcn.bib
+%
+% Kompilacja przykładowa (z katalogu latex/):
+%   pdflatex main_sieci_splotowe_i_tcn.tex
+%   bibtex main_sieci_splotowe_i_tcn
+%   pdflatex main_sieci_splotowe_i_tcn.tex
+%   pdflatex main_sieci_splotowe_i_tcn.tex
+
+\section{Sieci splotowe i czasowe sieci splotowe}
+\label{sec:cnn-tcn}
+
+Sieci splotowe (\emph{Convolutional Neural Networks}, CNN) oraz czasowe sieci splotowe
+(\emph{Temporal Convolutional Networks}, TCN) stanowią rodzinę modeli wykorzystujących
+operację splotu do ekstrakcji lokalnych wzorców z danych. CNN historycznie rozwinięto
+dla obrazów i sygnałów o strukturze przestrzennej~\citep{lecun1998gradient,lecun2015deep},
+natomiast TCN dostosowują splot do modelowania sekwencji i szeregów
+czasowych~\citep{lea2017temporal,bai2018empirical}.
+
+%==============================================================================
+\subsection{Sieci splotowe (CNN)}
+\label{sec:cnn}
+%==============================================================================
+
+%Definicja
+\subsubsection{Definicja}
+Sieć splotowa to architektura uczenia głębokiego, w której podstawową operacją jest
+splot dyskretny filtrów (jąder) z lokalnymi fragmentami wejścia~\citep{lecun1998gradient}.
+W przeciwieństwie do w pełni połączonych warstw, wagi filtrów są współdzielone
+(\emph{weight sharing}) wzdłuż osi przestrzennych lub czasowych, co ogranicza liczbę
+parametrów i wprowadza indukcję lokalności oraz ekwiwariancji względem
+przesunięć~\citep{goodfellow2016deep}. Typowa CNN składa się z warstw splotowych,
+nie\-li\-nio\-wo\-ści (np.\ ReLU), opcjonalnego podpróbkowania (\emph{pooling}) oraz warstw
+gęstych na wyjściu~\citep{lecun2015deep}.
+
+%Sposób działania
+\subsubsection{Sposób działania}
+Dla wejścia $X$ i jądra $K$ o rozmiarze $k$ jednowymiarowy splot w pozycji $t$
+można zapisać jako
+\begin{equation}
+  (X * K)(t) = \sum_{i=0}^{k-1} K(i)\, X(t-i),
+  \label{eq:conv1d}
+\end{equation}
+przy odpowiednim dopełnieniu (\emph{padding}) i kroku (\emph{stride}).
+W dwóch wymiarach (obrazy) splot obejmuje obie osie przestrzenne.
+Warstwa uczy się wielu filtrów, z których każdy wykrywa inny wzorzec lokalny
+(krawędzie, tekstury, motywy czasowe). Głębsze warstwy łączą te cechy w
+reprezentacje o większym polu recepcyjnym~\citep{lecun2015deep,goodfellow2016deep}.
+Uczenie odbywa się zwykle metodą wstecznej propagacji błędu i stochastycznego
+spadku gradientu~\citep{lecun1998gradient}.
+
+%Przykłady
+\subsubsection{Przykłady}
+Klasyczne zastosowania CNN obejmują rozpoznawanie pisma i dokumentów~\citep{lecun1998gradient}
+oraz klasyfikację obrazów w dużej skali~\citep{krizhevsky2012imagenet}.
+W domenie szeregów czasowych pełnosplotowe sieci 1D (FCN) stanowią silny punkt
+wyjścia do klasyfikacji bez ręcznej inżynierii cech~\citep{wang2017time}.
+Do rekonstrukcji i prognozowania przy brakach danych stosowano m.in.\ hybrydy
+CNN--LSTM na szeregach zużycia energii~\citep{hussain2022cnnlstm}
+oraz architektury oparte na splotach 2D nad wariacjami okresowymi
+(TimesNet), obejmujące także zadanie imputacji~\citep{wu2023timesnet}.
+
+%Zalety
+\subsubsection{Zalety}
+\begin{itemize}
+  \item Efektywna ekstrakcja lokalnych wzorców dzięki współdzieleniu wag
+        i indukcji lokalności~\citep{lecun2015deep,goodfellow2016deep}.
+  \item Znacznie mniej parametrów niż porównywalna sieć w pełni połączona
+        przy podobnej mocy ekspresji lokalnej~\citep{lecun1998gradient}.
+  \item Dobrze skaluje się na dane o strukturze siatki (obrazy, spektrogramy,
+        okna czasowe) i wspiera równoległe obliczenia~\citep{krizhevsky2012imagenet}.
+  \item Przenośność filtrów: wczesne warstwy często uczą się uniwersalnych cech,
+        co ułatwia transfer uczenia~\citep{yosinski2014transferable}.
+\end{itemize}
+
+%Ograniczenia
+\subsubsection{Ograniczenia}
+\begin{itemize}
+  \item Ograniczone pole recepcyjne w płytkich sieciach utrudnia modelowanie
+        bardzo długich zależności bez pogłębiania architektury lub użycia
+        dilatacji~\citep{yu2016multi}.
+  \item Standardowy splot nie jest z natury przyczynowy: bez specjalnego
+        dopełnienia może wykorzystywać przyszłe próbki, co jest niedopuszczalne
+        w prognozowaniu online~\citep{bai2018empirical}.
+  \item Słabsza indukcja dla danych bez lokalnej struktury przestrzennej/czasowej
+        (np.\ dowolne zbiory cech tabularnych)~\citep{goodfellow2016deep}.
+  \item Interpretacja poszczególnych filtrów bywa trudna, zwłaszcza w głębokich
+        stosach warstw~\citep{lecun2015deep}.
+\end{itemize}
+
+%==============================================================================
+\subsection{Czasowe sieci splotowe (TCN)}
+\label{sec:tcn}
+%==============================================================================
+
+%Definicja
+\subsubsection{Definicja}
+Czasowa sieć splotowa (TCN) to architektura sekwencyjna oparta na splotach
+przyczynowych i dilatowanych (\emph{causal dilated convolutions}), zaprojektowana
+do modelowania zależności czasowych bez rekurencji~\citep{lea2017temporal,bai2018empirical}.
+W ujęciu Bai i~wsp.~\cite{bai2018empirical} TCN łączy: (i)~splot przyczynowy
+(wyjście w chwili $t$ zależy wyłącznie od wejść $\le t$), (ii)~dilatację zwiększającą
+pole recepcyjne wykładniczo wraz z głębokością oraz (iii)~residualne bloki
+stabilizujące trening głębokich stosów. Koncepcja dilatowanych splotów przyczynowych
+była wcześniej kluczowa m.in.\ w modelu WaveNet~\citep{oord2016wavenet}.
+
+%Sposób działania
+\subsubsection{Sposób działania}
+Splot dilatowany z czynnikiem $d$ i jądrem rozmiaru $k$ ma postać
+\begin{equation}
+  (X *_d K)(t) = \sum_{i=0}^{k-1} K(i)\, X(t - d\cdot i),
+  \label{eq:dilated}
+\end{equation}
+gdzie $d$ pomija co $(d-1)$-szą próbkę, rozszerzając zasięg bez zwiększania liczby
+parametrów~\citep{yu2016multi,oord2016wavenet}. Przyczynowość uzyskuje się przez
+dopełnienie z lewej strony sekwencji, tak aby filtr nie sięgał w
+przyszłość~\citep{bai2018empirical}. Typowy blok TCN stosuje dwie warstwy
+splotu dilatowanego z normalizacją, nie\-li\-nio\-wo\-ścią i dropoutem oraz połączenie
+residualne; dilatacje rosną zwykle według $d = 2^{\ell}$ w kolejnych warstwach
+$\ell$, co daje pole recepcyjne rzędu $O(k\cdot 2^{L})$ dla $L$ warstw.
+Całą sekwencję można przetwarzać równolegle, w przeciwieństwie do klasycznych
+RNN/LSTM~\citep{bai2018empirical}.
+
+%Przykłady
+\subsubsection{Przykłady}
+TCN i pokrewne architektury stosowano do segmentacji działań w
+wideo~\citep{lea2017temporal}, generowania audio~\citep{oord2016wavenet}
+oraz ogólnego modelowania sekwencji, gdzie empirycznie dorównywały lub przewyższały
+RNN na wielu benchmarkach~\citep{bai2018empirical}.
+W prognozowaniu szeregów czasowych z brakami danych wykorzystano m.in.\ grafowe
+rozszerzenie splotu czasowego (BiTGraph) z modułem PartialTCN uwzględniającym
+wzorce braków~\citep{chen2024bitgraph}.
+Pokrewna linia --- TimesNet --- modeluje zmiany czasowe przez sploty 2D na
+tensorach okresowych i obejmuje m.in.\ imputację~\citep{wu2023timesnet}.
+
+%Zalety
+\subsubsection{Zalety}
+\begin{itemize}
+  \item Stabilne i zwykle szybsze uczenie niż RNN dzięki pełnej równoległości
+        po długości sekwencji~\citep{bai2018empirical}.
+  \item Elastyczne, rosnące pole recepcyjne przez dilatacje bez eksplozji
+        liczby parametrów~\citep{yu2016multi,oord2016wavenet}.
+  \item Ścisła przyczynowość ułatwia uczciwą ewaluację w zadaniach
+        prognostycznych~\citep{bai2018empirical}.
+  \item Residualne bloki poprawiają przepływ gradientu w głębokich
+        sieciach~\citep{he2016deep,bai2018empirical}.
+\end{itemize}
+
+%Ograniczenia
+\subsubsection{Ograniczenia}
+\begin{itemize}
+  \item Aby objąć bardzo długie zależności, potrzeba odpowiednio głębokiej sieci
+        lub dużych dilatacji, co zwiększa koszt pamięci aktywacji~\citep{bai2018empirical}.
+  \item Stałe jądra splotowe gorzej adaptują się do silnie niestacjonarnych
+        lub nieregularnie próbkowanych szeregów bez dodatkowych mechanizmów
+        (maski, interpolacja, modele grafowe)~\citep{chen2024bitgraph}.
+  \item Wybór rozmiaru jądra, schematu dilatacji i głębokości jest zadaniem
+        strojenia hiperparametrów o istotnym wpływie na jakość~\citep{bai2018empirical}.
+  \item Czyste TCN nie modelują wprost niepewności ani rozkładów braków danych;
+        w zadaniach imputacji często wymaga się rozszerzeń lub połączeń
+        z innymi rodzinami modeli~\citep{hussain2022cnnlstm,chen2024bitgraph}.
+\end{itemize}
+
+\paragraph{Podsumowanie.}
+CNN dostarczają ogólnego mechanizmu lokalnej ekstrakcji cech przez splot,
+natomiast TCN specjalizują ten mechanizm pod sekwencje: przyczynowość, dilatacje
+i residualne bloki pozwalają efektywnie modelować zależności czasowe bez
+rekurencji~\citep{lecun2015deep,bai2018empirical}. W rekonstrukcji i prognozowaniu
+szeregów czasowych obie linie --- często w wariantach hybrydowych --- stanowią
+ważną alternatywę wobec sieci rekurencyjnych i transformerów.
