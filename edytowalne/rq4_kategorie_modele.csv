@@ -1,0 +1,27 @@
+# Ręczna weryfikacja przypisań modeli → makrokategorie RQ4 (1–10).
+# Ten plik ma NAJWYŻSZY priorytet przy generowaniu HTML (build_research_html.py).
+# Format: model;kategoria;uwagi
+#   kategoria: 1–10 (patrz legenda poniżej) lub X (wyklucz z RQ4-A2–A11)
+# Wpisuj tylko modele, które chcesz skorygować — reszta bierze się z porownanie_kategoryzacji.csv.
+#
+# 1 = Modele Statystyczne i Klasyczne        → RQ4-A2
+# 2 = Klasyczne Uczenie Maszynowe           → RQ4-A3
+# 3 = Sieci Rekurencyjne i ich warianty     → RQ4-A4
+# 4 = Transformery i Mechanizmy Uwagi         → RQ4-A5
+# 5 = Sieci Splotowe i Czasowe              → RQ4-A6
+# 6 = Grafowe Sieci Neuronowe                → RQ4-A7
+# 7 = Faktoryzacja Macierzowa i Dekompozycja → RQ4-A8
+# 8 = Modele Generatywne i Probabilistyczne  → RQ4-A9
+# 9 = Architektury Hybrydowe                 → RQ4-A10
+# 10 = Logika Rozmyta i Systemy Hybrydowe    → RQ4-A11
+model;kategoria;uwagi
+TimesNet;4;CZĘŚCIOWO w porównaniu — zweryfikuj (4 vs 5)
+Gaussian Distribution;8;skorygowano względem Gemini (1→8)
+Time Series Decomposition;7;skorygowano względem Gemini (1→7)
+PSR;7;CZĘŚCIOWO — rekonstrukcja przestrzeni fazowej
+NARX;3;skorygowano względem Gemini (1→3)
+ARL Simpute;1;CZĘŚCIOWO — imputacja autoregresyjna
+DLMCC;7;CZĘŚCIOWO — dynamic linear model
+RMD-FSE;7;CZĘŚCIOWO — matrix decomposition
+SPIN;6;skorygowano (grafowa imputacja)
+TRF;8;CZĘŚCIOWO — transformer/flow w danych SLR

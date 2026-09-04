@@ -19,7 +19,6 @@ from     domain_groups import (
     count_articles_per_group,
     degradation_for_group,
     domain_general_degradation_matrix,
-    general_degradation_for_group,
     general_degradation_for_groups,
     recon_models_for_group,
     resolve_domain_groups,
@@ -32,6 +31,7 @@ from html_tables import (
     render_matrix_table,
     sample_note,
 )
+from label_mapping import translate_label, translate_labels
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 INPUT_DIR = os.path.join(SCRIPT_DIR, "input_csv")
@@ -216,6 +216,8 @@ def domain_quality_heatmap(
     groups: list[str],
     total: int,
 ) -> str:
+    col_labels = heatmap_general_columns()
+    visible_categories = set(col_labels)
     matrix: Counter = Counter()
     tag_totals: Counter = Counter()
     for aid in set(apps) & set(degrad):
@@ -223,14 +225,13 @@ def domain_quality_heatmap(
             continue
         for tag in degrad[aid]:
             general = TAG_TO_GENERAL.get(tag)
-            if not general:
+            if not general or general not in visible_categories:
                 continue
             matrix[(tag, general)] += 1
             tag_totals[tag] += 1
     if not matrix:
         return ""
     row_labels = [tag for tag, _ in tag_totals.most_common()]
-    col_labels = heatmap_general_columns()
     parts = [
         "<p><strong>Mapa ciepła: szczegółowe problemy × ogólna kategoria</strong></p>",
         render_matrix_table(
@@ -365,19 +366,23 @@ def build_rq2_a3_html(path: str) -> str:
     if not matrix:
         return ""
     active_freqs = [f for f in FREQUENCY_ORDER if any(matrix.get((d, f), 0) for d in DIMENSION_COLS)]
-    transposed = {(f, d): matrix.get((d, f), 0) for d in DIMENSION_COLS for f in active_freqs}
+    dim_cols = list(DIMENSION_COLS)
+    transposed = {(f, d): matrix.get((d, f), 0) for d in dim_cols for f in active_freqs}
+    other_pl = translate_label("Other")
     parts = [
         f"<p>Artykuły z obiema informacjami: <strong>{with_both}</strong> / {articles}"
         f"{sample_note(with_both, articles)}</p>",
         render_matrix_table(
-            active_freqs,
-            list(DIMENSION_COLS),
+            translate_labels(active_freqs),
+            translate_labels(dim_cols),
             transposed,
             total_articles=articles,
             caption="Oś X: wymiarowość · Oś Y: częstotliwość (od najniższej do najwyższej)",
+            row_keys=active_freqs,
+            col_keys=dim_cols,
         ),
         (
-            "<p><strong>Other</strong> (częstotliwość): jednostka czasu niepasująca do standardowej "
+            f"<p><strong>{html.escape(other_pl)}</strong> (częstotliwość): jednostka czasu niepasująca do standardowej "
             "siatki w skoroszycie — np. nieregularne próbkowanie, Hz, niestandardowy interwał "
             "lub brak jednoznacznej informacji u autorów.</p>"
         ),
@@ -394,7 +399,7 @@ def build_rq2_a3_html(path: str) -> str:
                 f"{'…' if len(note) > 200 else ''}</li>"
             )
         parts.append(
-            "<p>Artykuły z częstotliwością <em>Other</em>:</p>"
+            f"<p>Artykuły z częstotliwością <em>{html.escape(other_pl)}</em>:</p>"
             f'<ul class="bullet-list">{"".join(lis)}</ul>'
         )
     return "\n".join(parts)
@@ -436,9 +441,13 @@ def domain_quality_answer(
     general = general_degradation_for_groups(apps, degrad, groups)
     if not general:
         return ""
+    visible_categories = set(heatmap_general_columns())
+    general_visible = Counter(
+        {k: v for k, v in general.items() if k in visible_categories}
+    )
     parts = [
         "<p><strong>Ogólne kategorie problemów z jakością:</strong></p>",
-        render_count_lines(general.most_common(), total),
+        render_count_lines(general_visible.most_common(), total),
         domain_quality_heatmap(apps, degrad, groups, total),
     ]
     for group in groups:

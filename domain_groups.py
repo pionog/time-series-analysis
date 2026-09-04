@@ -1,7 +1,7 @@
 """Grupy domen zastosowań (applications) — wspólne dla analiz i wykresów."""
 from collections import Counter
 
-from degradation_categories import general_categories_from_tags
+from degradation_categories import TAG_TO_GENERAL, general_categories_from_tags
 
 TASK_DOMAINS = {
     "Prediction", "Classification", "Anomaly detection", "other", "Other",
@@ -123,9 +123,13 @@ def general_degradation_for_groups(
     degrad: dict[str, set[str]],
     groups: list[str],
 ) -> Counter:
+    """Zlicza tagi degradacji w grupach, zagregowane do ogólnych kategorii."""
     combined: Counter = Counter()
     for group in groups:
-        combined.update(general_degradation_for_group(apps, degrad, group))
+        for tag, count in degradation_for_group(apps, degrad, group).items():
+            category = TAG_TO_GENERAL.get(tag)
+            if category:
+                combined[category] += count
     return combined
 
 
@@ -147,14 +151,15 @@ def domain_general_degradation_matrix(
     apps: dict[str, set[str]],
     degrad: dict[str, set[str]],
 ) -> Counter:
-    """Domena × ogólna kategoria degradacji."""
+    """Domena × ogólna kategoria degradacji (zliczenie tagów, spójne ze szczegółami)."""
     counts: Counter = Counter()
     for aid in set(apps) & set(degrad):
         groups = [g for g in APPLICATION_DOMAIN_GROUPS if article_in_group(apps[aid], g)]
-        cats = general_categories_from_tags(degrad[aid])
-        for g in groups:
-            for c in cats:
-                counts[(g, c)] += 1
+        for group in groups:
+            for tag in degrad[aid]:
+                category = TAG_TO_GENERAL.get(tag)
+                if category:
+                    counts[(group, category)] += 1
     return counts
 
 

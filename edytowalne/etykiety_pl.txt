@@ -1,0 +1,26 @@
+# Mapowanie etykiet z CSV (angielski) na polskie nazwy w tabelach/wykresach.
+# Format: angielska_etykieta;polska_etykieta
+# Wielkość liter w kluczu angielskim jest ignorowana przy dopasowaniu.
+# Linie puste i zaczynające się od # są pomijane.
+
+# --- wymiarowość (RQ2-A3, oś X) ---
+Univariate;jednowymiarowe
+Multivariate;wielowymiarowe
+
+# --- częstotliwość (RQ2-A3, oś Y) ---
+Yearly;roczne
+Half a year;półroczne
+Quaterly;kwartalne
+Monthly;miesięczne
+Weekly;tygodniowe
+Daily;dzienne
+Hourly;godzinowe
+Half an hour;półgodzinne
+15 minutes;15 minut
+10 minutes;10 minut
+5 minutes;5 minut
+Minute;minutowe
+5 seconds;5 sekund
+Seconds;sekundowe
+100 milliseconds;100 milisekund
+Other;inne

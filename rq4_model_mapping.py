@@ -9,6 +9,7 @@ from collections import Counter
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 GEMINI_PATH = os.path.join(SCRIPT_DIR, "edytowalne", "gemini.txt")
 POROWNANIE_PATH = os.path.join(SCRIPT_DIR, "edytowalne", "porownanie_kategoryzacji.csv")
+MANUAL_CATEGORIES_PATH = os.path.join(SCRIPT_DIR, "edytowalne", "rq4_kategorie_modele.csv")
 
 RQ4_MACRO_CATEGORY_NAMES: dict[int, str] = {
     1: "Modele Statystyczne i Klasyczne",
@@ -90,6 +91,25 @@ def _parse_gemini(path: str) -> dict[str, int]:
     return mapping
 
 
+def _parse_manual_categories(path: str) -> dict[str, int | None]:
+    """Ręczne przypisania z edytowalne/rq4_kategorie_modele.csv (najwyższy priorytet)."""
+    mapping: dict[str, int | None] = {}
+    if not os.path.exists(path):
+        return mapping
+    with open(path, encoding="utf-8-sig", newline="") as f:
+        lines = [ln for ln in f if not ln.lstrip().startswith("#")]
+    for row in csv.DictReader(lines, delimiter=";"):
+        model = (row.get("model") or "").strip()
+        if not model:
+            continue
+        raw = (row.get("kategoria") or row.get("reczna") or "").strip().rstrip("?")
+        if raw.upper() == "X":
+            mapping[model] = None
+        elif raw.isdigit() and 1 <= int(raw) <= 10:
+            mapping[model] = int(raw)
+    return mapping
+
+
 def _parse_porownanie(path: str) -> dict[str, int | None]:
     """Zwraca kategorię z kolumny auto (gdy jest) lub None dla X."""
     mapping: dict[str, int | None] = {}
@@ -101,23 +121,44 @@ def _parse_porownanie(path: str) -> dict[str, int | None]:
             if not model or model.startswith("PI ("):
                 continue
             auto = row.get("auto", "").strip().rstrip("?")
-            if auto.upper() == "X":
+            reczna = row.get("reczna", "").strip().rstrip("?")
+            chosen = reczna if reczna else auto
+            if chosen.upper() == "X":
                 mapping[model] = None
-            elif auto.isdigit():
-                mapping[model] = int(auto)
+            elif chosen.isdigit():
+                mapping[model] = int(chosen)
     return mapping
 
 
 def build_model_category_map() -> dict[str, int]:
-    """Łączy gemini.txt, porównanie i ręczne korekty."""
+    """
+    Łączy źródła przypisań (od najwyższego priorytetu):
+      1. edytowalne/rq4_kategorie_modele.csv — Twoja ręczna weryfikacja
+      2. _CATEGORY_OVERRIDES w kodzie (korekty wbudowane)
+      3. edytowalne/porownanie_kategoryzacji.csv — kolumna reczna lub auto
+      4. edytowalne/gemini.txt — surowa kategoryzacja Gemini
+    Modele z EXCLUDED_MODELS lub kategoria X są pomijane w RQ4-A2–A11.
+    """
     result: dict[str, int] = {}
+    manual = _parse_manual_categories(MANUAL_CATEGORIES_PATH)
     gemini = _parse_gemini(GEMINI_PATH)
     porownanie = _parse_porownanie(POROWNANIE_PATH)
 
-    all_names = set(gemini) | set(porownanie) | set(_CATEGORY_OVERRIDES) | EXCLUDED_MODELS
+    all_names = (
+        set(manual)
+        | set(gemini)
+        | set(porownanie)
+        | set(_CATEGORY_OVERRIDES)
+        | EXCLUDED_MODELS
+    )
 
     for name in all_names:
         if name in EXCLUDED_MODELS:
+            continue
+        if name in manual:
+            if manual[name] is None:
+                continue
+            result[name] = manual[name]
             continue
         if name in _CATEGORY_OVERRIDES:
             result[name] = _CATEGORY_OVERRIDES[name]

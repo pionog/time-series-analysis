@@ -92,6 +92,7 @@ Opcjonalnie (raport diagnostyczny na konsoli):
 | `build_research_html.py` | `html/Pytania badawcze(…).csv`, `csv_results/`, `input_csv/`, `rules_results/` | `html/wyniki_badawcze.html` | Strona z odpowiedziami na pytania badawcze i analityczne. |
 | `export_questions_status.py` | (jak wyżej) | `html/status_pytan.txt` | Lista pytań ze statusem: [TAK] / [CZĘŚCIOWO] / [NIE]. |
 | `build_rules_graph.py` | `rules_results/` | `html/reguly_graf.html`, `edytowalne/reguly_eksperyment.csv` | Interaktywne drzewo decyzyjne i graf reguł RQ6-A4. |
+| `export_rq2_a3_heatmap_pdf.py` | `input_csv/…Data description.csv` | `charts/rq2_a3_heatmap.pdf` | Heatmapa RQ2-A3 do wstawienia w Overleaf (`\\includegraphics`). |
 
 ### Moduły pomocnicze (nie uruchamiać bezpośrednio)
 
@@ -104,6 +105,10 @@ Opcjonalnie (raport diagnostyczny na konsoli):
 
 - `full_analysis_files.txt` — lista skoroszytów z rozszerzoną analizą (używane przez `analyze_csv.py`)
 - `html/Pytania badawcze(Pytania badawcze).csv` — pytania badawcze i analityczne
+- `edytowalne/etykiety_pl.txt` — mapowanie etykiet EN→PL (np. `Yearly;roczne`) dla tabel i PDF
+- `edytowalne/gemini.txt` — surowe przypisania modeli do makrokategorii RQ4 (1–10) z Gemini
+- `edytowalne/porownanie_kategoryzacji.csv` — weryfikacja Gemini (`gemini` vs `auto`); opcjonalna kolumna `reczna`
+- `edytowalne/rq4_kategorie_modele.csv` — **Twoje ręczne korekty** (najwyższy priorytet przy HTML)
 
 ## Wyniki do przeglądu
 
