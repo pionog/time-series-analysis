@@ -41,6 +41,7 @@ Wszystkie poniższe komendy zakładają, że jesteś w katalogu projektu i używ
 | `rules_results/` | Reguły i dane RQ6 (A3, A4) |
 | `rq6_a3_verification/` | Tabele do ręcznej weryfikacji RQ6-A3 |
 | `html/` | Pytania badawcze, strona wyników, status pytań |
+| `Eksperyment/` | Weryfikacja kandydatów na reguły RQ6-A4 (biblioteki, config, wyniki) |
 
 ## Kolejność uruchamiania (pełny pipeline)
 

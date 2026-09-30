@@ -24,7 +24,13 @@ from     domain_groups import (
     resolve_domain_groups,
     structural_degradation_by_group,
 )
-from rq4_model_mapping import RQ4_CATEGORY_TO_QUESTION, macro_category_totals, counts_for_question
+from rq4_model_mapping import (
+    RQ4_CATEGORY_TO_QUESTION,
+    RQ4_MACRO_CATEGORY_NAMES,
+    macro_category_totals,
+    counts_for_question,
+    resolve_model_category,
+)
 from html_tables import (
     render_bullet_list,
     render_count_lines,
@@ -515,10 +521,65 @@ def build_rq6_a2_html(apps: dict[str, set[str]], total: int) -> str:
                 continue
     rows.sort(key=lambda x: (-x[1], -x[2], x[0]))
     if rows:
-        parts.append("<p><strong>Ogólny ranking algorytmów (SUMMARY):</strong></p>")
         parts.append(
-            render_bullet_list([(f"{a} — łącznie {t}, artykuły {art}", t) for a, t, art in rows[:15]], total)
+            "<p><strong>Ogólny ranking algorytmów (SUMMARY):</strong> "
+            f"w zestawieniu jest <strong>{len(rows)}</strong> metod "
+            f"(łącznie {sum(t for _, t, _ in rows)} zwycięstw konfiguracyjnych). "
+            "Poniżej top&nbsp;15; pełna lista w rozwinięciu.</p>"
         )
+        parts.append(
+            render_bullet_list(
+                [(f"{a} — łącznie {t}, artykuły {art}", t) for a, t, art in rows[:15]],
+                total,
+            )
+        )
+        full_items = [(f"{a} — łącznie {t}, artykuły {art}", t) for a, t, art in rows]
+        parts.append(
+            '<details class="sub-answer"><summary>'
+            f"Pełna lista metod ze SUMMARY ({len(rows)})</summary>"
+            f"{render_bullet_list(full_items, total)}"
+            "</details>"
+        )
+
+        # --- ranking makrokategorii RQ4 ---
+        wins_by_cat: Counter = Counter()
+        arts_by_cat: Counter = Counter()
+        unassigned: list[tuple[str, int, int]] = []
+        for alg, wins, arts in rows:
+            cat = resolve_model_category(alg)
+            if cat is None:
+                unassigned.append((alg, wins, arts))
+                continue
+            label = RQ4_MACRO_CATEGORY_NAMES[cat]
+            wins_by_cat[label] += wins
+            arts_by_cat[label] += arts
+
+        if wins_by_cat:
+            parts.append(
+                "<p><strong>Zwycięstwa wg makrokategorii podejść (RQ4):</strong> "
+                "suma zwycięstw konfiguracyjnych metod przypisanych do danej rodziny. "
+                "Kategorie jak w RQ4-A1 (sieci rekurencyjne, splotowe, transformery itd.).</p>"
+            )
+            cat_items = [
+                (f"{name} — łącznie {wins_by_cat[name]}, "
+                 f"suma „artykuły” metod {arts_by_cat[name]}", wins_by_cat[name])
+                for name, _ in wins_by_cat.most_common()
+            ]
+            parts.append(render_bullet_list(cat_items, total))
+
+        if unassigned:
+            u_wins = sum(w for _, w, _ in unassigned)
+            parts.append(
+                "<p><strong>Metody bez przypisanej makrokategorii RQ4:</strong> "
+                f"{len(unassigned)} nazw / {u_wins} zwycięstw "
+                "(brak pewnego mapowania w słowniku kategorii).</p>"
+            )
+            parts.append(
+                '<details class="sub-answer"><summary>'
+                f"Lista nieprzypisanych ({len(unassigned)})</summary>"
+                f"{render_bullet_list([(f'{a} — łącznie {t}, artykuły {art}', t) for a, t, art in unassigned], total)}"
+                "</details>"
+            )
 
     # --- zwycięzcy per metryka rekonstrukcji ---
     metric_winners: Counter = Counter()

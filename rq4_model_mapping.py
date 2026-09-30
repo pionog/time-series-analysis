@@ -70,7 +70,45 @@ _CATEGORY_OVERRIDES: dict[str, int] = {
     "PSR": 7,
     "ARL Simpute": 1,
     "TimesNet": 5,
+    # Nazwy ze SUMMARY / wariantów pisowni (RQ6-A2)
+    "Decay attention": 4,
+    "DecayAttention": 4,
+    "linear interpolation": 1,
+    "ARIMA with Filtering": 1,
+    "GPR": 8,
+    "EM DBN": 8,
+    "BiTGraph": 6,
+    "MICN": 5,
+    "CME-PDTW": 2,
+    "Intervension Analysis": 1,  # literówka w SUMMARY
 }
+
+
+# Aliasy nazw SUMMARY → kanoniczna nazwa w mapowaniu (gdy różni się tylko pisownia).
+_NAME_ALIASES: dict[str, str] = {
+    "decay attention": "Decay attention",
+    "knn impute": "KNN Impute",
+    "k-nn impute": "KNN Impute",
+}
+
+
+def resolve_model_category(name: str) -> int | None:
+    """Zwraca nr makrokategorii RQ4 dla nazwy modelu (lub None)."""
+    raw = (name or "").strip()
+    if not raw or raw in EXCLUDED_MODELS:
+        return None
+    alias = _NAME_ALIASES.get(raw.casefold(), raw)
+    if alias in MODEL_TO_CATEGORY:
+        return MODEL_TO_CATEGORY[alias]
+    if alias in _CATEGORY_OVERRIDES:
+        return _CATEGORY_OVERRIDES[alias]
+    for key, cat in MODEL_TO_CATEGORY.items():
+        if key.casefold() == alias.casefold():
+            return cat
+    for key, cat in _CATEGORY_OVERRIDES.items():
+        if key.casefold() == alias.casefold():
+            return cat
+    return None
 
 
 def _parse_gemini(path: str) -> dict[str, int]:
@@ -174,6 +212,11 @@ def build_model_category_map() -> dict[str, int]:
 
 
 MODEL_TO_CATEGORY: dict[str, int] = build_model_category_map()
+
+# Dołącz nadpisania SUMMARY do mapy globalnej (po zbudowaniu bazy).
+for _name, _cat in _CATEGORY_OVERRIDES.items():
+    if _name not in EXCLUDED_MODELS:
+        MODEL_TO_CATEGORY[_name] = _cat
 
 
 def counts_for_question(
